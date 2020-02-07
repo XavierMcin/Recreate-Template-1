@@ -344,6 +344,18 @@ main .about {
   /****************/
   /*FIRST ABOUT SECTION*/
   /****************/
+  /****************/
+  /*SECOND ABOUT SECTION*/
+  /****************/
+  /****************/
+  /*THIRD ABOUT SECTION*/
+  /****************/
+  /****************/
+  /*FOURTH ABOUT SECTION*/
+  /****************/
+  /****************/
+  /*FIFTH ABOUT SECTION*/
+  /****************/
 }
 
 main .about:first-of-type {
@@ -374,7 +386,7 @@ main .about:nth-of-type(2) .container {
           flex-direction: row;
 }
 
-main .about:nth-of-type(2) .container div:first-of-type {
+main .about:nth-of-type(2) .container .first-about:first-of-type {
   width: 50%;
   background-color: darkgoldenrod;
   display: -webkit-box;
@@ -385,7 +397,7 @@ main .about:nth-of-type(2) .container div:first-of-type {
           align-items: center;
 }
 
-main .about:nth-of-type(2) .container div:last-of-type {
+main .about:nth-of-type(2) .container .first-about:last-of-type {
   width: 50%;
   background-color: darkolivegreen;
   display: -webkit-box;
@@ -399,6 +411,164 @@ main .about:nth-of-type(2) .container div:last-of-type {
 main .about:nth-of-type(2) .container .first-about div {
   width: 100%;
   height: 64vh;
+  background-color: black;
+}
+
+main .about:nth-of-type(3) {
+  height: 47vh;
+}
+
+main .about:nth-of-type(3) .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .about:nth-of-type(3) .container .second-about {
+  width: 100%;
+  height: 80%;
+  background-color: darkgoldenrod;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .about:nth-of-type(3) .container .second-about div {
+  width: 24%;
+  height: 100%;
+  background-color: black;
+}
+
+main .about:nth-of-type(4) {
+  height: 80vh;
+}
+
+main .about:nth-of-type(4) .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .about:nth-of-type(4) .container .third-about:first-of-type {
+  width: 60%;
+  height: 68%;
+  background-color: darkgoldenrod;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .about:nth-of-type(4) .container .third-about:last-of-type {
+  width: 40%;
+  height: 68%;
+  background-color: darkgoldenrod;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .about:nth-of-type(4) .container .third-about div {
+  width: 24%;
+  height: 100%;
+  background-color: black;
+}
+
+main .about:nth-of-type(5) {
+  height: 70vh;
+}
+
+main .about:nth-of-type(5) .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .about:nth-of-type(5) .container .fourth-about:first-of-type {
+  width: 50%;
+  height: 68%;
+  background-color: darkgoldenrod;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .about:nth-of-type(5) .container .fourth-about:last-of-type {
+  width: 50%;
+  height: 68%;
+  background-color: darkgoldenrod;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .about:nth-of-type(5) .container .fourth-about div {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+main .about:nth-of-type(6) {
+  height: 77vh;
+}
+
+main .about:nth-of-type(6) .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .about:nth-of-type(6) .container .fifth-about {
+  width: 100%;
+  height: 64%;
+  background-color: darkgoldenrod;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .about:nth-of-type(6) .container .fifth-about div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 73%;
   background-color: black;
 }
 /*# sourceMappingURL=main.css.map */
