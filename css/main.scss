@@ -183,6 +183,85 @@ main {
         }
 
 
+        /****************/
+        /*FIFTH SECTION*/
+        /****************/
+
+        &:nth-of-type(5) {
+            height: 54vh;
+        }
+
+        &:nth-of-type(5) .container {
+            display: flex;
+            flex-direction: row;
+
+            .fifth-content:first-of-type {
+                flex-basis: 75%;
+                background-color: blueviolet;
+                display: flex;
+                align-items: center;
+                div {
+                    width: 100%;
+                    height: 53%;
+                    background-color: blue;
+                }
+            }
+
+            .fifth-content:last-of-type {
+                flex-basis: 25%;
+                background-color: chocolate;
+                display: flex;
+                align-items: center;
+                div {
+                    width: 100%;
+                    height: 53%;
+                    background-color: blue;
+                }
+            }
+        }
+
+
+        /****************/
+        /*SIXTH SECTION*/
+        /****************/
+
+        &:nth-of-type(6) {
+            height: 101vh;
+        }
+
+        &:nth-of-type(6) .container {
+            display: flex;
+            flex-direction: row;
+
+            .sixth-content:first-of-type {
+                flex-basis: 43%;
+                background-color: blueviolet;
+            }
+
+            .sixth-content:last-of-type {
+                flex-basis: 57%;
+                background-color: chocolate;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                div {
+                    width: 100%;
+                    height: 38%;
+                    background-color: blue;
+                }
+            }
+        }
+
+
+        /****************/
+        /*SEVENTH SECTION*/
+        /****************/
+
+        &:last-of-type {
+            height: 41vh;
+        }
+
+
     }
 
 
@@ -192,7 +271,7 @@ main {
 
     footer {
         width: 100%;
-        height: 15vh;
+        height: 11vh;
         background-color: khaki;
     }
 }

@@ -39,6 +39,15 @@ main section {
   /****************/
   /*FOURTH SECTION*/
   /****************/
+  /****************/
+  /*FIFTH SECTION*/
+  /****************/
+  /****************/
+  /*SIXTH SECTION*/
+  /****************/
+  /****************/
+  /*SEVENTH SECTION*/
+  /****************/
 }
 
 main section:nth-child(odd) {
@@ -229,9 +238,105 @@ main section:nth-of-type(4) .container .fourth-content:last-of-type div {
   background-color: blue;
 }
 
+main section:nth-of-type(5) {
+  height: 54vh;
+}
+
+main section:nth-of-type(5) .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+main section:nth-of-type(5) .container .fifth-content:first-of-type {
+  -ms-flex-preferred-size: 75%;
+      flex-basis: 75%;
+  background-color: blueviolet;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main section:nth-of-type(5) .container .fifth-content:first-of-type div {
+  width: 100%;
+  height: 53%;
+  background-color: blue;
+}
+
+main section:nth-of-type(5) .container .fifth-content:last-of-type {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  background-color: chocolate;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main section:nth-of-type(5) .container .fifth-content:last-of-type div {
+  width: 100%;
+  height: 53%;
+  background-color: blue;
+}
+
+main section:nth-of-type(6) {
+  height: 101vh;
+}
+
+main section:nth-of-type(6) .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+main section:nth-of-type(6) .container .sixth-content:first-of-type {
+  -ms-flex-preferred-size: 43%;
+      flex-basis: 43%;
+  background-color: blueviolet;
+}
+
+main section:nth-of-type(6) .container .sixth-content:last-of-type {
+  -ms-flex-preferred-size: 57%;
+      flex-basis: 57%;
+  background-color: chocolate;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main section:nth-of-type(6) .container .sixth-content:last-of-type div {
+  width: 100%;
+  height: 38%;
+  background-color: blue;
+}
+
+main section:last-of-type {
+  height: 41vh;
+}
+
 main footer {
   width: 100%;
-  height: 15vh;
+  height: 11vh;
   background-color: khaki;
 }
 /*# sourceMappingURL=main.css.map */
