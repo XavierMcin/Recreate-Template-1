@@ -76,6 +76,15 @@ main {
         }
 
 
+        /****************/
+        /*SECOND SECTION*/
+        /****************/
+
+        &:nth-of-type(2) {
+            height: 83vh;
+        }
+
+
         &:nth-of-type(2) .container {
             display: flex;
 
@@ -87,6 +96,51 @@ main {
             div:last-of-type {
                 width: 32%;
                 background-color: darkcyan;
+            }
+
+            .first-content {
+                display: flex;
+                align-items: center;
+
+                div {
+                    width: 100%;
+                    height: 78%;
+                    background-color: black;  
+                }
+
+                
+            }
+        }
+
+
+        /****************/
+        /*THIRD SECTION*/
+        /****************/
+
+        &:nth-of-type(3) {
+            height: 110vh;
+        }
+
+        &:nth-of-type(3) .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .second-content:first-of-type {
+                flex-basis: 61%;
+                background-color: blueviolet;
+            }
+
+            .second-content:last-of-type {
+                flex-basis: 15%;
+                background-color: chocolate;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                div {
+                    width: 16%;
+                    background-color: black;
+                }
             }
         }
 

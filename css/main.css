@@ -30,6 +30,12 @@ main section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  /****************/
+  /*SECOND SECTION*/
+  /****************/
+  /****************/
+  /*THIRD SECTION*/
+  /****************/
 }
 
 main section:nth-child(odd) {
@@ -91,6 +97,10 @@ main section .container {
   background-color: lightseagreen;
 }
 
+main section:nth-of-type(2) {
+  height: 83vh;
+}
+
 main section:nth-of-type(2) .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -105,6 +115,65 @@ main section:nth-of-type(2) .container div:first-of-type {
 main section:nth-of-type(2) .container div:last-of-type {
   width: 32%;
   background-color: darkcyan;
+}
+
+main section:nth-of-type(2) .container .first-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main section:nth-of-type(2) .container .first-content div {
+  width: 100%;
+  height: 78%;
+  background-color: black;
+}
+
+main section:nth-of-type(3) {
+  height: 110vh;
+}
+
+main section:nth-of-type(3) .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main section:nth-of-type(3) .container .second-content:first-of-type {
+  -ms-flex-preferred-size: 61%;
+      flex-basis: 61%;
+  background-color: blueviolet;
+}
+
+main section:nth-of-type(3) .container .second-content:last-of-type {
+  -ms-flex-preferred-size: 15%;
+      flex-basis: 15%;
+  background-color: chocolate;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main section:nth-of-type(3) .container .second-content:last-of-type div {
+  width: 16%;
+  background-color: black;
 }
 
 main footer {
