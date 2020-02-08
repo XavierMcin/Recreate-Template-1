@@ -11,6 +11,7 @@
 
 
 
+
 html, body {
     width: 100%;
     height: auto;
@@ -121,13 +122,13 @@ main {
 
         &:nth-of-type(2) .container {
             display: flex;
-            align-items: center;
         }
 
         #image-slider {
             width: 100%;
             height: 62%;
             background-color: lightgreen;
+            margin-top: 7%;
             margin-left: 11%;
             display: flex;
             flex-direction: row;
@@ -135,11 +136,42 @@ main {
             .slide-title {
                 width: auto;
                 background-color: hotpink;
+                position: relative;
 
-                button {
-                    width: 150px;
-                    height: 60px;
+                div {
+                    &:first-of-type {
+                        background-color: rebeccapurple;
+                        position: absolute;
+                        width: 240px;
+                        height: 240px;
+                        top: -15%;
+                        left: 42%;
+                    }
+
+                    &:nth-of-type(2) {
+                        background-color: royalblue;
+                        position: absolute;
+                        width: 400px;
+                        height: 170px;
+                        top: 38%;
+                        left: 18%;
+                        z-index: 2;
+                    }
+
+                    &:last-of-type {
+                        position: relative;
+                        top: 85%;
+
+                        button {
+                            width: 150px;
+                            height: 60px;
+                            background-color: goldenrod;
+        
+                        }
+                    }
                 }
+
+                
             }
 
             .slide-pics {
@@ -152,6 +184,24 @@ main {
                     width: 560px;
                     background-color: magenta;
                     margin-right: 70px;
+                    @include flexRow();
+                    align-items: flex-end;
+
+                    .img-container {
+                        width: 100%;
+                        height: 80%;
+                        background-color: black;
+                        margin: 0;
+                        border-radius: 2%;
+                        position: relative;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            border-radius: 2%;
+                        }
+                    }
                 }
             }
         }
