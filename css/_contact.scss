@@ -1,0 +1,35 @@
+main .contact {
+    &:first-of-type {
+        height: 14vh;
+        background-color: brown;
+
+        .container {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    /****************/
+    /*CONTACT FORM SECTION*/
+    /****************/
+
+    &:nth-of-type(2) {
+        height: 105vh;
+    }
+
+    &:nth-of-type(2) .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        .form-content {
+            width: 62%;
+            background-color: darkgoldenrod;
+            display: flex;
+            align-items: center;
+        }
+
+    }
+
+
+}

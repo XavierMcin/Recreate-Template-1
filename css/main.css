@@ -746,4 +746,52 @@ main .services:nth-of-type(5) .container .fourth-service div {
   height: 66%;
   background-color: black;
 }
+
+main .contact {
+  /****************/
+  /*CONTACT FORM SECTION*/
+  /****************/
+}
+
+main .contact:first-of-type {
+  height: 14vh;
+  background-color: brown;
+}
+
+main .contact:first-of-type .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .contact:nth-of-type(2) {
+  height: 105vh;
+}
+
+main .contact:nth-of-type(2) .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .contact:nth-of-type(2) .container .form-content {
+  width: 62%;
+  background-color: darkgoldenrod;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 /*# sourceMappingURL=main.css.map */
