@@ -6,6 +6,7 @@ html, body {
 body {
   margin: 0;
   padding: 0;
+  font-family: 'Nunito', sans-serif;
 }
 
 main {
@@ -30,6 +31,9 @@ main section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  /****************/
+  /*FIRST SECTION*/
+  /****************/
   /****************/
   /*SECOND SECTION*/
   /****************/
@@ -58,10 +62,19 @@ main section:nth-child(even) {
   background-color: indigo;
 }
 
+main section .container {
+  width: 75%;
+  height: 100%;
+  background-color: lightseagreen;
+}
+
+main section:first-of-type {
+  height: 14vh;
+}
+
 main section header {
   width: 100%;
-  height: 10vh;
-  background-color: lightblue;
+  height: 14vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -74,16 +87,31 @@ main section header {
           justify-content: space-between;
 }
 
-main section header div {
+main section header #web-logo {
   height: 100%;
   width: 25%;
+  position: relative;
   background-color: maroon;
+}
+
+main section header #web-logo img {
+  height: 100%;
+  width: 80%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 main section header nav {
   height: 100%;
-  width: 40%;
-  background-color: mediumpurple;
+  width: 29%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 main section header nav ul {
@@ -94,42 +122,38 @@ main section header nav ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  padding: 0;
 }
 
 main section header nav li {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  width: 22%;
   list-style: none;
+  text-align: center;
+  font-weight: 700;
 }
 
-main section .container {
-  width: 75%;
-  height: 100%;
-  background-color: lightseagreen;
+main section header nav li a {
+  cursor: pointer;
+  text-decoration: none;
+  color: gray;
+}
+
+main section header nav li a:hover {
+  color: lightgray;
+}
+
+main section header nav li:first-of-type {
+  text-align: right;
 }
 
 main section:nth-of-type(2) {
-  height: 83vh;
+  height: 86vh;
 }
 
 main section:nth-of-type(2) .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-main section:nth-of-type(2) .container div:first-of-type {
-  width: 68%;
-  background-color: brown;
-}
-
-main section:nth-of-type(2) .container div:last-of-type {
-  width: 32%;
-  background-color: darkcyan;
-}
-
-main section:nth-of-type(2) .container .second-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -138,17 +162,89 @@ main section:nth-of-type(2) .container .second-content {
           align-items: center;
 }
 
-main section:nth-of-type(2) .container .second-content div {
+main section #image-slider {
+  width: 100%;
+  height: 62%;
+  background-color: lightgreen;
+  margin-left: 11%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+main section #image-slider .slide-title {
+  width: auto;
+  background-color: hotpink;
+}
+
+main section #image-slider .slide-title button {
+  width: 150px;
+  height: 60px;
+}
+
+main section #image-slider .slide-pics {
+  width: auto;
+  background-color: lawngreen;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+main section #image-slider .slide-pics div {
+  height: 100%;
+  width: 560px;
+  background-color: magenta;
+  margin-right: 70px;
+}
+
+main section:nth-of-type(3) {
+  height: 83vh;
+}
+
+main section:nth-of-type(3) .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main section:nth-of-type(3) .container div:first-of-type {
+  width: 68%;
+  background-color: brown;
+}
+
+main section:nth-of-type(3) .container div:last-of-type {
+  width: 32%;
+  background-color: darkcyan;
+}
+
+main section:nth-of-type(3) .container .second-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main section:nth-of-type(3) .container .second-content div {
   width: 100%;
   height: 78%;
   background-color: black;
 }
 
-main section:nth-of-type(3) {
+main section:nth-of-type(4) {
   height: 110vh;
 }
 
-main section:nth-of-type(3) .container {
+main section:nth-of-type(4) .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -161,13 +257,13 @@ main section:nth-of-type(3) .container {
           justify-content: center;
 }
 
-main section:nth-of-type(3) .container .third-content:first-of-type {
+main section:nth-of-type(4) .container .third-content:first-of-type {
   -ms-flex-preferred-size: 61%;
       flex-basis: 61%;
   background-color: blueviolet;
 }
 
-main section:nth-of-type(3) .container .third-content:last-of-type {
+main section:nth-of-type(4) .container .third-content:last-of-type {
   -ms-flex-preferred-size: 15%;
       flex-basis: 15%;
   background-color: chocolate;
@@ -183,63 +279,13 @@ main section:nth-of-type(3) .container .third-content:last-of-type {
           justify-content: space-between;
 }
 
-main section:nth-of-type(3) .container .third-content:last-of-type div {
+main section:nth-of-type(4) .container .third-content:last-of-type div {
   width: 16%;
   background-color: black;
 }
 
-main section:nth-of-type(4) {
-  height: 93vh;
-}
-
-main section:nth-of-type(4) .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-main section:nth-of-type(4) .container .fourth-content:first-of-type {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
-  background-color: blueviolet;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-main section:nth-of-type(4) .container .fourth-content:first-of-type div {
-  width: 50%;
-  height: 73%;
-  background-color: blue;
-}
-
-main section:nth-of-type(4) .container .fourth-content:last-of-type {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
-  background-color: chocolate;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-main section:nth-of-type(4) .container .fourth-content:last-of-type div {
-  width: 100%;
-  height: 73%;
-  background-color: blue;
-}
-
 main section:nth-of-type(5) {
-  height: 54vh;
+  height: 93vh;
 }
 
 main section:nth-of-type(5) .container {
@@ -252,9 +298,9 @@ main section:nth-of-type(5) .container {
           flex-direction: row;
 }
 
-main section:nth-of-type(5) .container .fifth-content:first-of-type {
-  -ms-flex-preferred-size: 75%;
-      flex-basis: 75%;
+main section:nth-of-type(5) .container .fourth-content:first-of-type {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
   background-color: blueviolet;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -264,15 +310,15 @@ main section:nth-of-type(5) .container .fifth-content:first-of-type {
           align-items: center;
 }
 
-main section:nth-of-type(5) .container .fifth-content:first-of-type div {
-  width: 100%;
-  height: 53%;
+main section:nth-of-type(5) .container .fourth-content:first-of-type div {
+  width: 50%;
+  height: 73%;
   background-color: blue;
 }
 
-main section:nth-of-type(5) .container .fifth-content:last-of-type {
-  -ms-flex-preferred-size: 25%;
-      flex-basis: 25%;
+main section:nth-of-type(5) .container .fourth-content:last-of-type {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
   background-color: chocolate;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -282,14 +328,14 @@ main section:nth-of-type(5) .container .fifth-content:last-of-type {
           align-items: center;
 }
 
-main section:nth-of-type(5) .container .fifth-content:last-of-type div {
+main section:nth-of-type(5) .container .fourth-content:last-of-type div {
   width: 100%;
-  height: 53%;
+  height: 73%;
   background-color: blue;
 }
 
 main section:nth-of-type(6) {
-  height: 101vh;
+  height: 54vh;
 }
 
 main section:nth-of-type(6) .container {
@@ -302,13 +348,63 @@ main section:nth-of-type(6) .container {
           flex-direction: row;
 }
 
-main section:nth-of-type(6) .container .sixth-content:first-of-type {
+main section:nth-of-type(6) .container .fifth-content:first-of-type {
+  -ms-flex-preferred-size: 75%;
+      flex-basis: 75%;
+  background-color: blueviolet;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main section:nth-of-type(6) .container .fifth-content:first-of-type div {
+  width: 100%;
+  height: 53%;
+  background-color: blue;
+}
+
+main section:nth-of-type(6) .container .fifth-content:last-of-type {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  background-color: chocolate;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main section:nth-of-type(6) .container .fifth-content:last-of-type div {
+  width: 100%;
+  height: 53%;
+  background-color: blue;
+}
+
+main section:nth-of-type(7) {
+  height: 101vh;
+}
+
+main section:nth-of-type(7) .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+main section:nth-of-type(7) .container .sixth-content:first-of-type {
   -ms-flex-preferred-size: 43%;
       flex-basis: 43%;
   background-color: blueviolet;
 }
 
-main section:nth-of-type(6) .container .sixth-content:last-of-type {
+main section:nth-of-type(7) .container .sixth-content:last-of-type {
   -ms-flex-preferred-size: 57%;
       flex-basis: 57%;
   background-color: chocolate;
@@ -324,7 +420,7 @@ main section:nth-of-type(6) .container .sixth-content:last-of-type {
           justify-content: center;
 }
 
-main section:nth-of-type(6) .container .sixth-content:last-of-type div {
+main section:nth-of-type(7) .container .sixth-content:last-of-type div {
   width: 100%;
   height: 38%;
   background-color: blue;

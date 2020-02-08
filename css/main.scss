@@ -1,5 +1,13 @@
 
+@mixin flexRow {
+    display: flex;
+    flex-direction: row;
+}
 
+@mixin flexColumn {
+    display: flex;
+    flex-direction: column;
+}
 
 
 
@@ -11,6 +19,7 @@ html, body {
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Nunito', sans-serif;
 }
 
 
@@ -33,54 +42,133 @@ main {
             background-color: indigo;
         }
 
-        header {
-            width: 100%;
-            height: 10vh;
-            background-color: lightblue;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-
-            div {
-                height: 100%;
-                width: 25%;
-                background-color: maroon;
-            }
-
-            nav {
-                height: 100%;
-                width: 40%;
-                background-color: mediumpurple;
-                
-                ul {
-                    display: flex;
-                    flex-direction: row;
-                }
-
-                li {
-                    flex: 1;
-                    list-style: none;
-                }
-            }
-        }
-
         .container {
             width: 75%;
             height: 100%;
             background-color: lightseagreen;
         }
 
+        &:first-of-type {
+            height: 14vh;
+        }
+
+        header {
+            width: 100%;
+            height: 14vh;
+            @include flexRow();
+            justify-content: space-between;
+
+            #web-logo {
+                height: 100%;
+                width: 25%;
+                position: relative;
+                background-color: maroon;
+                
+
+                img {
+                    height: 100%;
+                    width: 80%;
+                    object-fit: cover;
+                }
+            }
+
+            nav {
+                height: 100%;
+                width: 29%;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                
+                ul {
+                    @include flexRow();
+                    justify-content: space-around;
+                    width: 100%;
+                    padding: 0;
+                }
+
+                li {
+                    width: 22%;
+                    list-style: none;
+                    text-align: center;
+                    font-weight: 700;
+
+                    a {
+                        cursor: pointer;
+                        text-decoration: none;
+                        color: gray;
+
+                        &:hover {
+                            color: lightgray;
+                        }
+                    }
+
+                    &:first-of-type {
+                        text-align: right;
+                    }
+
+                }
+            }
+        }
+
+
+        /****************/
+        /*FIRST SECTION*/
+        /****************/
+
+        &:nth-of-type(2) {
+            height: 86vh;
+        }
+
+        &:nth-of-type(2) .container {
+            display: flex;
+            align-items: center;
+        }
+
+        #image-slider {
+            width: 100%;
+            height: 62%;
+            background-color: lightgreen;
+            margin-left: 11%;
+            display: flex;
+            flex-direction: row;
+
+            .slide-title {
+                width: auto;
+                background-color: hotpink;
+
+                button {
+                    width: 150px;
+                    height: 60px;
+                }
+            }
+
+            .slide-pics {
+                width: auto;
+                background-color: lawngreen;
+                @include flexRow();
+
+                div {
+                    height: 100%;
+                    width: 560px;
+                    background-color: magenta;
+                    margin-right: 70px;
+                }
+            }
+        }
+
+    
+
 
         /****************/
         /*SECOND SECTION*/
         /****************/
 
-        &:nth-of-type(2) {
+        &:nth-of-type(3) {
             height: 83vh;
         }
 
 
-        &:nth-of-type(2) .container {
+        &:nth-of-type(3) .container {
             display: flex;
 
             div:first-of-type {
@@ -112,13 +200,12 @@ main {
         /*THIRD SECTION*/
         /****************/
 
-        &:nth-of-type(3) {
+        &:nth-of-type(4) {
             height: 110vh;
         }
 
-        &:nth-of-type(3) .container {
-            display: flex;
-            flex-direction: column;
+        &:nth-of-type(4) .container {
+            @include flexColumn();
             justify-content: center;
 
             .third-content:first-of-type {
@@ -129,8 +216,7 @@ main {
             .third-content:last-of-type {
                 flex-basis: 15%;
                 background-color: chocolate;
-                display: flex;
-                flex-direction: row;
+                @include flexRow();
                 justify-content: space-between;
                 div {
                     width: 16%;
@@ -144,13 +230,12 @@ main {
         /*FOURTH SECTION*/
         /****************/
 
-        &:nth-of-type(4) {
+        &:nth-of-type(5) {
             height: 93vh;
         }
 
-        &:nth-of-type(4) .container {
-            display: flex;
-            flex-direction: row;
+        &:nth-of-type(5) .container {
+            @include flexRow();
 
             .fourth-content:first-of-type {
                 flex-basis: 50%;
@@ -182,13 +267,12 @@ main {
         /*FIFTH SECTION*/
         /****************/
 
-        &:nth-of-type(5) {
+        &:nth-of-type(6) {
             height: 54vh;
         }
 
-        &:nth-of-type(5) .container {
-            display: flex;
-            flex-direction: row;
+        &:nth-of-type(6) .container {
+            @include flexRow();
 
             .fifth-content:first-of-type {
                 flex-basis: 75%;
@@ -220,13 +304,12 @@ main {
         /*SIXTH SECTION*/
         /****************/
 
-        &:nth-of-type(6) {
+        &:nth-of-type(7) {
             height: 101vh;
         }
 
-        &:nth-of-type(6) .container {
-            display: flex;
-            flex-direction: row;
+        &:nth-of-type(7) .container {
+            @include flexRow();
 
             .sixth-content:first-of-type {
                 flex-basis: 43%;
@@ -236,8 +319,7 @@ main {
             .sixth-content:last-of-type {
                 flex-basis: 57%;
                 background-color: chocolate;
-                display: flex;
-                flex-direction: column;
+                @include flexColumn();
                 justify-content: center;
                 div {
                     width: 100%;

@@ -26,8 +26,7 @@ main .services {
             width: 100%;
             height: 69vh;
             background-color: darkgoldenrod;
-            display: flex;
-            flex-direction: row;
+            @include flexRow();
             align-items: flex-end;
         }
 
@@ -55,8 +54,7 @@ main .services {
             width: 100%;
             height: 78vh;
             background-color: darkgoldenrod;
-            display: flex;
-            flex-direction: row;
+            @include flexRow();
             align-items: flex-end;
         }
 
@@ -84,8 +82,7 @@ main .services {
             width: 100%;
             height: 53vh;
             background-color: darkgoldenrod;
-            display: flex;
-            flex-direction: row;
+            @include flexRow();
             align-items: flex-end;
         }
 
@@ -113,8 +110,7 @@ main .services {
             width: 100%;
             height: 41vh;
             background-color: darkgoldenrod;
-            display: flex;
-            flex-direction: row;
+            @include flexRow();
             align-items: flex-end;
             justify-content: space-around;
         }
