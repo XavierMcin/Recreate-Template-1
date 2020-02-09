@@ -187,6 +187,32 @@ main section #image-slider .slide-title div:first-of-type {
   height: 240px;
   top: -15%;
   left: 42%;
+  overflow: hidden;
+}
+
+main section #image-slider .slide-title div:first-of-type ul {
+  height: 100%;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  background-color: indianred;
+}
+
+main section #image-slider .slide-title div:first-of-type ul li {
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 9em;
+  font-weight: 800;
 }
 
 main section #image-slider .slide-title div:nth-of-type(2) {
@@ -197,6 +223,30 @@ main section #image-slider .slide-title div:nth-of-type(2) {
   top: 38%;
   left: 18%;
   z-index: 2;
+  overflow: hidden;
+}
+
+main section #image-slider .slide-title div:nth-of-type(2) .h1-wrapper {
+  width: 100%;
+  height: auto;
+  left: 0;
+  top: -300%;
+  background-color: greenyellow;
+}
+
+main section #image-slider .slide-title div:nth-of-type(2) .h1-wrapper h1 {
+  height: 170px;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 4.5em;
 }
 
 main section #image-slider .slide-title div:last-of-type {
