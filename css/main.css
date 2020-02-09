@@ -244,8 +244,8 @@ main section #image-slider .slide-title div:nth-of-type(2) .h1-wrapper {
   left: 0;
   top: -300%;
   background-color: greenyellow;
-  -webkit-transition: top 1s ease-in-out;
-  transition: top 1s ease-in-out;
+  -webkit-transition: top .3s ease-in-out;
+  transition: top .3s ease-in-out;
 }
 
 main section #image-slider .slide-title div:nth-of-type(2) .h1-wrapper h1 {
