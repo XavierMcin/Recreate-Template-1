@@ -199,8 +199,8 @@ main section #image-slider .slide-title div:first-of-type ul {
   background-color: indianred;
   position: relative;
   left: 0;
-  -webkit-transition: left 1s ease-in-out;
-  transition: left 1s ease-in-out;
+  -webkit-transition: left .3s ease-in-out;
+  transition: left .3s ease-in-out;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -274,9 +274,10 @@ main section #image-slider .slide-title div:last-of-type ul {
   margin: 0;
   padding: 0;
   height: auto;
+  position: relative;
   top: 0;
-  -webkit-transition: top 1s ease-in-out;
-  transition: top 1s ease-in-out;
+  -webkit-transition: top .3s ease-in-out;
+  transition: top .3s ease-in-out;
 }
 
 main section #image-slider .slide-title div:last-of-type ul li {

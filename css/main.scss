@@ -163,7 +163,7 @@ main {
                             background-color: indianred;
                             position: relative;
                             left: 0;
-                            transition: left 1s ease-in-out;
+                            transition: left .3s ease-in-out;
                             @include flexRow();
 
                             li {
@@ -216,8 +216,9 @@ main {
                             margin: 0;
                             padding: 0;
                             height: auto;
+                            position: relative;
                             top: 0;
-                            transition: top 1s ease-in-out;
+                            transition: top .3s ease-in-out;
 
                             li {
                                 list-style: none;
