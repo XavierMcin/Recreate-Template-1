@@ -134,7 +134,7 @@ main {
         #image-slider {
             width: 100%;
             height: 62%;
-            background-color: lightgreen;
+            
             margin-top: 7%;
             margin-left: 11%;
             display: flex;
@@ -142,12 +142,12 @@ main {
 
             .slide-title {
                 width: auto;
-                background-color: black;
+                
                 position: relative;
 
                 div {
                     &:first-of-type {
-                        background-color: rebeccapurple;
+                        
                         position: absolute;
                         width: 240px;
                         height: 240px;
@@ -160,7 +160,7 @@ main {
                             width: 960px;
                             margin: 0;
                             padding: 0;
-                            background-color: indianred;
+                            
                             position: relative;
                             left: 0;
                             transition: left .3s ease-in-out;
@@ -178,7 +178,7 @@ main {
                     }
 
                     &:nth-of-type(2) {
-                        background-color: royalblue;
+                        
                         position: absolute;
                         width: 400px;
                         height: 170px;
@@ -192,7 +192,7 @@ main {
                             height: auto;
                             left: 0;
                             top: -300%;
-                            background-color: greenyellow;
+                            
                             transition: top .3s ease-in-out;
 
                             h1 {
@@ -239,15 +239,27 @@ main {
                 
             }
 
+            .slide-container {
+                overflow: hidden;
+                min-width: 100vw;
+                margin-left: 1.4%;
+            }
+
             .slide-pics {
                 width: auto;
-                background-color: lawngreen;
+                height: 100%;
+                min-width: 2520px;
+                overflow: hidden;
+                
                 @include flexRow();
+                position: relative;
+                left: 0;
+                transition: left .3s ease-in-out;
 
                 div {
                     height: 100%;
                     width: 560px;
-                    background-color: magenta;
+                    
                     margin-right: 70px;
                     @include flexRow();
                     align-items: flex-end;
@@ -255,7 +267,7 @@ main {
                     .img-container {
                         width: 100%;
                         height: 80%;
-                        background-color: black;
+                        
                         margin: 0;
                         border-radius: 2%;
                         position: relative;
