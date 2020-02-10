@@ -7,6 +7,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Nunito', sans-serif;
+  overflow-x: hidden;
 }
 
 main {
@@ -283,7 +284,7 @@ main section #image-slider .slide-title div:last-of-type button {
   height: 60px;
   background-color: goldenrod;
   border: none;
-  border-radius: 4%;
+  border-radius: 10px;
   margin-bottom: 8%;
 }
 
@@ -340,7 +341,7 @@ main section #image-slider .slide-pics div .img-container img {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 2%;
+  border-radius: 10px;
 }
 
 main section #nav-dots {
@@ -390,12 +391,10 @@ main section:nth-of-type(3) .container {
 
 main section:nth-of-type(3) .container div:first-of-type {
   width: 68%;
-  background-color: brown;
 }
 
 main section:nth-of-type(3) .container div:last-of-type {
   width: 32%;
-  background-color: darkcyan;
 }
 
 main section:nth-of-type(3) .container .second-content {
@@ -410,7 +409,42 @@ main section:nth-of-type(3) .container .second-content {
 main section:nth-of-type(3) .container .second-content div {
   width: 100%;
   height: 78%;
-  background-color: black;
+}
+
+main section:nth-of-type(3) .container .second-content div h2 {
+  font-size: 40px;
+  margin-top: 0;
+}
+
+main section:nth-of-type(3) .container .second-content div p {
+  font-size: 17px;
+  line-height: 26px;
+  width: 90%;
+}
+
+main section:nth-of-type(3) .container .second-content div button {
+  width: 145px;
+  height: 49px;
+  margin-top: 2%;
+  background-color: darkcyan;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  -webkit-transition: color .1s linear, background-color .1s linear;
+  transition: color .1s linear, background-color .1s linear;
+}
+
+main section:nth-of-type(3) .container .second-content div button:hover {
+  color: #000;
+  background-color: darkgrey;
+}
+
+main section:nth-of-type(3) .container .second-content div img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
 }
 
 main section:nth-of-type(4) {
@@ -430,16 +464,20 @@ main section:nth-of-type(4) .container {
           justify-content: center;
 }
 
+main section:nth-of-type(4) .container .third-content img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+
 main section:nth-of-type(4) .container .third-content:first-of-type {
-  -ms-flex-preferred-size: 61%;
-      flex-basis: 61%;
-  background-color: blueviolet;
+  height: 61%;
 }
 
 main section:nth-of-type(4) .container .third-content:last-of-type {
-  -ms-flex-preferred-size: 15%;
-      flex-basis: 15%;
-  background-color: chocolate;
+  margin-top: .8%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -454,7 +492,22 @@ main section:nth-of-type(4) .container .third-content:last-of-type {
 
 main section:nth-of-type(4) .container .third-content:last-of-type div {
   width: 16%;
-  background-color: black;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+main section:nth-of-type(4) .container .third-content:last-of-type div img {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform .1s linear;
+  transition: -webkit-transform .1s linear;
+  transition: transform .1s linear;
+  transition: transform .1s linear, -webkit-transform .1s linear;
+}
+
+main section:nth-of-type(4) .container .third-content:last-of-type div img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 main section:nth-of-type(5) {
@@ -472,9 +525,8 @@ main section:nth-of-type(5) .container {
 }
 
 main section:nth-of-type(5) .container .fourth-content:first-of-type {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
-  background-color: blueviolet;
+  -ms-flex-preferred-size: 54%;
+      flex-basis: 54%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -484,15 +536,21 @@ main section:nth-of-type(5) .container .fourth-content:first-of-type {
 }
 
 main section:nth-of-type(5) .container .fourth-content:first-of-type div {
-  width: 50%;
+  width: 100%;
   height: 73%;
-  background-color: blue;
+}
+
+main section:nth-of-type(5) .container .fourth-content:first-of-type div img {
+  width: 95%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
 }
 
 main section:nth-of-type(5) .container .fourth-content:last-of-type {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
-  background-color: chocolate;
+  -ms-flex-preferred-size: 46%;
+      flex-basis: 46%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -504,11 +562,46 @@ main section:nth-of-type(5) .container .fourth-content:last-of-type {
 main section:nth-of-type(5) .container .fourth-content:last-of-type div {
   width: 100%;
   height: 73%;
-  background-color: blue;
+}
+
+main section:nth-of-type(5) .container .fourth-content:last-of-type div h2 {
+  font-size: 35px;
+  line-height: 40px;
+  margin: 0;
+}
+
+main section:nth-of-type(5) .container .fourth-content:last-of-type div h3 {
+  font-size: 25px;
+  line-height: 30px;
+  margin-top: 15px;
+}
+
+main section:nth-of-type(5) .container .fourth-content:last-of-type div p {
+  font-size: 17px;
+  line-height: 26px;
+}
+
+main section:nth-of-type(5) .container .fourth-content:last-of-type div button {
+  width: 184px;
+  height: 49px;
+  background-color: darkcyan;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  -webkit-transition: color .1s linear, background-color .1s linear;
+  transition: color .1s linear, background-color .1s linear;
+}
+
+main section:nth-of-type(5) .container .fourth-content:last-of-type div button:hover {
+  color: #000;
+  background-color: darkgrey;
 }
 
 main section:nth-of-type(6) {
-  height: 54vh;
+  height: 58vh;
+  background-image: url(../img/fourth1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 main section:nth-of-type(6) .container {
@@ -537,6 +630,13 @@ main section:nth-of-type(6) .container .fifth-content:first-of-type div {
   width: 100%;
   height: 53%;
   background-color: blue;
+}
+
+main section:nth-of-type(6) .container .fifth-content:first-of-type div p {
+  font-size: 33px;
+  line-height: 42px;
+  font-weight: 600;
+  margin: 0;
 }
 
 main section:nth-of-type(6) .container .fifth-content:last-of-type {
