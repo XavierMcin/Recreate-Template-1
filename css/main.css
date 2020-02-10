@@ -20,7 +20,7 @@ main {
           flex-direction: column;
   width: 100%;
   height: auto;
-  background-color: grey;
+  background-color: #fff;
 }
 
 main section {
@@ -56,18 +56,13 @@ main section {
   /****************/
 }
 
-main section:nth-child(odd) {
-  background-color: indianred;
-}
-
 main section:nth-child(even) {
-  background-color: indigo;
+  background-color: #f8f9fa;
 }
 
 main section .container {
   width: 75%;
   height: 100%;
-  background-color: lightseagreen;
 }
 
 main section:first-of-type {
@@ -414,19 +409,21 @@ main section:nth-of-type(3) .container .second-content div {
 main section:nth-of-type(3) .container .second-content div h2 {
   font-size: 40px;
   margin-top: 0;
+  color: #232527;
 }
 
 main section:nth-of-type(3) .container .second-content div p {
   font-size: 17px;
   line-height: 26px;
   width: 90%;
+  color: #777777;
 }
 
 main section:nth-of-type(3) .container .second-content div button {
   width: 145px;
   height: 49px;
   margin-top: 2%;
-  background-color: darkcyan;
+  background-color: #29a19c;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -435,8 +432,8 @@ main section:nth-of-type(3) .container .second-content div button {
 }
 
 main section:nth-of-type(3) .container .second-content div button:hover {
-  color: #000;
-  background-color: darkgrey;
+  color: #a3f7bf;
+  background-color: #1f242c;
 }
 
 main section:nth-of-type(3) .container .second-content div img {
@@ -568,23 +565,26 @@ main section:nth-of-type(5) .container .fourth-content:last-of-type div h2 {
   font-size: 35px;
   line-height: 40px;
   margin: 0;
+  color: #232527;
 }
 
 main section:nth-of-type(5) .container .fourth-content:last-of-type div h3 {
   font-size: 25px;
   line-height: 30px;
   margin-top: 15px;
+  color: #999999;
 }
 
 main section:nth-of-type(5) .container .fourth-content:last-of-type div p {
   font-size: 17px;
   line-height: 26px;
+  color: #777;
 }
 
 main section:nth-of-type(5) .container .fourth-content:last-of-type div button {
   width: 184px;
   height: 49px;
-  background-color: darkcyan;
+  background-color: #29a19c;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -593,8 +593,8 @@ main section:nth-of-type(5) .container .fourth-content:last-of-type div button {
 }
 
 main section:nth-of-type(5) .container .fourth-content:last-of-type div button:hover {
-  color: #000;
-  background-color: darkgrey;
+  color: #a3f7bf;
+  background-color: #1f242c;
 }
 
 main section:nth-of-type(6) {
@@ -617,7 +617,6 @@ main section:nth-of-type(6) .container {
 main section:nth-of-type(6) .container .fifth-content:first-of-type {
   -ms-flex-preferred-size: 75%;
       flex-basis: 75%;
-  background-color: blueviolet;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -629,7 +628,6 @@ main section:nth-of-type(6) .container .fifth-content:first-of-type {
 main section:nth-of-type(6) .container .fifth-content:first-of-type div {
   width: 100%;
   height: 53%;
-  background-color: blue;
 }
 
 main section:nth-of-type(6) .container .fifth-content:first-of-type div p {
@@ -637,12 +635,12 @@ main section:nth-of-type(6) .container .fifth-content:first-of-type div p {
   line-height: 42px;
   font-weight: 600;
   margin: 0;
+  color: #eeeeee;
 }
 
 main section:nth-of-type(6) .container .fifth-content:last-of-type {
   -ms-flex-preferred-size: 25%;
       flex-basis: 25%;
-  background-color: chocolate;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -654,7 +652,42 @@ main section:nth-of-type(6) .container .fifth-content:last-of-type {
 main section:nth-of-type(6) .container .fifth-content:last-of-type div {
   width: 100%;
   height: 53%;
-  background-color: blue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main section:nth-of-type(6) .container .fifth-content:last-of-type div div {
+  width: 120px;
+  height: 120px;
+}
+
+main section:nth-of-type(6) .container .fifth-content:last-of-type div div img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+
+main section:nth-of-type(6) .container .fifth-content:last-of-type div h3 {
+  margin-bottom: 0;
+  color: #fff;
+}
+
+main section:nth-of-type(6) .container .fifth-content:last-of-type div p {
+  margin-top: 5px;
+  color: #cccccc;
 }
 
 main section:nth-of-type(7) {
@@ -674,13 +707,33 @@ main section:nth-of-type(7) .container {
 main section:nth-of-type(7) .container .sixth-content:first-of-type {
   -ms-flex-preferred-size: 43%;
       flex-basis: 43%;
-  background-color: blueviolet;
+}
+
+main section:nth-of-type(7) .container .sixth-content:first-of-type h2 {
+  font-size: 35px;
+  line-height: 40px;
+  margin-top: 85px;
+  margin-bottom: 10px;
+  color: #232527;
+}
+
+main section:nth-of-type(7) .container .sixth-content:first-of-type h3 {
+  font-size: 25px;
+  line-height: 30px;
+  margin: 0;
+  color: #999999;
+}
+
+main section:nth-of-type(7) .container .sixth-content:first-of-type p {
+  font-size: 17px;
+  line-height: 26px;
+  margin-top: 20px;
+  color: #777777;
 }
 
 main section:nth-of-type(7) .container .sixth-content:last-of-type {
   -ms-flex-preferred-size: 57%;
       flex-basis: 57%;
-  background-color: chocolate;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -696,11 +749,128 @@ main section:nth-of-type(7) .container .sixth-content:last-of-type {
 main section:nth-of-type(7) .container .sixth-content:last-of-type div {
   width: 100%;
   height: 38%;
-  background-color: blue;
+  border-radius: 10px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+main section:nth-of-type(7) .container .sixth-content:last-of-type div:first-of-type {
+  background-image: url(../img/sixth1.jpg);
+  background-size: cover;
+}
+
+main section:nth-of-type(7) .container .sixth-content:last-of-type div:first-of-type span {
+  width: 320px;
+}
+
+main section:nth-of-type(7) .container .sixth-content:last-of-type div:last-of-type {
+  background-image: url(../img/sixth2.jpg);
+  background-size: cover;
+  margin-top: 15px;
+}
+
+main section:nth-of-type(7) .container .sixth-content:last-of-type div:last-of-type span {
+  width: 256px;
+}
+
+main section:nth-of-type(7) .container .sixth-content:last-of-type div span {
+  height: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #1f242c;
+  color: #a3f7bf;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
 }
 
 main section:last-of-type {
   height: 41vh;
+}
+
+main section:last-of-type .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main section:last-of-type .container p {
+  font-size: 18px;
+  margin-top: 0;
+}
+
+main section:last-of-type .container h2 {
+  font-size: 2.5em;
+  font-weight: 600;
+  margin: 0;
+}
+
+main section:last-of-type .container div {
+  width: 286px;
+  height: 49px;
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+main section:last-of-type .container div span {
+  width: 143px;
+  height: 49px;
+  background-color: darkcyan;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main section:last-of-type .container div button {
+  background-color: #29a19c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  -webkit-transition: color .1s linear, background-color .1s linear;
+  transition: color .1s linear, background-color .1s linear;
+  width: 120px;
+  height: 49px;
+  margin-left: 10px;
+}
+
+main section:last-of-type .container div button:hover {
+  color: #a3f7bf;
+  background-color: #1f242c;
 }
 
 main footer {
