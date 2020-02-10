@@ -646,6 +646,7 @@ main {
 
         &:last-of-type {
             height: 41vh;
+            background-color: #29a19c;
         }
 
         &:last-of-type .container {
@@ -655,12 +656,14 @@ main {
             p {
                 font-size: 18px;
                 margin-top: 0;
+                color: #eaeaea;
             }
 
             h2 {
                 font-size: 2.5em;
                 font-weight: 600;
                 margin: 0;
+                color: #fff;
             }
 
             div {
@@ -672,13 +675,20 @@ main {
                 span {
                     width: 143px;
                     height: 49px;
-                    background-color: darkcyan;
-                    border-radius: 10px;
+                    background-color: #222831;
+                    color: #fff;
+                    border-radius: 5px;
                     @include absoluteCenter();
+
+                    &:hover {
+                        color: #a3f7bf;
+                    }
                 }
 
                 button {
                     @include pageButton();
+                    background-color: #fff;
+                    color: #29a19c;
                     width: 120px;
                     height: 49px;
                     margin-left: 10px;
@@ -692,7 +702,53 @@ main {
     footer {
         width: 100%;
         height: 11vh;
-        background-color: khaki;
+        background-color: #222831;
+        @include flexRow();
+        justify-content: center;
+
+        .container {
+            width: 75%;
+            height: 100%;
+            @include flexRow();
+            justify-content: space-between;
+
+            .footer-content:first-of-type {
+                @include flexColumn();
+                justify-content: center;
+
+                h3 {
+                    font-size: 17px;
+                    font-weight: 400;
+                    color: #aaaaaa;
+                }
+            }
+
+            .footer-content:last-of-type {
+                @include flexColumn();
+                justify-content: center;
+
+                ul {
+                    @include flexRow();
+                    margin: 0;
+                    padding: 0;
+
+                    li {
+                        list-style: none;
+                        width: 16px;
+                        height: 16px;
+                        background-color: darkolivegreen;
+                        position: relative;
+                        margin-left: 25px;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            fill: darkviolet;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 

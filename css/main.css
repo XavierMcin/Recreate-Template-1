@@ -798,6 +798,7 @@ main section:nth-of-type(7) .container .sixth-content:last-of-type div span {
 
 main section:last-of-type {
   height: 41vh;
+  background-color: #29a19c;
 }
 
 main section:last-of-type .container {
@@ -819,12 +820,14 @@ main section:last-of-type .container {
 main section:last-of-type .container p {
   font-size: 18px;
   margin-top: 0;
+  color: #eaeaea;
 }
 
 main section:last-of-type .container h2 {
   font-size: 2.5em;
   font-weight: 600;
   margin: 0;
+  color: #fff;
 }
 
 main section:last-of-type .container div {
@@ -843,8 +846,9 @@ main section:last-of-type .container div {
 main section:last-of-type .container div span {
   width: 143px;
   height: 49px;
-  background-color: darkcyan;
-  border-radius: 10px;
+  background-color: #222831;
+  color: #fff;
+  border-radius: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -856,6 +860,10 @@ main section:last-of-type .container div span {
           align-items: center;
 }
 
+main section:last-of-type .container div span:hover {
+  color: #a3f7bf;
+}
+
 main section:last-of-type .container div button {
   background-color: #29a19c;
   color: #fff;
@@ -863,6 +871,8 @@ main section:last-of-type .container div button {
   border-radius: 5px;
   -webkit-transition: color .1s linear, background-color .1s linear;
   transition: color .1s linear, background-color .1s linear;
+  background-color: #fff;
+  color: #29a19c;
   width: 120px;
   height: 49px;
   margin-left: 10px;
@@ -876,7 +886,91 @@ main section:last-of-type .container div button:hover {
 main footer {
   width: 100%;
   height: 11vh;
-  background-color: khaki;
+  background-color: #222831;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main footer .container {
+  width: 75%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main footer .container .footer-content:first-of-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main footer .container .footer-content:first-of-type h3 {
+  font-size: 17px;
+  font-weight: 400;
+  color: #aaaaaa;
+}
+
+main footer .container .footer-content:last-of-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main footer .container .footer-content:last-of-type ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
+main footer .container .footer-content:last-of-type ul li {
+  list-style: none;
+  width: 16px;
+  height: 16px;
+  background-color: darkolivegreen;
+  position: relative;
+  margin-left: 25px;
+}
+
+main footer .container .footer-content:last-of-type ul li img {
+  width: 100%;
+  height: 100%;
+  fill: darkviolet;
 }
 
 main .about {
