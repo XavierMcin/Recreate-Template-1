@@ -645,6 +645,15 @@ main section:nth-of-type(6) {
   background-attachment: fixed;
 }
 
+main section:nth-of-type(6)::before {
+  content: "";
+  width: 100%;
+  height: 58vh;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 0;
+}
+
 main section:nth-of-type(6) .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -653,6 +662,7 @@ main section:nth-of-type(6) .container {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  z-index: 1;
 }
 
 main section:nth-of-type(6) .container .fifth-content:first-of-type {
@@ -1062,7 +1072,6 @@ main .about:nth-of-type(2) .container {
 
 main .about:nth-of-type(2) .container .first-about:first-of-type {
   width: 50%;
-  background-color: darkgoldenrod;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1071,25 +1080,90 @@ main .about:nth-of-type(2) .container .first-about:first-of-type {
           align-items: center;
 }
 
+main .about:nth-of-type(2) .container .first-about:first-of-type div {
+  position: relative;
+}
+
+main .about:nth-of-type(2) .container .first-about:first-of-type div img:first-of-type {
+  width: 90%;
+  height: 90%;
+  position: absolute;
+  border-radius: 10px;
+  z-index: 1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main .about:nth-of-type(2) .container .first-about:first-of-type div img:last-of-type {
+  width: 55%;
+  height: 65%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
 main .about:nth-of-type(2) .container .first-about:last-of-type {
   width: 50%;
-  background-color: darkolivegreen;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+main .about:nth-of-type(2) .container .first-about:last-of-type div {
+  margin-left: 50px;
+}
+
+main .about:nth-of-type(2) .container .first-about:last-of-type div h2 {
+  font-size: 30px;
+  font-weight: 600;
+  width: 507px;
+}
+
+main .about:nth-of-type(2) .container .first-about:last-of-type div p {
+  font-size: 22px;
+  line-height: 30px;
+  color: #777777;
+  width: 507px;
+}
+
+main .about:nth-of-type(2) .container .first-about:last-of-type div p:nth-of-type(2) {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+main .about:nth-of-type(2) .container .first-about:last-of-type div p:nth-of-type(3) {
+  font-size: 20px;
+  font-weight: 600;
+  color: #212529;
+  margin-top: 5px;
+}
+
+main .about:nth-of-type(2) .container .first-about:last-of-type div img {
+  width: 300px;
+  height: 115px;
 }
 
 main .about:nth-of-type(2) .container .first-about div {
   width: 100%;
   height: 64vh;
-  background-color: black;
 }
 
 main .about:nth-of-type(3) {
   height: 47vh;
+  background-image: url(../img/about-second1.jpg);
+  background-size: cover;
+}
+
+main .about:nth-of-type(3)::before {
+  content: "";
+  width: 100%;
+  height: 47vh;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 0;
 }
 
 main .about:nth-of-type(3) .container {
@@ -1103,12 +1177,12 @@ main .about:nth-of-type(3) .container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 1;
 }
 
 main .about:nth-of-type(3) .container .second-about {
   width: 100%;
   height: 80%;
-  background-color: darkgoldenrod;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1124,7 +1198,44 @@ main .about:nth-of-type(3) .container .second-about {
 main .about:nth-of-type(3) .container .second-about div {
   width: 24%;
   height: 100%;
-  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .about:nth-of-type(3) .container .second-about div span {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: mediumblue;
+}
+
+main .about:nth-of-type(3) .container .second-about div h2 {
+  width: 100%;
+  height: 60px;
+  font-size: 50px;
+  margin: 0;
+  margin-top: 20px;
+  color: #ffffff;
+  text-align: center;
+}
+
+main .about:nth-of-type(3) .container .second-about div p {
+  width: 100%;
+  font-size: 20px;
+  color: #eeeeee;
+  margin-top: 10px;
+  text-align: center;
 }
 
 main .about:nth-of-type(4) {
