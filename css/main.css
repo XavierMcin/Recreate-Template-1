@@ -1877,6 +1877,16 @@ main footer .container .footer-content:last-of-type ul li img {
 }
 
 main .services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   /****************/
   /*FIRST SERVICES SECTION*/
   /****************/
@@ -1891,18 +1901,110 @@ main .services {
   /****************/
 }
 
-main .services:first-of-type {
-  height: 14vh;
-  background-color: brown;
+main .services .container {
+  width: 75%;
+  height: 100%;
 }
 
-main .services:first-of-type .container {
+main .services:first-of-type {
+  height: 14vh;
+  background-color: #1f242c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .services .main-header {
+  width: 100%;
+  height: 14vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .services .main-header #web-logo {
+  height: 100%;
+  width: 25%;
+  position: relative;
+  background-color: maroon;
+}
+
+main .services .main-header #web-logo img {
+  height: 100%;
+  width: 80%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main .services .main-header nav {
+  height: 100%;
+  width: 29%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  z-index: 1;
+}
+
+main .services .main-header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  padding: 0;
+}
+
+main .services .main-header nav li {
+  width: 22%;
+  list-style: none;
+  text-align: center;
+  font-weight: 700;
+}
+
+main .services .main-header nav li:nth-of-type(3) a {
+  color: #fff;
+}
+
+main .services .main-header nav li:nth-of-type(3) a:hover {
+  color: #fff;
+}
+
+main .services .main-header nav li a {
+  cursor: pointer;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+main .services .main-header nav li a:hover {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+main .services .main-header nav li:first-of-type {
+  text-align: right;
 }
 
 main .services:nth-of-type(2) {
