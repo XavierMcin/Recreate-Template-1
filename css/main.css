@@ -249,7 +249,8 @@ body {
       -ms-flex-align: center;
           align-items: center;
   font-size: 9em;
-  font-weight: 800;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.2);
 }
 
 .home section #image-slider .slide-title div:nth-of-type(2) {
@@ -284,6 +285,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   font-size: 4.5em;
+  color: #fff;
 }
 
 .home section #image-slider .slide-title div:last-of-type {
@@ -2549,23 +2551,125 @@ main .services:nth-of-type(5) .container .fourth-service > div {
 }
 
 main .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   /****************/
   /*CONTACT FORM SECTION*/
   /****************/
 }
 
-main .contact:first-of-type {
-  height: 14vh;
-  background-color: brown;
+main .contact .container {
+  width: 75%;
+  height: 100%;
 }
 
-main .contact:first-of-type .container {
+main .contact:first-of-type {
+  height: 14vh;
+  background-color: #1f242c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .contact .main-header {
+  width: 100%;
+  height: 14vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .contact .main-header #web-logo {
+  height: 100%;
+  width: 25%;
+  position: relative;
+  background-color: maroon;
+}
+
+main .contact .main-header #web-logo img {
+  height: 100%;
+  width: 80%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main .contact .main-header nav {
+  height: 100%;
+  width: 29%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  z-index: 1;
+}
+
+main .contact .main-header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  padding: 0;
+}
+
+main .contact .main-header nav li {
+  width: 22%;
+  list-style: none;
+  text-align: center;
+  font-weight: 700;
+}
+
+main .contact .main-header nav li:last-of-type a {
+  color: #fff;
+}
+
+main .contact .main-header nav li:last-of-type a:hover {
+  color: #fff;
+}
+
+main .contact .main-header nav li a {
+  cursor: pointer;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+main .contact .main-header nav li a:hover {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+main .contact .main-header nav li:first-of-type {
+  text-align: right;
 }
 
 main .contact:nth-of-type(2) {
@@ -2587,12 +2691,110 @@ main .contact:nth-of-type(2) .container {
 
 main .contact:nth-of-type(2) .container .form-content {
   width: 62%;
-  background-color: darkgoldenrod;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+}
+
+main .contact:nth-of-type(2) .container .form-content h2 {
+  position: absolute;
+  top: 3%;
+  text-align: center;
+  font-size: 45px;
+  line-height: 50px;
+  font-weight: 700;
+}
+
+main .contact:nth-of-type(2) .container .form-content h2 a {
+  color: #29a19c;
+  cursor: pointer;
+}
+
+main .contact:nth-of-type(2) .container .form-content h2 a:hover {
+  color: #196461;
+  text-decoration: underline;
+}
+
+main .contact:nth-of-type(2) .container .form-content form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 59%;
+  width: 100%;
+  position: relative;
+  top: 12%;
+}
+
+main .contact:nth-of-type(2) .container .form-content form div:first-of-type {
+  width: 100%;
+  height: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .contact:nth-of-type(2) .container .form-content form div:first-of-type input {
+  height: 60px;
+  padding: 0 15px 0 20px;
+  font-size: 17px;
+  color: #777777;
+  border: none;
+  background-color: #eee;
+  margin-bottom: 15px;
+}
+
+main .contact:nth-of-type(2) .container .form-content form div:first-of-type textarea {
+  height: 180px;
+  padding: 20px 15px 0 20px;
+  color: #777777;
+  border: none;
+  font-size: 17px;
+  background-color: #eee;
+  margin-bottom: 15px;
+  resize: vertical;
+}
+
+main .contact:nth-of-type(2) .container .form-content form div:last-of-type {
+  width: 100%;
+  height: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+main .contact:nth-of-type(2) .container .form-content form div:last-of-type button {
+  width: 139px;
+  height: 45px;
+  background-color: #29a19c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  -webkit-transition: color .1s linear, background-color .1s linear;
+  transition: color .1s linear, background-color .1s linear;
+  cursor: pointer;
+}
+
+main .contact:nth-of-type(2) .container .form-content form div:last-of-type button:hover {
+  color: #a3f7bf;
+  background-color: #1f242c;
 }
 /*# sourceMappingURL=main.css.map */
