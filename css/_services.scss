@@ -97,16 +97,105 @@ main .services {
         .first-service {
             width: 100%;
             height: 69vh;
-            background-color: darkgoldenrod;
             @include flexRow();
             align-items: flex-end;
+            position: relative;
+
+            h2 {
+                position: absolute;
+                top: 0;
+                width: 100%;
+                font-size: 45px;
+                font-weight: 700;
+                color: #212529;
+            }
+
+            hr {
+                width: 100%;
+                height: 2px;
+                border: none;
+                position: absolute;
+                top: 17%;
+                background-color: #eeeeee;
+            }
+
+            div:first-of-type {
+                width: 42%;
+                height: 50vh;
+
+                h3 {
+                    font-size: 35px;
+                    font-weight: 700;
+                    color: #232527;
+                    margin: 0;
+                }
+
+                p {
+                    font-size: 17px;
+                    line-height: 26px;
+                    color: #777777;
+                    margin-bottom: 45px;
+                    margin-top: 10px;
+                }
+
+                button {
+                    width: 147px;
+                    height: 49px;
+                    @include pageButton();
+                }
+            }
+
+            div:last-of-type {
+                width: 55.5%;
+                height: 50vh;
+                @include flexRow();
+                flex-wrap: wrap;
+
+                .service-wrapper {
+                    width: 50%;
+                    height: 25%;
+                    position: relative;
+                    @include flexColumn();
+
+                    div {
+                        width: 100%;
+                        height: 25px;
+                        margin-left: 20px;
+                        @include flexRow();
+
+                        span {
+                            width: 25px;
+                            height: 100%;
+                            background-color: wheat;
+                        }
+
+                        h4 {
+                            margin: 0;
+                            margin-left: 15px;
+                            color: #232527;
+                            transition: color .1s linear;
+                            font-size: 22px;
+                            font-weight: 600;
+
+                            &:hover {
+                                color: #29a19c;
+                            }
+                        }
+                        
+                    }
+
+                    p {
+                        font-size: 17px;
+                        line-height: 26px;
+                        color: #777777;
+                        margin: 0;
+                        margin-left: 20px;
+                        margin-top: 15px;
+                    }
+                }
+            }
         }
 
-        .first-service div {
-            width: 50%;
-            height: 50vh;
-            background-color: black;
-        }
     }
 
 
@@ -124,16 +213,96 @@ main .services {
 
         .second-service {
             width: 100%;
-            height: 78vh;
-            background-color: darkgoldenrod;
+            height: 65vh;
             @include flexRow();
-            align-items: flex-end;
+            justify-content: space-between;
+
         }
 
-        .second-service div {
-            flex: 1;
+        .second-service > div {
+            width: 31%;
             height: 100%;
-            background-color: black;
+            @include flexColumn();
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+
+            &:hover::before, &:hover::after {
+                width: 100%;
+                height: 100%;
+            }
+
+            &::before {
+                content: "";
+                width: 0;
+                height: 0;
+                background-color: transparent;
+                position: absolute;
+                border: 3px solid #29a19c;
+                transition: width .5s linear, height .5s linear;
+                border-radius: 10px;
+                border-right: transparent;
+                border-bottom: transparent;
+                z-index: 1;
+            }
+
+            &::after {
+                content: "";
+                width: 0;
+                height: 0;
+                bottom: 0;
+                right: 0;
+                background-color: transparent;
+                position: absolute;
+                border: 3px solid #29a19c;
+                transition: width .5s linear, height .5s linear;
+                border-radius: 10px;
+                border-top: transparent;
+                border-left: transparent;
+                z-index: 1;
+            }
+            
+            div:first-of-type {
+                width: 100%;
+                height: 45%;
+                background-color: #fff;
+                @include flexColumn();
+                align-items: center;
+
+                span {
+                    width: 32px;
+                    height: 30px;
+                    background-color: springgreen;
+                    margin-top: 10%;
+                    margin-bottom: 10%;
+                }
+
+                h3 {
+                    font-size: 25px;
+                    font-weight: 600;
+                    color: #232527;
+                    margin: 0;
+                }
+
+                p {
+                    text-align: center;
+                    color: #777777;
+                    font-size: 17px;
+                    line-height: 26px;
+                }
+            }
+
+            div:last-of-type {
+                width: 100%;
+                height: 55%;
+                position: relative;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
         }
     }
 

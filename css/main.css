@@ -2023,7 +2023,6 @@ main .services:nth-of-type(2) .container {
 main .services:nth-of-type(2) .container .first-service {
   width: 100%;
   height: 69vh;
-  background-color: darkgoldenrod;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2034,12 +2033,131 @@ main .services:nth-of-type(2) .container .first-service {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  position: relative;
 }
 
-main .services:nth-of-type(2) .container .first-service div {
-  width: 50%;
+main .services:nth-of-type(2) .container .first-service h2 {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  font-size: 45px;
+  font-weight: 700;
+  color: #212529;
+}
+
+main .services:nth-of-type(2) .container .first-service hr {
+  width: 100%;
+  height: 2px;
+  border: none;
+  position: absolute;
+  top: 17%;
+  background-color: #eeeeee;
+}
+
+main .services:nth-of-type(2) .container .first-service div:first-of-type {
+  width: 42%;
   height: 50vh;
-  background-color: black;
+}
+
+main .services:nth-of-type(2) .container .first-service div:first-of-type h3 {
+  font-size: 35px;
+  font-weight: 700;
+  color: #232527;
+  margin: 0;
+}
+
+main .services:nth-of-type(2) .container .first-service div:first-of-type p {
+  font-size: 17px;
+  line-height: 26px;
+  color: #777777;
+  margin-bottom: 45px;
+  margin-top: 10px;
+}
+
+main .services:nth-of-type(2) .container .first-service div:first-of-type button {
+  width: 147px;
+  height: 49px;
+  background-color: #29a19c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  -webkit-transition: color .1s linear, background-color .1s linear;
+  transition: color .1s linear, background-color .1s linear;
+  cursor: pointer;
+}
+
+main .services:nth-of-type(2) .container .first-service div:first-of-type button:hover {
+  color: #a3f7bf;
+  background-color: #1f242c;
+}
+
+main .services:nth-of-type(2) .container .first-service div:last-of-type {
+  width: 55.5%;
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main .services:nth-of-type(2) .container .first-service div:last-of-type .service-wrapper {
+  width: 50%;
+  height: 25%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .services:nth-of-type(2) .container .first-service div:last-of-type .service-wrapper div {
+  width: 100%;
+  height: 25px;
+  margin-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+main .services:nth-of-type(2) .container .first-service div:last-of-type .service-wrapper div span {
+  width: 25px;
+  height: 100%;
+  background-color: wheat;
+}
+
+main .services:nth-of-type(2) .container .first-service div:last-of-type .service-wrapper div h4 {
+  margin: 0;
+  margin-left: 15px;
+  color: #232527;
+  -webkit-transition: color .1s linear;
+  transition: color .1s linear;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+main .services:nth-of-type(2) .container .first-service div:last-of-type .service-wrapper div h4:hover {
+  color: #29a19c;
+}
+
+main .services:nth-of-type(2) .container .first-service div:last-of-type .service-wrapper p {
+  font-size: 17px;
+  line-height: 26px;
+  color: #777777;
+  margin: 0;
+  margin-left: 20px;
+  margin-top: 15px;
 }
 
 main .services:nth-of-type(3) {
@@ -2057,8 +2175,7 @@ main .services:nth-of-type(3) .container {
 
 main .services:nth-of-type(3) .container .second-service {
   width: 100%;
-  height: 78vh;
-  background-color: darkgoldenrod;
+  height: 65vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2066,17 +2183,112 @@ main .services:nth-of-type(3) .container .second-service {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-main .services:nth-of-type(3) .container .second-service div {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+main .services:nth-of-type(3) .container .second-service > div {
+  width: 31%;
   height: 100%;
-  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+main .services:nth-of-type(3) .container .second-service > div:hover::before, main .services:nth-of-type(3) .container .second-service > div:hover::after {
+  width: 100%;
+  height: 100%;
+}
+
+main .services:nth-of-type(3) .container .second-service > div::before {
+  content: "";
+  width: 0;
+  height: 0;
+  background-color: transparent;
+  position: absolute;
+  border: 3px solid #29a19c;
+  -webkit-transition: width .5s linear, height .5s linear;
+  transition: width .5s linear, height .5s linear;
+  border-radius: 10px;
+  border-right: transparent;
+  border-bottom: transparent;
+  z-index: 1;
+}
+
+main .services:nth-of-type(3) .container .second-service > div::after {
+  content: "";
+  width: 0;
+  height: 0;
+  bottom: 0;
+  right: 0;
+  background-color: transparent;
+  position: absolute;
+  border: 3px solid #29a19c;
+  -webkit-transition: width .5s linear, height .5s linear;
+  transition: width .5s linear, height .5s linear;
+  border-radius: 10px;
+  border-top: transparent;
+  border-left: transparent;
+  z-index: 1;
+}
+
+main .services:nth-of-type(3) .container .second-service > div div:first-of-type {
+  width: 100%;
+  height: 45%;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .services:nth-of-type(3) .container .second-service > div div:first-of-type span {
+  width: 32px;
+  height: 30px;
+  background-color: springgreen;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+main .services:nth-of-type(3) .container .second-service > div div:first-of-type h3 {
+  font-size: 25px;
+  font-weight: 600;
+  color: #232527;
+  margin: 0;
+}
+
+main .services:nth-of-type(3) .container .second-service > div div:first-of-type p {
+  text-align: center;
+  color: #777777;
+  font-size: 17px;
+  line-height: 26px;
+}
+
+main .services:nth-of-type(3) .container .second-service > div div:last-of-type {
+  width: 100%;
+  height: 55%;
+  position: relative;
+}
+
+main .services:nth-of-type(3) .container .second-service > div div:last-of-type img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 main .services:nth-of-type(4) {
