@@ -103,7 +103,7 @@ main .contact {
                 position: absolute;
                 top: 3%;              
                 text-align: center;
-                font-size: 45px;
+                font-size: 2.813em;
                 line-height: 50px;
                 font-weight: 700;
 
@@ -131,9 +131,9 @@ main .contact {
                     @include flexColumn();
 
                     input {
-                        height: 60px;
+                        height: 3.906vw;
                         padding: 0 15px 0 20px;
-                        font-size: 17px;
+                        font-size: 1.063em;
                         color: #777777;
                         border: none;
                         background-color: #eee;
@@ -141,11 +141,11 @@ main .contact {
                     }
 
                     textarea {
-                        height: 180px;
+                        height: 11.719vw;
                         padding: 20px 15px 0 20px;
                         color: #777777;
                         border: none;
-                        font-size: 17px;
+                        font-size: 1.063em;
                         background-color: #eee;
                         margin-bottom: 15px;
                         resize: vertical;
@@ -159,8 +159,8 @@ main .contact {
                     justify-content: flex-end;
 
                     button {
-                        width: 139px;
-                        height: 45px;
+                        width: 9.049vw;
+                        height: 2.930vw;
                         @include pageButton();
                     }
                 }

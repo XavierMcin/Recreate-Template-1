@@ -210,8 +210,8 @@ body {
 
 .home section #image-slider .slide-title div:first-of-type {
   position: absolute;
-  width: 240px;
-  height: 240px;
+  width: 15.625vw;
+  height: 15.625vw;
   top: -15%;
   left: 42%;
   overflow: hidden;
@@ -219,7 +219,7 @@ body {
 
 .home section #image-slider .slide-title div:first-of-type ul {
   height: 100%;
-  width: 960px;
+  width: 62.500vw;
   margin: 0;
   padding: 0;
   position: relative;
@@ -255,8 +255,8 @@ body {
 
 .home section #image-slider .slide-title div:nth-of-type(2) {
   position: absolute;
-  width: 400px;
-  height: 170px;
+  width: 26.042vw;
+  height: 11.068vw;
   top: 38%;
   left: 18%;
   z-index: 2;
@@ -292,7 +292,7 @@ body {
   position: relative;
   top: 85%;
   overflow: hidden;
-  height: 60px;
+  height: 3.906vw;
 }
 
 .home section #image-slider .slide-title div:last-of-type ul {
@@ -310,8 +310,8 @@ body {
 }
 
 .home section #image-slider .slide-title div:last-of-type button {
-  width: 150px;
-  height: 60px;
+  width: 9.766vw;
+  height: 3.906vw;
   background-color: #29a19c;
   color: #fff;
   border: none;
@@ -336,7 +336,7 @@ body {
 .home section #image-slider .slide-pics {
   width: auto;
   height: 100%;
-  min-width: 2520px;
+  min-width: 164.063vw;
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -353,7 +353,7 @@ body {
 
 .home section #image-slider .slide-pics div {
   height: 100%;
-  width: 560px;
+  width: 36.458vw;
   margin-right: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -430,10 +430,12 @@ body {
 
 .home section:nth-of-type(3) .container div:first-of-type {
   width: 68%;
+  height: 100%;
 }
 
 .home section:nth-of-type(3) .container div:last-of-type {
   width: 32%;
+  height: 100%;
 }
 
 .home section:nth-of-type(3) .container .second-content {
@@ -451,21 +453,21 @@ body {
 }
 
 .home section:nth-of-type(3) .container .second-content div h2 {
-  font-size: 40px;
+  font-size: 2.5em;
   margin-top: 0;
   color: #232527;
 }
 
 .home section:nth-of-type(3) .container .second-content div p {
-  font-size: 17px;
-  line-height: 26px;
-  width: 90%;
+  font-size: 1.05em;
+  line-height: 1.60em;
   color: #777777;
+  width: 90%;
 }
 
 .home section:nth-of-type(3) .container .second-content div button {
-  width: 145px;
-  height: 49px;
+  width: 9.440vw;
+  height: 3.190vw;
   margin-top: 2%;
   background-color: #29a19c;
   color: #fff;
@@ -607,28 +609,28 @@ body {
 }
 
 .home section:nth-of-type(5) .container .fourth-content:last-of-type div h2 {
-  font-size: 35px;
+  font-size: 2.188em;
   line-height: 40px;
   margin: 0;
   color: #232527;
 }
 
 .home section:nth-of-type(5) .container .fourth-content:last-of-type div h3 {
-  font-size: 25px;
+  font-size: 1.563em;
   line-height: 30px;
   margin-top: 15px;
   color: #999999;
 }
 
 .home section:nth-of-type(5) .container .fourth-content:last-of-type div p {
-  font-size: 17px;
-  line-height: 26px;
-  color: #777;
+  font-size: 1.05em;
+  line-height: 1.60em;
+  color: #777777;
 }
 
 .home section:nth-of-type(5) .container .fourth-content:last-of-type div button {
-  width: 184px;
-  height: 49px;
+  width: 11.979vw;
+  height: 3.190vw;
   background-color: #29a19c;
   color: #fff;
   border: none;
@@ -687,7 +689,7 @@ body {
 }
 
 .home section:nth-of-type(6) .container .fifth-content:first-of-type div p {
-  font-size: 33px;
+  font-size: 2.063em;
   line-height: 42px;
   font-weight: 600;
   margin: 0;
@@ -724,8 +726,8 @@ body {
 }
 
 .home section:nth-of-type(6) .container .fifth-content:last-of-type div div {
-  width: 120px;
-  height: 120px;
+  width: 7.813vw;
+  height: 7.813vw;
 }
 
 .home section:nth-of-type(6) .container .fifth-content:last-of-type div div img {
@@ -766,25 +768,25 @@ body {
 }
 
 .home section:nth-of-type(7) .container .sixth-content:first-of-type h2 {
-  font-size: 35px;
+  font-size: 2.188em;
   line-height: 40px;
-  margin-top: 85px;
-  margin-bottom: 10px;
+  margin: 85px 0 10px 0;
   color: #232527;
 }
 
 .home section:nth-of-type(7) .container .sixth-content:first-of-type h3 {
-  font-size: 25px;
+  font-size: 1.563em;
+  font-weight: 400;
   line-height: 30px;
   margin: 0;
   color: #999999;
 }
 
 .home section:nth-of-type(7) .container .sixth-content:first-of-type p {
-  font-size: 17px;
-  line-height: 26px;
-  margin-top: 20px;
+  font-size: 1.05em;
+  line-height: 1.60em;
   color: #777777;
+  margin-top: 20px;
 }
 
 .home section:nth-of-type(7) .container .sixth-content:last-of-type {
@@ -800,6 +802,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-left: 25px;
 }
 
 .home section:nth-of-type(7) .container .sixth-content:last-of-type div {
@@ -821,7 +824,7 @@ body {
 }
 
 .home section:nth-of-type(7) .container .sixth-content:last-of-type div:first-of-type span {
-  width: 320px;
+  width: 20.833vw;
 }
 
 .home section:nth-of-type(7) .container .sixth-content:last-of-type div:last-of-type {
@@ -831,11 +834,11 @@ body {
 }
 
 .home section:nth-of-type(7) .container .sixth-content:last-of-type div:last-of-type span {
-  width: 256px;
+  width: 16.667vw;
 }
 
 .home section:nth-of-type(7) .container .sixth-content:last-of-type div span {
-  height: 44px;
+  height: 2.865vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -848,8 +851,7 @@ body {
   background-color: #1f242c;
   color: #a3f7bf;
   border-radius: 10px;
-  margin-bottom: 10px;
-  margin-left: 10px;
+  margin: 0 0 10px 10px;
 }
 
 .home section:last-of-type {
@@ -874,7 +876,7 @@ body {
 }
 
 .home section:last-of-type .container p {
-  font-size: 18px;
+  font-size: 1.125em;
   margin-top: 0;
   color: #eaeaea;
 }
@@ -887,8 +889,8 @@ body {
 }
 
 .home section:last-of-type .container div {
-  width: 286px;
-  height: 49px;
+  width: 18.620vw;
+  height: 3.190vw;
   margin-top: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -900,8 +902,8 @@ body {
 }
 
 .home section:last-of-type .container div span {
-  width: 143px;
-  height: 49px;
+  width: 9.310vw;
+  height: 3.190vw;
   background-color: #222831;
   color: #fff;
   border-radius: 5px;
@@ -930,8 +932,8 @@ body {
   cursor: pointer;
   background-color: #fff;
   color: #29a19c;
-  width: 120px;
-  height: 49px;
+  width: 7.813vw;
+  height: 3.190vw;
   margin-left: 10px;
 }
 
@@ -985,7 +987,7 @@ body {
 }
 
 .home footer .container .footer-content:first-of-type h3 {
-  font-size: 17px;
+  font-size: 1.063em;
   font-weight: 400;
   color: #aaaaaa;
 }
@@ -1017,8 +1019,8 @@ body {
 
 .home footer .container .footer-content:last-of-type ul li {
   list-style: none;
-  width: 16px;
-  height: 16px;
+  width: 1.042vw;
+  height: 1.042vw;
   background-color: darkolivegreen;
   position: relative;
   margin-left: 25px;
@@ -1225,16 +1227,16 @@ main .about:nth-of-type(2) .container .first-about:last-of-type div {
 }
 
 main .about:nth-of-type(2) .container .first-about:last-of-type div h2 {
-  font-size: 30px;
+  font-size: 1.875em;
   font-weight: 600;
-  width: 507px;
+  width: 33.008vw;
 }
 
 main .about:nth-of-type(2) .container .first-about:last-of-type div p {
-  font-size: 22px;
+  font-size: 1.375em;
   line-height: 30px;
   color: #777777;
-  width: 507px;
+  width: 33.008vw;
 }
 
 main .about:nth-of-type(2) .container .first-about:last-of-type div p:nth-of-type(2) {
@@ -1243,15 +1245,15 @@ main .about:nth-of-type(2) .container .first-about:last-of-type div p:nth-of-typ
 }
 
 main .about:nth-of-type(2) .container .first-about:last-of-type div p:nth-of-type(3) {
-  font-size: 20px;
+  font-size: 1.250em;
   font-weight: 600;
   color: #212529;
   margin-top: 5px;
 }
 
 main .about:nth-of-type(2) .container .first-about:last-of-type div img {
-  width: 300px;
-  height: 115px;
+  width: 19.531vw;
+  height: 7.487vw;
 }
 
 main .about:nth-of-type(2) .container .first-about div {
@@ -1323,24 +1325,24 @@ main .about:nth-of-type(3) .container .second-about div {
 
 main .about:nth-of-type(3) .container .second-about div span {
   display: block;
-  width: 40px;
-  height: 40px;
+  width: 2.604vw;
+  height: 2.604vw;
   background-color: mediumblue;
 }
 
 main .about:nth-of-type(3) .container .second-about div h2 {
   width: 100%;
-  height: 60px;
-  font-size: 50px;
+  height: 3.906vw;
+  font-size: 3.125em;
   margin: 0;
-  margin-top: 20px;
+  margin-top: 1.250em;
   color: #ffffff;
   text-align: center;
 }
 
 main .about:nth-of-type(3) .container .second-about div p {
   width: 100%;
-  font-size: 20px;
+  font-size: 1.250em;
   color: #eeeeee;
   margin-top: 10px;
   text-align: center;
@@ -1369,17 +1371,17 @@ main .about:nth-of-type(4) .container .third-about:first-of-type {
 }
 
 main .about:nth-of-type(4) .container .third-about:first-of-type h2 {
-  font-size: 30px;
+  font-size: 1.875em;
   font-weight: 700;
   color: #212529;
   margin-top: 0;
 }
 
 main .about:nth-of-type(4) .container .third-about:first-of-type p {
-  font-size: 17px;
-  line-height: 26px;
+  font-size: 1.05em;
+  line-height: 1.60em;
   color: #777777;
-  width: 634px;
+  width: 41.276vw;
 }
 
 main .about:nth-of-type(4) .container .third-about:first-of-type p:first-of-type {
@@ -1402,8 +1404,8 @@ main .about:nth-of-type(4) .container .third-about:first-of-type div {
 }
 
 main .about:nth-of-type(4) .container .third-about:first-of-type div span {
-  width: 119px;
-  height: 49px;
+  width: 7.747vw;
+  height: 3.190vw;
   background-color: #222831;
   color: #fff;
   border-radius: 5px;
@@ -1423,8 +1425,8 @@ main .about:nth-of-type(4) .container .third-about:first-of-type div span:hover 
 }
 
 main .about:nth-of-type(4) .container .third-about:first-of-type div button {
-  width: 165px;
-  height: 49px;
+  width: 10.742vw;
+  height: 3.190vw;
   margin-right: 8px;
   background-color: #29a19c;
   color: #fff;
@@ -1486,13 +1488,13 @@ main .about:nth-of-type(5) .container .fourth-about:first-of-type {
 }
 
 main .about:nth-of-type(5) .container .fourth-about:first-of-type h2 {
-  font-size: 30px;
+  font-size: 1.875em;
   color: #232527;
 }
 
 main .about:nth-of-type(5) .container .fourth-about:first-of-type #skills-chart {
-  width: 540px;
-  height: 264px;
+  width: 35.156vw;
+  height: 17.188vw;
   color: #777777;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1516,7 +1518,7 @@ main .about:nth-of-type(5) .container .fourth-about:first-of-type #skills-chart 
 }
 
 main .about:nth-of-type(5) .container .fourth-about:first-of-type #skills-chart .chart-wrapper h3 {
-  font-size: 17px;
+  font-size: 1.063em;
   font-weight: 400;
 }
 
@@ -1541,7 +1543,7 @@ main .about:nth-of-type(5) .container .fourth-about:first-of-type #skills-chart 
 
 main .about:nth-of-type(5) .container .fourth-about:first-of-type #skills-chart .chart-wrapper div:last-of-type {
   width: 100%;
-  height: 10px;
+  height: 0.651vw;
   background-color: rgba(0, 0, 0, 0.1);
   position: relative;
   overflow: hidden;
@@ -1591,13 +1593,13 @@ main .about:nth-of-type(5) .container .fourth-about:last-of-type {
 }
 
 main .about:nth-of-type(5) .container .fourth-about:last-of-type h2 {
-  font-size: 30px;
+  font-size: 1.875em;
   color: #232527;
 }
 
 main .about:nth-of-type(5) .container .fourth-about:last-of-type #hobbies-wrapper {
-  width: 474px;
-  height: 264px;
+  width: 30.859vw;
+  height: 17.188vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1628,8 +1630,8 @@ main .about:nth-of-type(5) .container .fourth-about:last-of-type #hobbies-wrappe
 }
 
 main .about:nth-of-type(5) .container .fourth-about:last-of-type #hobbies-wrapper div div {
-  width: 65px;
-  height: 65px;
+  width: 4.232vw;
+  height: 4.232vw;
   background-color: silver;
   border-radius: 50%;
   display: -webkit-box;
@@ -1645,16 +1647,15 @@ main .about:nth-of-type(5) .container .fourth-about:last-of-type #hobbies-wrappe
 
 main .about:nth-of-type(5) .container .fourth-about:last-of-type #hobbies-wrapper div div span {
   display: block;
-  width: 20px;
-  height: 20px;
+  width: 1.302vw;
+  height: 1.302vw;
   background-color: goldenrod;
 }
 
 main .about:nth-of-type(5) .container .fourth-about:last-of-type #hobbies-wrapper div h3 {
-  font-size: 20px;
+  font-size: 1.250em;
   color: #232527;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 10px 0 10px 0;
 }
 
 main .about:nth-of-type(6) {
@@ -1672,8 +1673,8 @@ main .about:nth-of-type(6) button {
   -webkit-transition: color .1s linear, background-color .1s linear;
   transition: color .1s linear, background-color .1s linear;
   cursor: pointer;
-  width: 143px;
-  height: 49px;
+  width: 9.310vw;
+  height: 3.190vw;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -1721,7 +1722,7 @@ main .about:nth-of-type(6) .container .fifth-about h2 {
 }
 
 main .about:nth-of-type(6) .container .fifth-about > div {
-  width: 350px;
+  width: 22.786vw;
   height: 73%;
   position: relative;
   margin-bottom: 25px;
@@ -1767,7 +1768,7 @@ main .about:nth-of-type(6) .container .fifth-about > div div {
 }
 
 main .about:nth-of-type(6) .container .fifth-about > div div h3 {
-  font-size: 35px;
+  font-size: 2.188em;
   font-weight: 600;
   color: #fff;
   margin-bottom: 0;
@@ -1776,7 +1777,7 @@ main .about:nth-of-type(6) .container .fifth-about > div div h3 {
 main .about:nth-of-type(6) .container .fifth-about > div div p {
   color: #fff;
   margin-top: 15px;
-  font-size: 12px;
+  font-size: 0.750em;
 }
 
 main .about:nth-of-type(6) .container .fifth-about > div:hover::before {
@@ -1833,7 +1834,7 @@ main footer .container .footer-content:first-of-type {
 }
 
 main footer .container .footer-content:first-of-type h3 {
-  font-size: 17px;
+  font-size: 1.063em;
   font-weight: 400;
   color: #aaaaaa;
 }
@@ -1865,8 +1866,8 @@ main footer .container .footer-content:last-of-type ul {
 
 main footer .container .footer-content:last-of-type ul li {
   list-style: none;
-  width: 16px;
-  height: 16px;
+  width: 1.042vw;
+  height: 1.042vw;
   background-color: darkolivegreen;
   position: relative;
   margin-left: 25px;
@@ -2042,14 +2043,14 @@ main .services:nth-of-type(2) .container .first-service h2 {
   position: absolute;
   top: 0;
   width: 100%;
-  font-size: 45px;
+  font-size: 2.813em;
   font-weight: 700;
   color: #212529;
 }
 
 main .services:nth-of-type(2) .container .first-service hr {
   width: 100%;
-  height: 2px;
+  height: 0.130vw;
   border: none;
   position: absolute;
   top: 17%;
@@ -2062,23 +2063,22 @@ main .services:nth-of-type(2) .container .first-service div:first-of-type {
 }
 
 main .services:nth-of-type(2) .container .first-service div:first-of-type h3 {
-  font-size: 35px;
+  font-size: 2.188em;
   font-weight: 700;
   color: #232527;
   margin: 0;
 }
 
 main .services:nth-of-type(2) .container .first-service div:first-of-type p {
-  font-size: 17px;
-  line-height: 26px;
+  font-size: 1.05em;
+  line-height: 1.60em;
   color: #777777;
-  margin-bottom: 45px;
-  margin-top: 10px;
+  margin: 10px 0 45px 0;
 }
 
 main .services:nth-of-type(2) .container .first-service div:first-of-type button {
-  width: 147px;
-  height: 49px;
+  width: 9.570vw;
+  height: 3.190vw;
   background-color: #29a19c;
   color: #fff;
   border: none;
@@ -2109,7 +2109,7 @@ main .services:nth-of-type(2) .container .first-service div:last-of-type {
 
 main .services:nth-of-type(2) .container .first-service div:last-of-type .service-wrapper {
   width: 50%;
-  height: 25%;
+  height: 33%;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2122,7 +2122,7 @@ main .services:nth-of-type(2) .container .first-service div:last-of-type .servic
 
 main .services:nth-of-type(2) .container .first-service div:last-of-type .service-wrapper div {
   width: 100%;
-  height: 25px;
+  height: 1.628vw;
   margin-left: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2134,7 +2134,7 @@ main .services:nth-of-type(2) .container .first-service div:last-of-type .servic
 }
 
 main .services:nth-of-type(2) .container .first-service div:last-of-type .service-wrapper div span {
-  width: 25px;
+  width: 1.628vw;
   height: 100%;
   background-color: wheat;
 }
@@ -2145,7 +2145,7 @@ main .services:nth-of-type(2) .container .first-service div:last-of-type .servic
   color: #232527;
   -webkit-transition: color .1s linear;
   transition: color .1s linear;
-  font-size: 22px;
+  font-size: 1.375em;
   font-weight: 600;
 }
 
@@ -2154,12 +2154,10 @@ main .services:nth-of-type(2) .container .first-service div:last-of-type .servic
 }
 
 main .services:nth-of-type(2) .container .first-service div:last-of-type .service-wrapper p {
-  font-size: 17px;
-  line-height: 26px;
+  font-size: 1.05em;
+  line-height: 1.60em;
   color: #777777;
-  margin: 0;
-  margin-left: 20px;
-  margin-top: 15px;
+  margin: 15px 0 0 20px;
 }
 
 main .services:nth-of-type(3) {
@@ -2259,15 +2257,15 @@ main .services:nth-of-type(3) .container .second-service > div div:first-of-type
 }
 
 main .services:nth-of-type(3) .container .second-service > div div:first-of-type span {
-  width: 32px;
-  height: 30px;
+  width: 2.083vw;
+  height: 1.953vw;
   background-color: springgreen;
   margin-top: 10%;
   margin-bottom: 10%;
 }
 
 main .services:nth-of-type(3) .container .second-service > div div:first-of-type h3 {
-  font-size: 25px;
+  font-size: 1.563em;
   font-weight: 600;
   color: #232527;
   margin: 0;
@@ -2275,9 +2273,9 @@ main .services:nth-of-type(3) .container .second-service > div div:first-of-type
 
 main .services:nth-of-type(3) .container .second-service > div div:first-of-type p {
   text-align: center;
+  font-size: 1.05em;
+  line-height: 1.60em;
   color: #777777;
-  font-size: 17px;
-  line-height: 26px;
 }
 
 main .services:nth-of-type(3) .container .second-service > div div:last-of-type {
@@ -2330,7 +2328,7 @@ main .services:nth-of-type(4) .container .third-service > h2 {
   top: 0;
   width: 100%;
   text-align: center;
-  font-size: 40px;
+  font-size: 2.500em;
   font-weight: 700;
   color: #232527;
 }
@@ -2367,8 +2365,8 @@ main .services:nth-of-type(4) .container .third-service > div:hover p {
 }
 
 main .services:nth-of-type(4) .container .third-service > div div {
-  width: 80px;
-  height: 80px;
+  width: 5.208vw;
+  height: 5.208vw;
   background-color: #29a19c;
   border-radius: 50%;
   display: -webkit-box;
@@ -2385,14 +2383,14 @@ main .services:nth-of-type(4) .container .third-service > div div {
 }
 
 main .services:nth-of-type(4) .container .third-service > div div span {
-  width: 27px;
-  height: 26px;
+  width: 1.758vw;
+  height: 1.693vw;
   background-color: sandybrown;
 }
 
 main .services:nth-of-type(4) .container .third-service > div h2 {
   color: #232527;
-  font-size: 22px;
+  font-size: 1.375em;
   font-weight: 700;
   -webkit-transition: color .2s linear;
   transition: color .2s linear;
@@ -2400,9 +2398,9 @@ main .services:nth-of-type(4) .container .third-service > div h2 {
 }
 
 main .services:nth-of-type(4) .container .third-service > div p {
+  font-size: 1.05em;
+  line-height: 1.60em;
   color: #777777;
-  font-size: 17px;
-  line-height: 26px;
   margin: 0;
   text-align: center;
   width: 90%;
@@ -2412,7 +2410,7 @@ main .services:nth-of-type(4) .container .third-service > div p {
 
 main .services:nth-of-type(4) .container .third-service > div h3 {
   color: #29a19c;
-  font-size: 17px;
+  font-size: 1.063em;
   font-weight: 700;
 }
 
@@ -2482,8 +2480,8 @@ main .services:nth-of-type(5) .container .fourth-service div div:hover h3 {
 }
 
 main .services:nth-of-type(5) .container .fourth-service div div div {
-  width: 80px;
-  height: 80px;
+  width: 5.208vw;
+  height: 5.208vw;
   background-color: #29a19c;
   border-radius: 50%;
   display: -webkit-box;
@@ -2502,14 +2500,14 @@ main .services:nth-of-type(5) .container .fourth-service div div div {
 }
 
 main .services:nth-of-type(5) .container .fourth-service div div div span {
-  width: 27px;
-  height: 26px;
+  width: 1.758vw;
+  height: 1.693vw;
   background-color: sandybrown;
 }
 
 main .services:nth-of-type(5) .container .fourth-service div div h2 {
   color: #fff;
-  font-size: 22px;
+  font-size: 1.375em;
   font-weight: 700;
   -webkit-transition: color 0.2s linear, top 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   transition: color 0.2s linear, top 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -2519,9 +2517,10 @@ main .services:nth-of-type(5) .container .fourth-service div div h2 {
 }
 
 main .services:nth-of-type(5) .container .fourth-service div div p {
+  font-size: 1.05em;
+  line-height: 1.60em;
+  color: #777777;
   color: #cccccc;
-  font-size: 17px;
-  line-height: 26px;
   margin: 0;
   text-align: center;
   width: 90%;
@@ -2535,7 +2534,7 @@ main .services:nth-of-type(5) .container .fourth-service div div p {
 
 main .services:nth-of-type(5) .container .fourth-service div div h3 {
   color: #29a19c;
-  font-size: 17px;
+  font-size: 1.063em;
   font-weight: 700;
   -webkit-transform: scale(0);
           transform: scale(0);
@@ -2704,7 +2703,7 @@ main .contact:nth-of-type(2) .container .form-content h2 {
   position: absolute;
   top: 3%;
   text-align: center;
-  font-size: 45px;
+  font-size: 2.813em;
   line-height: 50px;
   font-weight: 700;
 }
@@ -2746,9 +2745,9 @@ main .contact:nth-of-type(2) .container .form-content form div:first-of-type {
 }
 
 main .contact:nth-of-type(2) .container .form-content form div:first-of-type input {
-  height: 60px;
+  height: 3.906vw;
   padding: 0 15px 0 20px;
-  font-size: 17px;
+  font-size: 1.063em;
   color: #777777;
   border: none;
   background-color: #eee;
@@ -2756,11 +2755,11 @@ main .contact:nth-of-type(2) .container .form-content form div:first-of-type inp
 }
 
 main .contact:nth-of-type(2) .container .form-content form div:first-of-type textarea {
-  height: 180px;
+  height: 11.719vw;
   padding: 20px 15px 0 20px;
   color: #777777;
   border: none;
-  font-size: 17px;
+  font-size: 1.063em;
   background-color: #eee;
   margin-bottom: 15px;
   resize: vertical;
@@ -2782,8 +2781,8 @@ main .contact:nth-of-type(2) .container .form-content form div:last-of-type {
 }
 
 main .contact:nth-of-type(2) .container .form-content form div:last-of-type button {
-  width: 139px;
-  height: 45px;
+  width: 9.049vw;
+  height: 2.930vw;
   background-color: #29a19c;
   color: #fff;
   border: none;

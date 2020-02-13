@@ -29,6 +29,18 @@
     }
 }
 
+@mixin paragraphSize {
+    font-size: 1.05em;
+    line-height: 1.60em;
+    color: #777777;
+}
+
+
+
+
+
+
+
 
 
 html, body {
@@ -187,15 +199,15 @@ body {
                 div {
                     &:first-of-type {
                         position: absolute;
-                        width: 240px;
-                        height: 240px;
+                        width: 15.625vw;
+                        height: 15.625vw;
                         top: -15%;
                         left: 42%;
                         overflow: hidden;
 
                         ul {
                             height: 100%;
-                            width: 960px;
+                            width: 62.500vw;
                             margin: 0;
                             padding: 0;
                             position: relative;
@@ -217,8 +229,8 @@ body {
 
                     &:nth-of-type(2) {
                         position: absolute;
-                        width: 400px;
-                        height: 170px;
+                        width: 26.042vw;
+                        height: 11.068vw;
                         top: 38%;
                         left: 18%;
                         z-index: 2;
@@ -247,7 +259,7 @@ body {
                         position: relative;
                         top: 85%;
                         overflow: hidden;
-                        height: 60px;
+                        height: 3.906vw;
 
                         ul {
                             margin: 0;
@@ -263,8 +275,8 @@ body {
                         }
 
                         button {
-                            width: 150px;
-                            height: 60px;
+                            width: 9.766vw;
+                            height: 3.906vw;
                             @include pageButton();
                             margin-bottom: 8%;
                         }
@@ -283,7 +295,7 @@ body {
             .slide-pics {
                 width: auto;
                 height: 100%;
-                min-width: 2520px;
+                min-width: 164.063vw;
                 overflow: hidden;
                 
                 @include flexRow();
@@ -293,7 +305,7 @@ body {
 
                 div {
                     height: 100%;
-                    width: 560px;
+                    width: 36.458vw;
                     margin-right: 70px;
                     @include flexRow();
                     align-items: flex-end;
@@ -362,10 +374,12 @@ body {
 
             div:first-of-type {
                 width: 68%;
+                height: 100%;
             }
 
             div:last-of-type {
                 width: 32%;
+                height: 100%;
             }
 
             .second-content {
@@ -377,21 +391,19 @@ body {
                     height: 78%;
                     
                     h2 {
-                        font-size: 40px;
+                        font-size: 2.5em;
                         margin-top: 0;
                         color: #232527;
                     }
 
                     p {
-                        font-size: 17px;
-                        line-height: 26px;
+                        @include paragraphSize();
                         width: 90%;
-                        color: #777777;
                     }
 
                     button {
-                        width: 145px;
-                        height: 49px;
+                        width: 9.440vw;
+                        height: 3.190vw;
                         margin-top: 2%;
                         @include pageButton();  
                     }
@@ -493,28 +505,26 @@ body {
                     height: 73%;
 
                     h2 {
-                        font-size: 35px;
+                        font-size: 2.188em;
                         line-height: 40px;
                         margin: 0;
                         color: #232527;
                     }
 
                     h3 {
-                        font-size: 25px;
+                        font-size: 1.563em;
                         line-height: 30px;
                         margin-top: 15px;
                         color: #999999;
                     }
 
                     p {
-                        font-size: 17px;
-                        line-height: 26px;
-                        color: #777;
+                        @include paragraphSize();
                     }
 
                     button {
-                        width: 184px;
-                        height: 49px;
+                        width: 11.979vw;
+                        height: 3.190vw;
                         @include pageButton();
                     }
                 }
@@ -555,7 +565,7 @@ body {
                     height: 53%;
 
                     p {
-                        font-size: 33px;
+                        font-size: 2.063em;
                         line-height: 42px;
                         font-weight: 600;
                         margin: 0;
@@ -575,8 +585,8 @@ body {
                     flex-direction: column;
 
                     div {
-                        width: 120px;
-                        height: 120px;
+                        width: 7.813vw;
+                        height: 7.813vw;
 
                         img {
                             width: 100%;
@@ -615,25 +625,23 @@ body {
                 flex-basis: 43%;
 
                 h2 {
-                    font-size: 35px;
+                    font-size: 2.188em;
                     line-height: 40px;
-                    margin-top: 85px;
-                    margin-bottom: 10px;
+                    margin: 85px 0 10px 0;
                     color: #232527;
                 }
 
                 h3 {
-                    font-size: 25px;
+                    font-size: 1.563em;
+                    font-weight: 400;
                     line-height: 30px;
                     margin: 0;
                     color: #999999;
                 }
 
                 p {
-                    font-size: 17px;
-                    line-height: 26px;
+                    @include paragraphSize();
                     margin-top: 20px;
-                    color: #777777;
                 }
             }
 
@@ -641,6 +649,9 @@ body {
                 flex-basis: 57%;
                 @include flexColumn();
                 justify-content: center;
+                margin-left: 25px;
+
+
                 div {
                     width: 100%;
                     height: 38%;
@@ -654,7 +665,7 @@ body {
                         background-size: cover;
 
                         span {
-                            width: 320px;
+                            width: 20.833vw;
                         }
                     }
 
@@ -664,18 +675,17 @@ body {
                         margin-top: 15px;
 
                         span {
-                            width: 256px;
+                            width: 16.667vw;
                         }
                     }
 
                     span {
-                        height: 44px;
+                        height: 2.865vw;
                         @include absoluteCenter();
                         background-color: #1f242c;
                         color: #a3f7bf;
                         border-radius: 10px;
-                        margin-bottom: 10px;
-                        margin-left: 10px;
+                        margin: 0 0 10px 10px;
                     }
                 }
             }
@@ -696,7 +706,7 @@ body {
             flex-direction: column;
 
             p {
-                font-size: 18px;
+                font-size: 1.125em;
                 margin-top: 0;
                 color: #eaeaea;
             }
@@ -709,14 +719,14 @@ body {
             }
 
             div {
-                width: 286px;
-                height: 49px;
+                width: 18.620vw;
+                height: 3.190vw;
                 margin-top: 40px;
                 @include flexRow();
 
                 span {
-                    width: 143px;
-                    height: 49px;
+                    width: 9.310vw;
+                    height: 3.190vw;
                     background-color: #222831;
                     color: #fff;
                     border-radius: 5px;
@@ -731,8 +741,8 @@ body {
                     @include pageButton();
                     background-color: #fff;
                     color: #29a19c;
-                    width: 120px;
-                    height: 49px;
+                    width: 7.813vw;
+                    height: 3.190vw;
                     margin-left: 10px;
                 }
             }
@@ -759,7 +769,7 @@ body {
                 justify-content: center;
 
                 h3 {
-                    font-size: 17px;
+                    font-size: 1.063em;
                     font-weight: 400;
                     color: #aaaaaa;
                 }
@@ -776,8 +786,8 @@ body {
 
                     li {
                         list-style: none;
-                        width: 16px;
-                        height: 16px;
+                        width: 1.042vw;
+                        height: 1.042vw;
                         background-color: darkolivegreen;
                         position: relative;
                         margin-left: 25px;
@@ -802,4 +812,5 @@ body {
 
 @import "./about";
 @import "./services";
-@import "./contact"
+@import "./contact";
+@import "./mediaQueries";
