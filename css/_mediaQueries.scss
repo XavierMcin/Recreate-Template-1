@@ -21,5 +21,110 @@
 }
 
 @include responsive(tabletLandscape) {
+
+    /******HOME PAGE STYLES******/
+
+    .home section .main-header nav {
+        width: 35%;
+    }
+
+    .home section .container {
+        width: 90%;
+    }
+
+    .home section:nth-of-type(2) .container {
+        width: 75%;
+    }
     
+    .home section #image-slider {
+        margin: 7% 0 0 0;
+    }
+
+    /*SECOND SECTION*/
+
+    .home section:nth-of-type(3) {
+        height: 100vh;
+    }
+
+    .home section:nth-of-type(3) .container .second-content div {
+        height: 355px;
+        margin-top: -15%;
+    }
+
+    .home section:nth-of-type(3) .container .second-content:last-of-type div {
+        margin-top: -25%;
+    }
+
+    .home section:nth-of-type(3) .container .second-content div h2 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    /*FOURTH SECTION*/
+
+    .home section:nth-of-type(5) .container .fourth-content:last-of-type {
+        flex-basis: 70%;
+    }
+
+    .home section:nth-of-type(5) .container .fourth-content:first-of-type div {
+        width: 90%;
+        height: 63%;
+        margin-top: -15%;
+    }
+
+    .home section:nth-of-type(5) .container .fourth-content:last-of-type div h2 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .home section:nth-of-type(5) .container .fourth-content:last-of-type div h3 {
+        font-weight: 400;
+    }
+
+    .home section:nth-of-type(5) .container .fourth-content:last-of-type div button {
+        margin-top: 25px;
+    }
+
+    /*FIFTH SECTION*/
+
+    .home section:nth-of-type(6) .container .fifth-content:first-of-type div p {
+        font-size: 25px;
+    }
+
+    /*SIXTH SECTION*/
+
+    .home section:nth-of-type(7) .container .sixth-content:first-of-type h2 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .home section:nth-of-type(7) .container .sixth-content:last-of-type div:first-of-type span {
+        width: 300px;
+        height: 45px;
+    }
+
+    .home section:nth-of-type(7) .container .sixth-content:last-of-type div:last-of-type span {
+        width: 237px;
+        height: 45px;
+    }
+
+    .home section:last-of-type .container div {
+        width: auto;
+    }
+
+    .home section:last-of-type .container div span {
+        width: 143px;
+        height: 49px;
+    }
+
+    /*FOOTER*/
+
+    .home footer .container {
+        width: 90%;
+    }
+   
+    .home footer .container .footer-content:first-of-type h3 {
+        font-size: 16px;
+    }
+
 }

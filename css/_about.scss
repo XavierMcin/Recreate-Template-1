@@ -292,7 +292,7 @@ main .about {
                     width: 10.742vw;
                     height: 3.190vw;
                     margin-right: 8px;
-                    @include pageButton();
+                    @include pageButton(166px, 49px);
                 }
             }
         }
@@ -480,9 +480,7 @@ main .about {
         button {
             position: absolute;
             bottom: 30px;
-            @include pageButton();
-            width: 9.310vw;
-            height: 3.190vw;
+            @include pageButton(143px, 49px);
             left: 50%;
             transform: translateX(-50%);
         }

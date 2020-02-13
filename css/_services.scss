@@ -136,9 +136,7 @@ main .services {
                 }
 
                 button {
-                    width: 9.570vw;
-                    height: 3.190vw;
-                    @include pageButton();
+                    @include pageButton(147px, 49px);
                 }
             }
 

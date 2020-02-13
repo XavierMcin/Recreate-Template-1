@@ -159,9 +159,7 @@ main .contact {
                     justify-content: flex-end;
 
                     button {
-                        width: 9.049vw;
-                        height: 2.930vw;
-                        @include pageButton();
+                        @include pageButton(139px, 45px);
                     }
                 }
             }
