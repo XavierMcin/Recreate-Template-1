@@ -94,7 +94,8 @@ main .contact {
         justify-content: center;
 
         .form-content {
-            width: 62%;
+            width: 700px;
+            max-width: 700px;
             display: flex;
             align-items: center;
             position: relative;
@@ -127,11 +128,11 @@ main .contact {
 
                 div:first-of-type {
                     width: 100%;
-                    height: 85%;
+                    height: 100%;
                     @include flexColumn();
 
                     input {
-                        height: 3.906vw;
+                        height: 60px;
                         padding: 0 15px 0 20px;
                         font-size: 1.063em;
                         color: #777777;
@@ -141,7 +142,7 @@ main .contact {
                     }
 
                     textarea {
-                        height: 11.719vw;
+                        height: 180px;
                         padding: 20px 15px 0 20px;
                         color: #777777;
                         border: none;

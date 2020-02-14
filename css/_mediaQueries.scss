@@ -20,9 +20,33 @@
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
 @include responsive(tabletLandscape) {
 
+
+
+
+
+
+
+
+
+
+
+    /****************************/
     /******HOME PAGE STYLES******/
+    /****************************/
 
     .home section .main-header nav {
         width: 35%;
@@ -119,12 +143,269 @@
 
     /*FOOTER*/
 
-    .home footer .container {
+    main footer .container {
         width: 90%;
     }
    
-    .home footer .container .footer-content:first-of-type h3 {
+    main footer .container .footer-content:first-of-type h3 {
         font-size: 16px;
     }
+
+
+
+
+
+
+
+
+
+    /*****************************/
+    /******ABOUT PAGE STYLES******/
+    /*****************************/
+
+
+    /*FIRST SECTION*/
+
+
+
+    main .about:nth-of-type(2) {
+        height: 83vh;
+    }
+
+    main .about .container {
+        width: 90%;
+    }
+
+    main .about .main-header nav {
+        width: 35%;
+    }
+
+    main .about:nth-of-type(2) .container .first-about:first-of-type div {
+        height: 60vh;
+    }
+
+    main .about:nth-of-type(2) .container .first-about:first-of-type div img:last-of-type {
+        width: 65%;
+        height: 75%;
+    }
+
+    main .about:nth-of-type(2) .container .first-about:last-of-type div h2 {
+        font-weight: 700;
+    }
+
+    main .about:nth-of-type(2) .container .first-about:last-of-type div p:nth-of-type(3) {
+        font-weight: 700;
+    }
+
+
+    /*SECOND SECTION*/
+
+
+
+    main .about:nth-of-type(3) {
+        height: 55vh;
+    }
+
+    main .about:nth-of-type(3)::before {
+        height: 55vh;
+    }
+
+    main .about:nth-of-type(3) .container .second-about div h2 {
+        margin-top: 20px;
+    }
+
+    main .about:nth-of-type(3) .container .second-about div p {
+        margin-top: 20px;
+    }
+
+
+    /*THIRD SECTION*/
+
+
+    main .about:nth-of-type(4) .container .third-about:first-of-type p {
+        width: 95%;
+    }
+
+    main .about:nth-of-type(4) .container .third-about:first-of-type div span {
+        width: 119px;
+        height: 49px;
+    }
+
+
+
+    /*FOURTH SECTION*/
+
+
+
+    main .about:nth-of-type(5) {
+        height: 80vh;
+    }
+
+    
+
+    main .about:nth-of-type(5) .container .fourth-about:first-of-type #skills-chart {
+        width: 100%;
+        height: auto;
+    }
+
+    main .about:nth-of-type(5) .container .fourth-about:first-of-type #skills-chart .chart-wrapper div:last-of-type {
+        height: 10px;
+    }
+
+    main .about:nth-of-type(5) .container .fourth-about:last-of-type h2 {
+        margin-top: 0;
+        margin-left: 5%;
+    }
+
+    main .about:nth-of-type(5) .container .fourth-about:last-of-type #hobbies-wrapper {
+        width: 84%;
+        height: 73%;
+        margin-left: 5%;
+    }
+
+    main .about:nth-of-type(5) .container .fourth-about:last-of-type #hobbies-wrapper > div {
+        margin-bottom: 20px;
+    }
+
+    main .about:nth-of-type(5) .container .fourth-about:last-of-type #hobbies-wrapper div div {
+        width: 65px;
+        height: 65px;
+    }
+
+
+
+    /*FIFTH SECTION*/
+
+
+    main .about:nth-of-type(6) {
+        height: 80vh;
+    }
+
+    main .about:nth-of-type(6) .container .fifth-about {
+        justify-content: space-between;
+    }
+
+    main .about:nth-of-type(6) .container .fifth-about > div {
+        width: 290px;
+    }
+
+
+
+
+
+
+
+
+
+
+    /********************************/
+    /******SERVICES PAGE STYLES******/
+    /********************************/
+
+
+    main .services .container {
+        width: 90%;
+        position: relative;
+    }
+
+    main .services .main-header nav {
+        width: 35%;
+    }
+
+    
+
+    /*FIRST SECTION*/
+
+    main .services:nth-of-type(2) {
+        height: 104vh;
+    }
+
+    main .services:nth-of-type(2) .container .first-service {
+        height: 89vh;
+    }
+
+
+    main .services:nth-of-type(2) .container .first-service hr {
+        top: 15%;
+        height: 2px;
+    }
+
+    main .services:nth-of-type(2) .container .first-service > div:first-of-type {
+        margin-top: -10%;
+    }
+
+
+    /*SECOND SECTION*/
+
+
+    main .services:nth-of-type(3) .container .second-service {
+        height: 70vh;
+    }
+
+    main .services:nth-of-type(3) .container .second-service > div {
+        width: 32%;
+    }
+
+    main .services:nth-of-type(3) .container .second-service > div div:first-of-type {
+        height: 59%;
+    }
+
+
+
+    /*THIRD SECTION*/
+
+    main .services:nth-of-type(4) {
+        height: 78vh;
+    }
+
+    main .services:nth-of-type(4) .container .third-service > div {
+        height: 77%;
+    }
+
+
+    main .services:nth-of-type(4) .container > h2 {
+        top: 3%;
+    }
+
+
+    /*FOURTH SECTION*/
+
+
+
+    main .services:nth-of-type(5) .container .fourth-service > div {
+        height: 92%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    /*******************************/
+    /******CONTACT PAGE STYLES******/
+    /*******************************/
+
+    
+
+    main .contact .container {
+        width: 90%;
+    }
+    
+    main .contact .main-header nav {
+        width: 35%;
+    }
+
+    main .contact:nth-of-type(2) {
+        height: 119vh;
+    }
+
+
+
 
 }

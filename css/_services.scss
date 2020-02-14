@@ -5,6 +5,7 @@ main .services {
     .container {
         width: 75%;
         height: 100%; 
+        position: relative;
     }
 
     &:first-of-type {
@@ -99,6 +100,7 @@ main .services {
             height: 69vh;
             @include flexRow();
             align-items: flex-end;
+            justify-content: space-between;
             position: relative;
 
             h2 {
@@ -121,7 +123,7 @@ main .services {
 
             div:first-of-type {
                 width: 42%;
-                height: 50vh;
+                height: 73%;
 
                 h3 {
                     font-size: 2.188em;
@@ -142,13 +144,14 @@ main .services {
 
             div:last-of-type {
                 width: 55.5%;
-                height: 50vh;
+                height: 73%;
                 @include flexRow();
                 flex-wrap: wrap;
 
                 .service-wrapper {
                     width: 50%;
                     height: 33%;
+                    margin-bottom: 15px;
                     position: relative;
                     @include flexColumn();
 
@@ -159,8 +162,8 @@ main .services {
                         @include flexRow();
 
                         span {
-                            width: 1.628vw;
-                            height: 100%;
+                            width: 25px;
+                            height: 25px;
                             background-color: wheat;
                         }
 
@@ -304,6 +307,16 @@ main .services {
         height: 65vh;
     }
 
+    &:nth-of-type(4) .container > h2 {
+        position: absolute;
+        top: 7%;
+        width: 100%;
+        text-align: center;
+        font-size: 2.500em;
+        font-weight: 700;
+        color: #232527;
+    }
+
     &:nth-of-type(4) .container {
         display: flex;
         align-items: center;
@@ -317,15 +330,7 @@ main .services {
             position: relative;
         }
 
-        .third-service > h2 {
-            position: absolute;
-            top: 0;
-            width: 100%;
-            text-align: center;
-            font-size: 2.500em;
-            font-weight: 700;
-            color: #232527;
-        }
+        
 
         .third-service > div {
             width: 31%;
@@ -349,8 +354,8 @@ main .services {
             }
 
             div {
-                width: 5.208vw;
-                height: 5.208vw;
+                width: 80px;
+                height: 80px;
                 background-color: #29a19c;
                 border-radius: 50%;
                 @include absoluteCenter();
@@ -358,8 +363,8 @@ main .services {
                 top: -15%;
 
                 span {
-                    width: 1.758vw;
-                    height: 1.693vw;
+                    width: 28px;
+                    height: 26px;
                     background-color: sandybrown;
                 }
             }
@@ -436,8 +441,8 @@ main .services {
                 }
     
                 div {
-                    width: 5.208vw;
-                    height: 5.208vw;
+                    width: 76px;
+                    height: 78px;
                     background-color: #29a19c;
                     border-radius: 50%;
                     @include absoluteCenter();
@@ -446,8 +451,8 @@ main .services {
                     transition: top .2s linear;
     
                     span {
-                        width: 1.758vw;
-                        height: 1.693vw;
+                        width: 25px;
+                        height: 25px;
                         background-color: sandybrown;
                     }
                 }
@@ -483,7 +488,7 @@ main .services {
         }
 
         .fourth-service > div {
-            width: 22.5%;
+            width: 23%;
             height: 81%;
         }
     }

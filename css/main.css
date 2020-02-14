@@ -1480,7 +1480,7 @@ main .about:nth-of-type(5) .container {
 
 main .about:nth-of-type(5) .container .fourth-about:first-of-type {
   width: 50%;
-  height: 68%;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1514,6 +1514,7 @@ main .about:nth-of-type(5) .container .fourth-about:first-of-type #skills-chart 
 main .about:nth-of-type(5) .container .fourth-about:first-of-type #skills-chart .chart-wrapper {
   width: 100%;
   height: 25%;
+  margin-bottom: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1526,10 +1527,12 @@ main .about:nth-of-type(5) .container .fourth-about:first-of-type #skills-chart 
 main .about:nth-of-type(5) .container .fourth-about:first-of-type #skills-chart .chart-wrapper h3 {
   font-size: 1.063em;
   font-weight: 400;
+  margin-bottom: 10px;
 }
 
 main .about:nth-of-type(5) .container .fourth-about:first-of-type #skills-chart .chart-wrapper p {
   font-weight: 600;
+  margin-bottom: 0;
 }
 
 main .about:nth-of-type(5) .container .fourth-about:first-of-type #skills-chart .chart-wrapper div:first-of-type {
@@ -1549,7 +1552,7 @@ main .about:nth-of-type(5) .container .fourth-about:first-of-type #skills-chart 
 
 main .about:nth-of-type(5) .container .fourth-about:first-of-type #skills-chart .chart-wrapper div:last-of-type {
   width: 100%;
-  height: 0.651vw;
+  height: 10px;
   background-color: rgba(0, 0, 0, 0.1);
   position: relative;
   overflow: hidden;
@@ -1653,8 +1656,8 @@ main .about:nth-of-type(5) .container .fourth-about:last-of-type #hobbies-wrappe
 
 main .about:nth-of-type(5) .container .fourth-about:last-of-type #hobbies-wrapper div div span {
   display: block;
-  width: 1.302vw;
-  height: 1.302vw;
+  width: 20px;
+  height: 20px;
   background-color: goldenrod;
 }
 
@@ -1913,6 +1916,7 @@ main .services {
 main .services .container {
   width: 75%;
   height: 100%;
+  position: relative;
 }
 
 main .services:first-of-type {
@@ -2042,6 +2046,9 @@ main .services:nth-of-type(2) .container .first-service {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   position: relative;
 }
 
@@ -2065,7 +2072,7 @@ main .services:nth-of-type(2) .container .first-service hr {
 
 main .services:nth-of-type(2) .container .first-service div:first-of-type {
   width: 42%;
-  height: 50vh;
+  height: 73%;
 }
 
 main .services:nth-of-type(2) .container .first-service div:first-of-type h3 {
@@ -2101,7 +2108,7 @@ main .services:nth-of-type(2) .container .first-service div:first-of-type button
 
 main .services:nth-of-type(2) .container .first-service div:last-of-type {
   width: 55.5%;
-  height: 50vh;
+  height: 73%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2116,6 +2123,7 @@ main .services:nth-of-type(2) .container .first-service div:last-of-type {
 main .services:nth-of-type(2) .container .first-service div:last-of-type .service-wrapper {
   width: 50%;
   height: 33%;
+  margin-bottom: 15px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2140,8 +2148,8 @@ main .services:nth-of-type(2) .container .first-service div:last-of-type .servic
 }
 
 main .services:nth-of-type(2) .container .first-service div:last-of-type .service-wrapper div span {
-  width: 1.628vw;
-  height: 100%;
+  width: 25px;
+  height: 25px;
   background-color: wheat;
 }
 
@@ -2301,6 +2309,16 @@ main .services:nth-of-type(4) {
   height: 65vh;
 }
 
+main .services:nth-of-type(4) .container > h2 {
+  position: absolute;
+  top: 7%;
+  width: 100%;
+  text-align: center;
+  font-size: 2.500em;
+  font-weight: 700;
+  color: #232527;
+}
+
 main .services:nth-of-type(4) .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2327,16 +2345,6 @@ main .services:nth-of-type(4) .container .third-service {
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: relative;
-}
-
-main .services:nth-of-type(4) .container .third-service > h2 {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  text-align: center;
-  font-size: 2.500em;
-  font-weight: 700;
-  color: #232527;
 }
 
 main .services:nth-of-type(4) .container .third-service > div {
@@ -2371,8 +2379,8 @@ main .services:nth-of-type(4) .container .third-service > div:hover p {
 }
 
 main .services:nth-of-type(4) .container .third-service > div div {
-  width: 5.208vw;
-  height: 5.208vw;
+  width: 80px;
+  height: 80px;
   background-color: #29a19c;
   border-radius: 50%;
   display: -webkit-box;
@@ -2389,8 +2397,8 @@ main .services:nth-of-type(4) .container .third-service > div div {
 }
 
 main .services:nth-of-type(4) .container .third-service > div div span {
-  width: 1.758vw;
-  height: 1.693vw;
+  width: 28px;
+  height: 26px;
   background-color: sandybrown;
 }
 
@@ -2486,8 +2494,8 @@ main .services:nth-of-type(5) .container .fourth-service div div:hover h3 {
 }
 
 main .services:nth-of-type(5) .container .fourth-service div div div {
-  width: 5.208vw;
-  height: 5.208vw;
+  width: 76px;
+  height: 78px;
   background-color: #29a19c;
   border-radius: 50%;
   display: -webkit-box;
@@ -2506,8 +2514,8 @@ main .services:nth-of-type(5) .container .fourth-service div div div {
 }
 
 main .services:nth-of-type(5) .container .fourth-service div div div span {
-  width: 1.758vw;
-  height: 1.693vw;
+  width: 25px;
+  height: 25px;
   background-color: sandybrown;
 }
 
@@ -2551,7 +2559,7 @@ main .services:nth-of-type(5) .container .fourth-service div div h3 {
 }
 
 main .services:nth-of-type(5) .container .fourth-service > div {
-  width: 22.5%;
+  width: 23%;
   height: 81%;
 }
 
@@ -2695,7 +2703,8 @@ main .contact:nth-of-type(2) .container {
 }
 
 main .contact:nth-of-type(2) .container .form-content {
-  width: 62%;
+  width: 700px;
+  max-width: 700px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2740,7 +2749,7 @@ main .contact:nth-of-type(2) .container .form-content form {
 
 main .contact:nth-of-type(2) .container .form-content form div:first-of-type {
   width: 100%;
-  height: 85%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2751,7 +2760,7 @@ main .contact:nth-of-type(2) .container .form-content form div:first-of-type {
 }
 
 main .contact:nth-of-type(2) .container .form-content form div:first-of-type input {
-  height: 3.906vw;
+  height: 60px;
   padding: 0 15px 0 20px;
   font-size: 1.063em;
   color: #777777;
@@ -2761,7 +2770,7 @@ main .contact:nth-of-type(2) .container .form-content form div:first-of-type inp
 }
 
 main .contact:nth-of-type(2) .container .form-content form div:first-of-type textarea {
-  height: 11.719vw;
+  height: 180px;
   padding: 20px 15px 0 20px;
   color: #777777;
   border: none;
@@ -2804,7 +2813,9 @@ main .contact:nth-of-type(2) .container .form-content form div:last-of-type butt
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1112px) {
+  /****************************/
   /******HOME PAGE STYLES******/
+  /****************************/
   .home section .main-header nav {
     width: 35%;
   }
@@ -2877,11 +2888,157 @@ main .contact:nth-of-type(2) .container .form-content form div:last-of-type butt
     height: 49px;
   }
   /*FOOTER*/
-  .home footer .container {
+  main footer .container {
     width: 90%;
   }
-  .home footer .container .footer-content:first-of-type h3 {
+  main footer .container .footer-content:first-of-type h3 {
     font-size: 16px;
+  }
+  /*****************************/
+  /******ABOUT PAGE STYLES******/
+  /*****************************/
+  /*FIRST SECTION*/
+  main .about:nth-of-type(2) {
+    height: 83vh;
+  }
+  main .about .container {
+    width: 90%;
+  }
+  main .about .main-header nav {
+    width: 35%;
+  }
+  main .about:nth-of-type(2) .container .first-about:first-of-type div {
+    height: 60vh;
+  }
+  main .about:nth-of-type(2) .container .first-about:first-of-type div img:last-of-type {
+    width: 65%;
+    height: 75%;
+  }
+  main .about:nth-of-type(2) .container .first-about:last-of-type div h2 {
+    font-weight: 700;
+  }
+  main .about:nth-of-type(2) .container .first-about:last-of-type div p:nth-of-type(3) {
+    font-weight: 700;
+  }
+  /*SECOND SECTION*/
+  main .about:nth-of-type(3) {
+    height: 55vh;
+  }
+  main .about:nth-of-type(3)::before {
+    height: 55vh;
+  }
+  main .about:nth-of-type(3) .container .second-about div h2 {
+    margin-top: 20px;
+  }
+  main .about:nth-of-type(3) .container .second-about div p {
+    margin-top: 20px;
+  }
+  /*THIRD SECTION*/
+  main .about:nth-of-type(4) .container .third-about:first-of-type p {
+    width: 95%;
+  }
+  main .about:nth-of-type(4) .container .third-about:first-of-type div span {
+    width: 119px;
+    height: 49px;
+  }
+  /*FOURTH SECTION*/
+  main .about:nth-of-type(5) {
+    height: 80vh;
+  }
+  main .about:nth-of-type(5) .container .fourth-about:first-of-type #skills-chart {
+    width: 100%;
+    height: auto;
+  }
+  main .about:nth-of-type(5) .container .fourth-about:first-of-type #skills-chart .chart-wrapper div:last-of-type {
+    height: 10px;
+  }
+  main .about:nth-of-type(5) .container .fourth-about:last-of-type h2 {
+    margin-top: 0;
+    margin-left: 5%;
+  }
+  main .about:nth-of-type(5) .container .fourth-about:last-of-type #hobbies-wrapper {
+    width: 84%;
+    height: 73%;
+    margin-left: 5%;
+  }
+  main .about:nth-of-type(5) .container .fourth-about:last-of-type #hobbies-wrapper > div {
+    margin-bottom: 20px;
+  }
+  main .about:nth-of-type(5) .container .fourth-about:last-of-type #hobbies-wrapper div div {
+    width: 65px;
+    height: 65px;
+  }
+  /*FIFTH SECTION*/
+  main .about:nth-of-type(6) {
+    height: 80vh;
+  }
+  main .about:nth-of-type(6) .container .fifth-about {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  main .about:nth-of-type(6) .container .fifth-about > div {
+    width: 290px;
+  }
+  /********************************/
+  /******SERVICES PAGE STYLES******/
+  /********************************/
+  main .services .container {
+    width: 90%;
+    position: relative;
+  }
+  main .services .main-header nav {
+    width: 35%;
+  }
+  /*FIRST SECTION*/
+  main .services:nth-of-type(2) {
+    height: 104vh;
+  }
+  main .services:nth-of-type(2) .container .first-service {
+    height: 89vh;
+  }
+  main .services:nth-of-type(2) .container .first-service hr {
+    top: 15%;
+    height: 2px;
+  }
+  main .services:nth-of-type(2) .container .first-service > div:first-of-type {
+    margin-top: -10%;
+  }
+  /*SECOND SECTION*/
+  main .services:nth-of-type(3) .container .second-service {
+    height: 70vh;
+  }
+  main .services:nth-of-type(3) .container .second-service > div {
+    width: 32%;
+  }
+  main .services:nth-of-type(3) .container .second-service > div div:first-of-type {
+    height: 59%;
+  }
+  /*THIRD SECTION*/
+  main .services:nth-of-type(4) {
+    height: 78vh;
+  }
+  main .services:nth-of-type(4) .container .third-service > div {
+    height: 77%;
+  }
+  main .services:nth-of-type(4) .container > h2 {
+    top: 3%;
+  }
+  /*FOURTH SECTION*/
+  main .services:nth-of-type(5) .container .fourth-service > div {
+    height: 92%;
+  }
+  /*******************************/
+  /******CONTACT PAGE STYLES******/
+  /*******************************/
+  main .contact .container {
+    width: 90%;
+  }
+  main .contact .main-header nav {
+    width: 35%;
+  }
+  main .contact:nth-of-type(2) {
+    height: 119vh;
   }
 }
 /*# sourceMappingURL=main.css.map */
