@@ -409,3 +409,102 @@
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@include responsive(tablet) {
+
+
+    .home section .main-header nav {
+        display: none;
+    }
+
+    .home section .container {
+        width: 90%;
+    }
+
+    .home section:nth-of-type(2) .container {
+        width: 75%;
+    }
+
+    .home #mobile-menu {
+        display: block;
+        width: 52px;
+        height: 44px;
+        background-color: tan;
+        z-index: 1;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        @include flexColumn();
+        justify-content: center;
+        align-items: center;
+
+        span {
+            height: 2px;
+            width: 50%;
+            background-color: black;
+            display: block;
+
+            &::before {
+                content: "";
+                display: block;
+                width: inherit;
+                height: inherit;
+                background-color: inherit;
+                position: absolute;
+                top: 25%;
+            }
+
+            &::after {
+                content: "";
+                display: block;
+                width: inherit;
+                height: inherit;
+                background-color: inherit;
+                position: absolute;
+                bottom: 25%;
+            }
+        }
+    }
+
+    .home section #image-slider {
+        position: relative;
+    }
+
+    .home section #image-slider .slide-title {
+        position: absolute;
+        height: 100%;
+    }
+
+
+}

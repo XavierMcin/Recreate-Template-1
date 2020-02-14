@@ -23,6 +23,10 @@ body {
   background-color: #fff;
 }
 
+.home #mobile-menu {
+  display: none;
+}
+
 .home .polygon {
   position: absolute;
   top: 0;
@@ -3039,6 +3043,73 @@ main .contact:nth-of-type(2) .container .form-content form div:last-of-type butt
   }
   main .contact:nth-of-type(2) {
     height: 119vh;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 834px) {
+  .home section .main-header nav {
+    display: none;
+  }
+  .home section .container {
+    width: 90%;
+  }
+  .home section:nth-of-type(2) .container {
+    width: 75%;
+  }
+  .home #mobile-menu {
+    display: block;
+    width: 52px;
+    height: 44px;
+    background-color: tan;
+    z-index: 1;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .home #mobile-menu span {
+    height: 2px;
+    width: 50%;
+    background-color: black;
+    display: block;
+  }
+  .home #mobile-menu span::before {
+    content: "";
+    display: block;
+    width: inherit;
+    height: inherit;
+    background-color: inherit;
+    position: absolute;
+    top: 25%;
+  }
+  .home #mobile-menu span::after {
+    content: "";
+    display: block;
+    width: inherit;
+    height: inherit;
+    background-color: inherit;
+    position: absolute;
+    bottom: 25%;
+  }
+  .home section #image-slider {
+    position: relative;
+  }
+  .home section #image-slider .slide-title {
+    position: absolute;
+    height: 100%;
   }
 }
 /*# sourceMappingURL=main.css.map */
