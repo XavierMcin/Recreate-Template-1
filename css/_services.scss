@@ -114,7 +114,7 @@ main .services {
 
             hr {
                 width: 100%;
-                height: 0.130vw;
+                height: 2px;
                 border: none;
                 position: absolute;
                 top: 17%;
@@ -142,7 +142,7 @@ main .services {
                 }
             }
 
-            div:last-of-type {
+            & > div:last-of-type {
                 width: 55.5%;
                 height: 73%;
                 @include flexRow();
@@ -264,11 +264,12 @@ main .services {
                 align-items: center;
 
                 span {
-                    width: 2.083vw;
-                    height: 1.953vw;
+                    width: 32px;
+                    height: 30px;
                     background-color: springgreen;
                     margin-top: 10%;
                     margin-bottom: 10%;
+                    position: absolute;
                 }
 
                 h3 {
@@ -276,6 +277,7 @@ main .services {
                     font-weight: 600;
                     color: #232527;
                     margin: 0;
+                    margin-top: 25%;
                 }
 
                 p {
@@ -334,7 +336,7 @@ main .services {
 
         .third-service > div {
             width: 31%;
-            height: 63%;
+            height: 252px;
             @include flexColumn();
             align-items: center;
             background-color: rgba(41, 161, 156, 0.1);
