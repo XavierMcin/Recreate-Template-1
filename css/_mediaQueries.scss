@@ -8,16 +8,13 @@
     }
 
     @else if $breakpoint == tablet {
-        @media only screen and (min-width: 768px) and (max-width: 834px) { @content };
+        @media only screen and (max-width: 834px) { @content };
     }
 
     @else if $breakpoint == tabletLandscape {
-        @media only screen and (min-width: 1024px) and (max-width: 1112px) { @content };
+        @media only screen and (max-width: 1112px) { @content };
     }
 
-    @else if $breakpoint == desktop {
-        @media only screen and (min-width: 1200px) { @content };
-    }
 }
 
 
@@ -454,9 +451,56 @@
     /******HOME PAGE STYLES******/
     /****************************/
 
+    @keyframes hamburger {
+        0% {
+            opacity: 0;
+            transform: scale(0);
+        }
+        100% {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
 
     .home section .main-header nav {
-        display: none;
+        @include flexRow();
+        justify-content: center;
+        align-items: flex-start;
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.9);
+        z-index: 2;
+        transform: scale(0);
+
+        &.clicked {
+            animation: hamburger;
+            animation-duration: .3s; 
+            animation-fill-mode: forwards;
+        }
+    }
+
+    .home section .main-header nav ul {
+        width: 90%;
+        height: 100%;
+        flex-direction: column;
+        margin: 0;
+        font-size: 3em;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .home section .main-header nav li, .home section .main-header nav li:first-of-type {
+        width: 50%;
+        height: 10%;
+        text-align: center;
+        margin-top: 5%;
+    }
+
+    .home section .main-header nav li:first-of-type {
+        margin-top: 20%;
     }
 
     .home section .container {
@@ -472,28 +516,48 @@
         width: 52px;
         height: 44px;
         background-color: tan;
-        z-index: 1;
+        z-index: 3;
         position: relative;
         top: 50%;
         transform: translateY(-50%);
         @include flexColumn();
         justify-content: center;
         align-items: center;
+        
+        &.clicked {
+            span {
+                background-color: transparent;
+    
+                &::before {
+                    top: 45%;
+                    transform: rotate(45deg);
+                }
+    
+                &::after {
+                    bottom: 50%;
+                    transform: rotate(-45deg);
+                }
+            }
+        }
 
         span {
             height: 2px;
             width: 50%;
             background-color: black;
             display: block;
+            transition: background-color .1s linear .2s;
 
             &::before {
                 content: "";
                 display: block;
                 width: inherit;
                 height: inherit;
-                background-color: inherit;
+                background-color: black;
                 position: absolute;
                 top: 25%;
+                transition: top .3s linear, transform .3s ease-in-out .3s;
+                transform: rotate(0);
+                transform-origin: center;
             }
 
             &::after {
@@ -501,12 +565,16 @@
                 display: block;
                 width: inherit;
                 height: inherit;
-                background-color: inherit;
+                background-color: black;
                 position: absolute;
                 bottom: 25%;
+                transition: bottom .3s linear, transform .3s ease-in-out .3s;
+                transform: rotate(0);
+                transform-origin: center;
             }
         }
     }
+
 
 
     /*FIRST SECTION*/
@@ -748,7 +816,43 @@
     }
 
     main .about .main-header nav {
-        display: none;
+        @include flexRow();
+        justify-content: center;
+        align-items: flex-start;
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.9);
+        z-index: 2;
+        transform: scale(0);
+
+        &.clicked {
+            animation: hamburger;
+            animation-duration: .3s; 
+            animation-fill-mode: forwards;
+        }
+    }
+
+    main .about .main-header nav ul {
+        width: 90%;
+        height: 100%;
+        flex-direction: column;
+        margin: 0;
+        font-size: 3em;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    main .about .main-header nav li, main .about .main-header nav li:first-of-type {
+        width: 50%;
+        height: 10%;
+        text-align: center;
+        margin-top: 5%;
+    }
+
+    main .about .main-header nav li:first-of-type {
+        margin-top: 20%;
     }
 
 
@@ -907,8 +1011,48 @@
         width: 90%;
     }
 
+    main .services:first-of-type .container {
+        position: initial;
+    }
+
     main .services .main-header nav {
-        display: none;
+        @include flexRow();
+        justify-content: center;
+        align-items: flex-start;
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.9);
+        z-index: 2;
+        transform: scale(0);
+
+        &.clicked {
+            animation: hamburger;
+            animation-duration: .3s; 
+            animation-fill-mode: forwards;
+        }
+    }
+
+    main .services .main-header nav ul {
+        width: 90%;
+        height: 100%;
+        flex-direction: column;
+        margin: 0;
+        font-size: 3em;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    main .services .main-header nav li, main .services .main-header nav li:first-of-type {
+        width: 50%;
+        height: 10%;
+        text-align: center;
+        margin-top: 5%;
+    }
+
+    main .services .main-header nav li:first-of-type {
+        margin-top: 20%;
     }
 
 
@@ -1107,7 +1251,43 @@
     }
 
     main .contact .main-header nav {
-        display: none;
+        @include flexRow();
+        justify-content: center;
+        align-items: flex-start;
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.9);
+        z-index: 2;
+        transform: scale(0);
+
+        &.clicked {
+            animation: hamburger;
+            animation-duration: .3s; 
+            animation-fill-mode: forwards;
+        }
+    }
+
+    main .contact .main-header nav ul {
+        width: 90%;
+        height: 100%;
+        flex-direction: column;
+        margin: 0;
+        font-size: 3em;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    main .contact .main-header nav li, main .contact .main-header nav li:first-of-type {
+        width: 50%;
+        height: 10%;
+        text-align: center;
+        margin-top: 5%;
+    }
+
+    main .contact .main-header nav li:first-of-type {
+        margin-top: 20%;
     }
 
     main .contact:nth-of-type(2) {
