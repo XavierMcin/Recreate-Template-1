@@ -31,7 +31,7 @@ body {
   position: absolute;
   top: 0;
   width: 100%;
-  height: 100vh;
+  height: 750px;
   background-color: #222831;
   z-index: 0;
   overflow: hidden;
@@ -89,17 +89,20 @@ body {
 }
 
 .home section .container {
-  width: 75%;
   height: 100%;
+  max-width: 1100px;
+  position: relative;
 }
 
 .home section:first-of-type {
-  height: 14vh;
+  height: 106px;
+  position: absolute;
+  background-color: #222831;
 }
 
 .home section .main-header {
-  width: 100%;
-  height: 14vh;
+  width: 1100px;
+  height: 106px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -114,7 +117,7 @@ body {
 
 .home section .main-header #web-logo {
   height: 100%;
-  width: 25%;
+  width: 300px;
   position: relative;
   background-color: maroon;
 }
@@ -128,7 +131,7 @@ body {
 
 .home section .main-header nav {
   height: 100%;
-  width: 29%;
+  width: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -155,7 +158,7 @@ body {
 }
 
 .home section .main-header nav li {
-  width: 22%;
+  width: auto;
   list-style: none;
   text-align: center;
   font-weight: 700;
@@ -184,7 +187,7 @@ body {
 }
 
 .home section:nth-of-type(2) {
-  height: 86vh;
+  height: 750px;
 }
 
 .home section:nth-of-type(2) .container {
@@ -193,10 +196,14 @@ body {
   display: flex;
 }
 
+.home section:nth-of-type(2) .inner-container {
+  width: 100%;
+}
+
 .home section #image-slider {
   width: 100%;
-  height: 62%;
-  margin: 7% 0 0 11%;
+  height: 402px;
+  margin: 160px 0 0 160px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -326,11 +333,18 @@ body {
   transition: color .1s linear, background-color .1s linear;
   cursor: pointer;
   margin-bottom: 8%;
+  background-color: #1f242c;
+  color: #cccccc;
 }
 
 .home section #image-slider .slide-title div:last-of-type button:hover {
   color: #a3f7bf;
   background-color: #1f242c;
+}
+
+.home section #image-slider .slide-title div:last-of-type button:hover {
+  background-color: #29a19c;
+  color: #fff;
 }
 
 .home section #image-slider .slide-container {
@@ -390,12 +404,11 @@ body {
 }
 
 .home section #nav-dots {
-  width: 10%;
-  height: 5%;
-  background-color: indigo;
+  width: 275px;
+  height: 30px;
   position: absolute;
   left: 50%;
-  top: 90%;
+  bottom: 10%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
@@ -418,9 +431,9 @@ body {
 
 .home section #nav-dots ul li {
   list-style: none;
-  height: 20%;
-  width: 22%;
-  background-color: black;
+  height: 5px;
+  width: 55px;
+  background-color: #393e46;
   margin-right: 2%;
 }
 
@@ -434,17 +447,18 @@ body {
   display: flex;
 }
 
-.home section:nth-of-type(3) .container div:first-of-type {
-  width: 68%;
-  margin: 5% 0 5% 0;
+.home section:nth-of-type(3) .container .inner-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 1100px;
 }
 
-.home section:nth-of-type(3) .container div:last-of-type {
-  width: 45%;
-  margin: 5% 0 5% 0;
-}
-
-.home section:nth-of-type(3) .container .second-content {
+.home section:nth-of-type(3) .container .inner-container .second-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -453,19 +467,29 @@ body {
           align-items: center;
 }
 
-.home section:nth-of-type(3) .container .second-content div {
+.home section:nth-of-type(3) .container .inner-container .second-content:first-of-type {
+  width: 68%;
+  margin: 5% 0 5% 0;
+}
+
+.home section:nth-of-type(3) .container .inner-container .second-content:last-of-type {
+  width: 35%;
+  margin: 5% 0 5% 0;
+}
+
+.home section:nth-of-type(3) .container .inner-container .second-content div {
   width: 100%;
   height: 78%;
 }
 
-.home section:nth-of-type(3) .container .second-content div h2 {
+.home section:nth-of-type(3) .container .inner-container .second-content div h2 {
   font-size: 2.5em;
   line-height: 40px;
   margin-top: 0;
   color: #232527;
 }
 
-.home section:nth-of-type(3) .container .second-content div p {
+.home section:nth-of-type(3) .container .inner-container .second-content div p {
   font-size: 1.05em;
   line-height: 1.60em;
   color: #777777;
@@ -473,7 +497,7 @@ body {
   width: 90%;
 }
 
-.home section:nth-of-type(3) .container .second-content div button {
+.home section:nth-of-type(3) .container .inner-container .second-content div button {
   margin-top: 2%;
   width: 155px;
   height: 49px;
@@ -486,12 +510,12 @@ body {
   cursor: pointer;
 }
 
-.home section:nth-of-type(3) .container .second-content div button:hover {
+.home section:nth-of-type(3) .container .inner-container .second-content div button:hover {
   color: #a3f7bf;
   background-color: #1f242c;
 }
 
-.home section:nth-of-type(3) .container .second-content div img {
+.home section:nth-of-type(3) .container .inner-container .second-content div img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -500,10 +524,10 @@ body {
 }
 
 .home section:nth-of-type(4) {
-  height: 110vh;
+  height: 830px;
 }
 
-.home section:nth-of-type(4) .container {
+.home section:nth-of-type(4) .container .inner-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -514,6 +538,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: 100%;
 }
 
 .home section:nth-of-type(4) .container .third-content img {
@@ -563,7 +588,7 @@ body {
 }
 
 .home section:nth-of-type(5) {
-  height: 93vh;
+  height: 702px;
 }
 
 .home section:nth-of-type(5) .container {
@@ -655,7 +680,7 @@ body {
 }
 
 .home section:nth-of-type(6) {
-  height: 58vh;
+  height: 438px;
   background-image: url(../img/fourth1.jpg);
   background-size: cover;
   background-attachment: fixed;
@@ -664,7 +689,7 @@ body {
 .home section:nth-of-type(6)::before {
   content: "";
   width: 100%;
-  height: 58vh;
+  height: 438px;
   position: absolute;
   background: rgba(0, 0, 0, 0.7);
   z-index: 0;
@@ -735,8 +760,8 @@ body {
 }
 
 .home section:nth-of-type(6) .container .fifth-content:last-of-type div div {
-  width: 7.813vw;
-  height: 7.813vw;
+  width: 120px;
+  height: 120px;
 }
 
 .home section:nth-of-type(6) .container .fifth-content:last-of-type div div img {
@@ -758,7 +783,7 @@ body {
 }
 
 .home section:nth-of-type(7) {
-  height: 101vh;
+  height: 762px;
 }
 
 .home section:nth-of-type(7) .container {
@@ -866,7 +891,7 @@ body {
 }
 
 .home section:last-of-type {
-  height: 41vh;
+  height: 309px;
   background-color: #29a19c;
 }
 
@@ -955,7 +980,7 @@ body {
 
 .home footer {
   width: 100%;
-  height: 11vh;
+  height: 83px;
   background-color: #222831;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1071,13 +1096,17 @@ main .about {
   /****************/
 }
 
+main .about:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
 main .about .container {
-  width: 75%;
-  height: 100%;
+  max-width: 1100px;
+  position: relative;
 }
 
 main .about:first-of-type {
-  height: 14vh;
+  height: 106px;
   background-color: #1f242c;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1092,8 +1121,8 @@ main .about:first-of-type {
 }
 
 main .about .main-header {
-  width: 100%;
-  height: 14vh;
+  width: 1100px;
+  height: 106px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1108,7 +1137,7 @@ main .about .main-header {
 
 main .about .main-header #web-logo {
   height: 100%;
-  width: 25%;
+  width: 300px;
   position: relative;
   background-color: maroon;
 }
@@ -1122,7 +1151,7 @@ main .about .main-header #web-logo img {
 
 main .about .main-header nav {
   height: 100%;
-  width: 29%;
+  width: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1149,7 +1178,7 @@ main .about .main-header nav ul {
 }
 
 main .about .main-header nav li {
-  width: 22%;
+  width: auto;
   list-style: none;
   text-align: center;
   font-weight: 700;
@@ -1178,10 +1207,23 @@ main .about .main-header nav li:first-of-type {
 }
 
 main .about:nth-of-type(2) {
-  height: 77vh;
+  height: 580px;
+  background-color: #fff;
 }
 
 main .about:nth-of-type(2) .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+main .about:nth-of-type(2) .container .inner-container {
+  width: 1100px;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1203,11 +1245,13 @@ main .about:nth-of-type(2) .container .first-about:first-of-type {
 
 main .about:nth-of-type(2) .container .first-about:first-of-type div {
   position: relative;
+  width: 100%;
+  height: 484px;
 }
 
 main .about:nth-of-type(2) .container .first-about:first-of-type div img:first-of-type {
-  width: 90%;
-  height: 90%;
+  width: 95%;
+  height: 85%;
   position: absolute;
   border-radius: 10px;
   z-index: 1;
@@ -1220,7 +1264,7 @@ main .about:nth-of-type(2) .container .first-about:first-of-type div img:last-of
   height: 65%;
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: 40px;
 }
 
 main .about:nth-of-type(2) .container .first-about:last-of-type {
@@ -1239,15 +1283,13 @@ main .about:nth-of-type(2) .container .first-about:last-of-type div {
 
 main .about:nth-of-type(2) .container .first-about:last-of-type div h2 {
   font-size: 1.875em;
-  font-weight: 600;
-  width: 33.008vw;
+  font-weight: 700;
 }
 
 main .about:nth-of-type(2) .container .first-about:last-of-type div p {
   font-size: 1.375em;
   line-height: 30px;
   color: #777777;
-  width: 33.008vw;
 }
 
 main .about:nth-of-type(2) .container .first-about:last-of-type div p:nth-of-type(2) {
@@ -1257,23 +1299,18 @@ main .about:nth-of-type(2) .container .first-about:last-of-type div p:nth-of-typ
 
 main .about:nth-of-type(2) .container .first-about:last-of-type div p:nth-of-type(3) {
   font-size: 1.250em;
-  font-weight: 600;
+  font-weight: 700;
   color: #212529;
   margin-top: 5px;
 }
 
 main .about:nth-of-type(2) .container .first-about:last-of-type div img {
-  width: 19.531vw;
-  height: 7.487vw;
-}
-
-main .about:nth-of-type(2) .container .first-about div {
-  width: 100%;
-  height: 64vh;
+  width: 300px;
+  height: 115px;
 }
 
 main .about:nth-of-type(3) {
-  height: 47vh;
+  height: 355px;
   background-image: url(../img/about-second1.jpg);
   background-size: cover;
 }
@@ -1281,7 +1318,7 @@ main .about:nth-of-type(3) {
 main .about:nth-of-type(3)::before {
   content: "";
   width: 100%;
-  height: 47vh;
+  height: 355px;
   position: absolute;
   background: rgba(0, 0, 0, 0.7);
   z-index: 0;
@@ -1299,6 +1336,21 @@ main .about:nth-of-type(3) .container {
       -ms-flex-align: center;
           align-items: center;
   z-index: 1;
+}
+
+main .about:nth-of-type(3) .container .inner-container {
+  width: 1100px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 main .about:nth-of-type(3) .container .second-about {
@@ -1360,7 +1412,7 @@ main .about:nth-of-type(3) .container .second-about div p {
 }
 
 main .about:nth-of-type(4) {
-  height: 80vh;
+  height: 604px;
 }
 
 main .about:nth-of-type(4) .container {
@@ -1456,6 +1508,7 @@ main .about:nth-of-type(4) .container .third-about:first-of-type div button:hove
 main .about:nth-of-type(4) .container .third-about:last-of-type {
   width: 40%;
   height: 68%;
+  margin-left: 25px;
 }
 
 main .about:nth-of-type(4) .container .third-about:last-of-type img {
@@ -1467,7 +1520,7 @@ main .about:nth-of-type(4) .container .third-about:last-of-type img {
 }
 
 main .about:nth-of-type(5) {
-  height: 70vh;
+  height: 528px;
 }
 
 main .about:nth-of-type(5) .container {
@@ -1485,7 +1538,6 @@ main .about:nth-of-type(5) .container {
 
 main .about:nth-of-type(5) .container .fourth-about:first-of-type {
   width: 50%;
-  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1590,7 +1642,6 @@ main .about:nth-of-type(5) .container .fourth-about:first-of-type #skills-chart 
 
 main .about:nth-of-type(5) .container .fourth-about:last-of-type {
   width: 50%;
-  height: 68%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1623,9 +1674,10 @@ main .about:nth-of-type(5) .container .fourth-about:last-of-type #hobbies-wrappe
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin: 0 0 0 25px;
 }
 
-main .about:nth-of-type(5) .container .fourth-about:last-of-type #hobbies-wrapper div {
+main .about:nth-of-type(5) .container .fourth-about:last-of-type #hobbies-wrapper > div {
   width: 33.33%;
   height: 50%;
   display: -webkit-box;
@@ -1641,9 +1693,10 @@ main .about:nth-of-type(5) .container .fourth-about:last-of-type #hobbies-wrappe
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 25px;
 }
 
-main .about:nth-of-type(5) .container .fourth-about:last-of-type #hobbies-wrapper div div {
+main .about:nth-of-type(5) .container .fourth-about:last-of-type #hobbies-wrapper > div div {
   width: 65px;
   height: 65px;
   background-color: silver;
@@ -1659,22 +1712,23 @@ main .about:nth-of-type(5) .container .fourth-about:last-of-type #hobbies-wrappe
           align-items: center;
 }
 
-main .about:nth-of-type(5) .container .fourth-about:last-of-type #hobbies-wrapper div div span {
+main .about:nth-of-type(5) .container .fourth-about:last-of-type #hobbies-wrapper > div div span {
   display: block;
   width: 20px;
   height: 20px;
   background-color: goldenrod;
 }
 
-main .about:nth-of-type(5) .container .fourth-about:last-of-type #hobbies-wrapper div h3 {
+main .about:nth-of-type(5) .container .fourth-about:last-of-type #hobbies-wrapper > div h3 {
   font-size: 1.250em;
   color: #232527;
   margin: 10px 0 10px 0;
 }
 
 main .about:nth-of-type(6) {
-  height: 77vh;
+  height: 580px;
   position: relative;
+  background-color: #fff;
 }
 
 main .about:nth-of-type(6) button {
@@ -1743,6 +1797,10 @@ main .about:nth-of-type(6) .container .fifth-about > div {
   border-radius: 10px;
   overflow: hidden;
   cursor: pointer;
+}
+
+main .about:nth-of-type(6) .container .fifth-about > div:nth-of-type(2) {
+  margin: 0 25px 25px 25px;
 }
 
 main .about:nth-of-type(6) .container .fifth-about > div::before {
@@ -1921,14 +1979,18 @@ main .services {
   /****************/
 }
 
+main .services:nth-child(odd) {
+  background-color: #f8f9fa;
+}
+
 main .services .container {
-  width: 75%;
+  max-width: 1100px;
   height: 100%;
   position: relative;
 }
 
 main .services:first-of-type {
-  height: 14vh;
+  height: 106px;
   background-color: #1f242c;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1943,8 +2005,8 @@ main .services:first-of-type {
 }
 
 main .services .main-header {
-  width: 100%;
-  height: 14vh;
+  width: 1100px;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1959,7 +2021,7 @@ main .services .main-header {
 
 main .services .main-header #web-logo {
   height: 100%;
-  width: 25%;
+  width: 300px;
   position: relative;
   background-color: maroon;
 }
@@ -1973,7 +2035,7 @@ main .services .main-header #web-logo img {
 
 main .services .main-header nav {
   height: 100%;
-  width: 29%;
+  width: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2000,7 +2062,7 @@ main .services .main-header nav ul {
 }
 
 main .services .main-header nav li {
-  width: 22%;
+  width: auto;
   list-style: none;
   text-align: center;
   font-weight: 700;
@@ -2029,21 +2091,18 @@ main .services .main-header nav li:first-of-type {
 }
 
 main .services:nth-of-type(2) {
-  height: 81vh;
+  height: 572px;
 }
 
 main .services:nth-of-type(2) .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 main .services:nth-of-type(2) .container .first-service {
   width: 100%;
-  height: 69vh;
+  height: 520px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2078,26 +2137,26 @@ main .services:nth-of-type(2) .container .first-service hr {
   background-color: #eeeeee;
 }
 
-main .services:nth-of-type(2) .container .first-service div:first-of-type {
+main .services:nth-of-type(2) .container .first-service > div:first-of-type {
   width: 42%;
-  height: 73%;
+  height: 380px;
 }
 
-main .services:nth-of-type(2) .container .first-service div:first-of-type h3 {
+main .services:nth-of-type(2) .container .first-service > div:first-of-type h3 {
   font-size: 2.188em;
   font-weight: 700;
   color: #232527;
   margin: 0;
 }
 
-main .services:nth-of-type(2) .container .first-service div:first-of-type p {
+main .services:nth-of-type(2) .container .first-service > div:first-of-type p {
   font-size: 1.05em;
   line-height: 1.60em;
   color: #777777;
   margin: 10px 0 45px 0;
 }
 
-main .services:nth-of-type(2) .container .first-service div:first-of-type button {
+main .services:nth-of-type(2) .container .first-service > div:first-of-type button {
   width: 147px;
   height: 49px;
   background-color: #29a19c;
@@ -2109,14 +2168,14 @@ main .services:nth-of-type(2) .container .first-service div:first-of-type button
   cursor: pointer;
 }
 
-main .services:nth-of-type(2) .container .first-service div:first-of-type button:hover {
+main .services:nth-of-type(2) .container .first-service > div:first-of-type button:hover {
   color: #a3f7bf;
   background-color: #1f242c;
 }
 
 main .services:nth-of-type(2) .container .first-service > div:last-of-type {
   width: 55.5%;
-  height: 73%;
+  height: 380px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2144,7 +2203,7 @@ main .services:nth-of-type(2) .container .first-service > div:last-of-type .serv
 
 main .services:nth-of-type(2) .container .first-service > div:last-of-type .service-wrapper div {
   width: 100%;
-  height: 1.628vw;
+  height: 25px;
   margin-left: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2183,7 +2242,7 @@ main .services:nth-of-type(2) .container .first-service > div:last-of-type .serv
 }
 
 main .services:nth-of-type(3) {
-  height: 90vh;
+  height: 635px;
 }
 
 main .services:nth-of-type(3) .container {
@@ -2197,7 +2256,7 @@ main .services:nth-of-type(3) .container {
 
 main .services:nth-of-type(3) .container .second-service {
   width: 100%;
-  height: 65vh;
+  height: 490px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2316,7 +2375,7 @@ main .services:nth-of-type(3) .container .second-service > div div:last-of-type 
 }
 
 main .services:nth-of-type(4) {
-  height: 65vh;
+  height: 492px;
 }
 
 main .services:nth-of-type(4) .container > h2 {
@@ -2340,7 +2399,7 @@ main .services:nth-of-type(4) .container {
 
 main .services:nth-of-type(4) .container .third-service {
   width: 100%;
-  height: 53vh;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2355,6 +2414,7 @@ main .services:nth-of-type(4) .container .third-service {
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: relative;
+  top: 10%;
 }
 
 main .services:nth-of-type(4) .container .third-service > div {
@@ -2439,7 +2499,7 @@ main .services:nth-of-type(4) .container .third-service > div h3 {
 }
 
 main .services:nth-of-type(5) {
-  height: 53vh;
+  height: 374px;
 }
 
 main .services:nth-of-type(5) .container {
@@ -2453,7 +2513,7 @@ main .services:nth-of-type(5) .container {
 
 main .services:nth-of-type(5) .container .fourth-service {
   width: 100%;
-  height: 41vh;
+  height: 310px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2461,9 +2521,9 @@ main .services:nth-of-type(5) .container .fourth-service {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
@@ -2590,12 +2650,12 @@ main .contact {
 }
 
 main .contact .container {
-  width: 75%;
+  max-width: 1100px;
   height: 100%;
 }
 
 main .contact:first-of-type {
-  height: 14vh;
+  height: 106px;
   background-color: #1f242c;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2610,8 +2670,8 @@ main .contact:first-of-type {
 }
 
 main .contact .main-header {
-  width: 100%;
-  height: 14vh;
+  width: 1100px;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2626,7 +2686,7 @@ main .contact .main-header {
 
 main .contact .main-header #web-logo {
   height: 100%;
-  width: 25%;
+  width: 300px;
   position: relative;
   background-color: maroon;
 }
@@ -2640,7 +2700,7 @@ main .contact .main-header #web-logo img {
 
 main .contact .main-header nav {
   height: 100%;
-  width: 29%;
+  width: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2667,7 +2727,7 @@ main .contact .main-header nav ul {
 }
 
 main .contact .main-header nav li {
-  width: 22%;
+  width: auto;
   list-style: none;
   text-align: center;
   font-weight: 700;
@@ -2696,7 +2756,7 @@ main .contact .main-header nav li:first-of-type {
 }
 
 main .contact:nth-of-type(2) {
-  height: 105vh;
+  height: 792px;
 }
 
 main .contact:nth-of-type(2) .container {
@@ -2822,21 +2882,15 @@ main .contact:nth-of-type(2) .container .form-content form div:last-of-type butt
   background-color: #1f242c;
 }
 
-@media only screen and (max-width: 1112px) {
+@media only screen and (max-width: 1250px) {
   /****************************/
   /******HOME PAGE STYLES******/
   /****************************/
-  .home section .main-header nav {
-    width: 35%;
-  }
   .home section .container {
-    width: 90%;
+    max-width: 1000px;
   }
-  .home section:nth-of-type(2) .container {
-    width: 75%;
-  }
-  .home section #image-slider {
-    margin: 7% 0 0 0;
+  .home section .main-header {
+    width: 1000px;
   }
   /*SECOND SECTION*/
   .home section:nth-of-type(3) {
@@ -3052,7 +3106,7 @@ main .contact:nth-of-type(2) .container .form-content form div:last-of-type butt
   }
 }
 
-@media only screen and (max-width: 834px) {
+@media only screen and (max-width: 950px) {
   /****************************/
   /******HOME PAGE STYLES******/
   /****************************/

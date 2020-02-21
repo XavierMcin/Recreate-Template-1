@@ -8,11 +8,11 @@
     }
 
     @else if $breakpoint == tablet {
-        @media only screen and (max-width: 834px) { @content };
+        @media only screen and (max-width: 950px) { @content };
     }
 
     @else if $breakpoint == tabletLandscape {
-        @media only screen and (max-width: 1112px) { @content };
+        @media only screen and (max-width: 1250px) { @content };
     }
 
 }
@@ -45,21 +45,15 @@
     /******HOME PAGE STYLES******/
     /****************************/
 
-    .home section .main-header nav {
-        width: 35%;
-    }
 
     .home section .container {
-        width: 90%;
+        max-width: 1000px;
     }
 
-    .home section:nth-of-type(2) .container {
-        width: 75%;
+    .home section .main-header {
+        width: 1000px;
     }
-    
-    .home section #image-slider {
-        margin: 7% 0 0 0;
-    }
+
 
     /*SECOND SECTION*/
 

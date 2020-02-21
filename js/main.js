@@ -33,8 +33,6 @@
 
 let webPage = document.querySelector('main');
 
-console.log(webPage.classList);
-
 if (webPage.classList == "home") {
 
 
@@ -181,113 +179,7 @@ if (webPage.classList == "home") {
     }
 }
 
-// dot1.onclick = function() {
-//     let Hcurr = parseInt(Hstyle.top);
-//     let Ncurr = parseInt(Nstyle.left);
-//     let Vcurr = parseInt(Vstyle.top);
-//     let Pcurr = parseInt(Pstyle.left);
-    
-//     if (Hcurr == -510) {
-//         console.log('nothing');
-//     } else if (Hcurr == -340) {
-//         headerDiv.style.top = (Hcurr - headerHeight) + "px";
-//         numbersDiv.style.left = (Ncurr + numberWidth) + "px";
-//         viewDiv.style.top = (Vcurr + buttonHeight) + "px";
-//         photosDiv.style.left = (Pcurr + photoWidth) + "px";
-//     } else if (Hcurr == -170) {
-//         headerDiv.style.top = (Hcurr - (headerHeight * 2)) + "px";
-//         numbersDiv.style.left = (Ncurr + (numberWidth * 2)) + "px";
-//         viewDiv.style.top = (Vcurr + (buttonHeight * 2)) + "px";
-//         photosDiv.style.left = (Pcurr + (photoWidth * 2)) + "px";
-//     } else if (Hcurr == 0) {
-//         headerDiv.style.top = (Hcurr - (headerHeight * 3)) + "px";
-//         numbersDiv.style.left = (Ncurr + (numberWidth * 3)) + "px";
-//         viewDiv.style.top = (Vcurr + (buttonHeight * 3)) + "px";
-//         photosDiv.style.left = (Pcurr + (photoWidth * 3)) + "px";
-//     }
 
-// }
-
-// dot2.onclick = function() {
-//     let Hcurr = parseInt(Hstyle.top);
-//     let Ncurr = parseInt(Nstyle.left);
-//     let Vcurr = parseInt(Vstyle.top);
-//     let Pcurr = parseInt(Pstyle.left);
-    
-//     if (Hcurr == -510) {
-//         headerDiv.style.top = (Hcurr + headerHeight) + "px";
-//         numbersDiv.style.left = (Ncurr - numberWidth) + "px";
-//         viewDiv.style.top = (Vcurr - buttonHeight) + "px";
-//         photosDiv.style.left = (Pcurr - photoWidth) + "px";
-//     } else if (Hcurr == -340) {
-//         console.log('nothing');
-//     } else if (Hcurr == -170) {
-//         headerDiv.style.top = (Hcurr - headerHeight) + "px";
-//         numbersDiv.style.left = (Ncurr + numberWidth) + "px";
-//         viewDiv.style.top = (Vcurr + buttonHeight) + "px";
-//         photosDiv.style.left = (Pcurr + photoWidth) + "px";
-//     } else if (Hcurr == 0) {
-//         headerDiv.style.top = (Hcurr - (headerHeight * 2)) + "px";
-//         numbersDiv.style.left = (Ncurr + (numberWidth * 2)) + "px";
-//         viewDiv.style.top = (Vcurr + (buttonHeight * 2)) + "px";
-//         photosDiv.style.left = (Pcurr + (photoWidth * 2)) + "px";
-//     }
-
-// }
-
-// dot3.onclick = function() {
-//     let Hcurr = parseInt(Hstyle.top);
-//     let Ncurr = parseInt(Nstyle.left);
-//     let Vcurr = parseInt(Vstyle.top);
-//     let Pcurr = parseInt(Pstyle.left);
-    
-//     if (Hcurr == -510) {
-//         headerDiv.style.top = (Hcurr + (headerHeight * 2)) + "px";
-//         numbersDiv.style.left = (Ncurr - (numberWidth * 2)) + "px";
-//         viewDiv.style.top = (Vcurr - (buttonHeight * 2)) + "px";
-//         photosDiv.style.left = (Pcurr - (photoWidth * 2)) + "px";
-//     } else if (Hcurr == -340) {
-//         headerDiv.style.top = (Hcurr + headerHeight) + "px";
-//         numbersDiv.style.left = (Ncurr - numberWidth) + "px";
-//         viewDiv.style.top = (Vcurr - buttonHeight) + "px";
-//         photosDiv.style.left = (Pcurr - photoWidth) + "px";
-//     } else if (Hcurr == -170) {
-//         console.log('nothing');
-//     } else if (Hcurr == 0) {
-//         headerDiv.style.top = (Hcurr - headerHeight) + "px";
-//         numbersDiv.style.left = (Ncurr + numberWidth) + "px";
-//         viewDiv.style.top = (Vcurr + buttonHeight) + "px";
-//         photosDiv.style.left = (Pcurr + photoWidth) + "px";
-//     }
-
-// }
-
-// dot4.onclick = function() {
-//     let Hcurr = parseInt(Hstyle.top);
-//     let Ncurr = parseInt(Nstyle.left);
-//     let Vcurr = parseInt(Vstyle.top);
-//     let Pcurr = parseInt(Pstyle.left);
-    
-//     if (Hcurr == -510) {
-//         headerDiv.style.top = (Hcurr + (headerHeight * 3)) + "px";
-//         numbersDiv.style.left = (Ncurr - (numberWidth * 3)) + "px";
-//         viewDiv.style.top = (Vcurr - (buttonHeight * 3)) + "px";
-//         photosDiv.style.left = (Pcurr - (photoWidth * 3)) + "px";
-//     } else if (Hcurr == -340) {
-//         headerDiv.style.top = (Hcurr + (headerHeight * 2)) + "px";
-//         numbersDiv.style.left = (Ncurr - (numberWidth * 2)) + "px";
-//         viewDiv.style.top = (Vcurr - (buttonHeight * 2)) + "px";
-//         photosDiv.style.left = (Pcurr - (photoWidth * 2)) + "px";
-//     } else if (Hcurr == -170) {
-//         headerDiv.style.top = (Hcurr + headerHeight) + "px";
-//         numbersDiv.style.left = (Ncurr - numberWidth) + "px";
-//         viewDiv.style.top = (Vcurr - buttonHeight) + "px";
-//         photosDiv.style.left = (Pcurr - photoWidth) + "px";
-//     } else if (Hcurr == 0) {
-//         console.log('nothing');
-//     }
-
-// }
 
 
 

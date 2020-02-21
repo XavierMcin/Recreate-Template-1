@@ -2,27 +2,31 @@ main .about {
     @include flexRow();
     justify-content: center;
 
+    &:nth-child(even) {
+        background-color: #f8f9fa;
+    }
+
     .container {
-        width: 75%;
-        height: 100%; 
+        max-width: 1100px;
+        position: relative;
     }
 
     &:first-of-type {
-        height: 14vh;
+        height: 106px;
         background-color: #1f242c;
         @include flexRow();
         justify-content: center;
     }
 
     .main-header {
-        width: 100%;
-        height: 14vh;
+        width: 1100px;
+        height: 106px;
         @include flexRow();
         justify-content: space-between;
 
         #web-logo {
             height: 100%;
-            width: 25%;
+            width: 300px;
             position: relative;
             background-color: maroon;
             
@@ -36,7 +40,7 @@ main .about {
 
         nav {
             height: 100%;
-            width: 29%;
+            width: 300px;
             display: flex;
             align-items: center;
             justify-content: space-around;
@@ -50,7 +54,7 @@ main .about {
             }
 
             li {
-                width: 22%;
+                width: auto;
                 list-style: none;
                 text-align: center;
                 font-weight: 700;
@@ -87,11 +91,18 @@ main .about {
     /****************/
 
     &:nth-of-type(2) {
-        height: 77vh;
+        height: 580px;
+        background-color: #fff;
     }
 
     &:nth-of-type(2) .container {
         @include flexRow();
+
+        .inner-container {
+            width: 1100px;
+            height: 100%;
+            @include flexRow();
+        }
 
         .first-about:first-of-type {
             width: 50%;
@@ -100,11 +111,13 @@ main .about {
 
             div {
                 position: relative;
+                width: 100%;
+                height: 484px;
 
                 img {
                     &:first-of-type {
-                        width: 90%;
-                        height: 90%;
+                        width: 95%;
+                        height: 85%;
                         position: absolute;
                         border-radius: 10px;
                         z-index: 1;
@@ -116,7 +129,7 @@ main .about {
                         height: 65%;
                         position: absolute;
                         right: 0;
-                        bottom: 0;
+                        bottom: 40px;
                     }
                 }
             }
@@ -132,15 +145,13 @@ main .about {
 
                 h2 {
                     font-size: 1.875em;
-                    font-weight: 600;
-                    width: 33.008vw;
+                    font-weight: 700;
                 }
 
                 p {
                     font-size: 1.375em;
                     line-height: 30px;
                     color: #777777;
-                    width: 33.008vw;
 
                     &:nth-of-type(2) {
                         margin-top: 10px;
@@ -149,23 +160,20 @@ main .about {
 
                     &:nth-of-type(3) {
                         font-size: 1.250em;
-                        font-weight: 600;
+                        font-weight: 700;
                         color: #212529;
                         margin-top: 5px;
                     }
                 }
 
                 img {
-                    width: 19.531vw;
-                    height: 7.487vw;
+                    width: 300px;
+                    height: 115px;
                 }
             }
         }
 
-        .first-about div {
-            width: 100%;
-            height: 64vh;
-        }
+        
     }
 
 
@@ -174,14 +182,14 @@ main .about {
     /****************/
 
     &:nth-of-type(3) {
-        height: 47vh;
+        height: 355px;
         background-image: url(../img/about-second1.jpg);
         background-size: cover;
 
         &::before {
             content: "";
             width: 100%;
-            height: 47vh;
+            height: 355px;
             position: absolute;
             background: rgba(0, 0, 0, 0.7);
             z-index: 0;
@@ -192,6 +200,13 @@ main .about {
         @include flexRow();
         align-items: center;
         z-index: 1;
+
+        .inner-container {
+            width: 1100px;
+            height: 100%;
+            @include flexRow();
+            align-items: center;
+        }
 
         .second-about {
             width: 100%;
@@ -240,7 +255,7 @@ main .about {
     /****************/
 
     &:nth-of-type(4) {
-        height: 80vh;
+        height: 604px;
     }
 
     &:nth-of-type(4) .container {
@@ -298,6 +313,7 @@ main .about {
         .third-about:last-of-type {
             width: 40%;
             height: 68%;
+            margin-left: 25px;
 
             img {
                 width: 100%;
@@ -315,7 +331,7 @@ main .about {
     /****************/
 
     &:nth-of-type(5) {
-        height: 70vh;
+        height: 528px;
     }
 
     &:nth-of-type(5) .container {
@@ -324,7 +340,6 @@ main .about {
 
         .fourth-about:first-of-type {
             width: 50%;
-            height: auto;
             @include flexColumn();
             align-items: center;
 
@@ -418,7 +433,6 @@ main .about {
 
         .fourth-about:last-of-type {
             width: 50%;
-            height: 68%;
             @include flexColumn();
             justify-content: center;
             align-items: center;
@@ -433,14 +447,16 @@ main .about {
                 height: 265px;
                 @include flexRow();
                 flex-wrap: wrap;
+                margin: 0 0 0 25px;
 
 
-                div {
+                & > div {
                     width: 33.33%;
                     height: 50%;
                     @include flexColumn();
                     align-items: center;
                     justify-content: center;
+                    margin-bottom: 25px;
 
                     div {
                         width: 65px;
@@ -475,8 +491,9 @@ main .about {
     /****************/
 
     &:nth-of-type(6) {
-        height: 77vh;
+        height: 580px;
         position: relative;
+        background-color: #fff;
 
         button {
             position: absolute;
@@ -517,6 +534,10 @@ main .about {
             border-radius: 10px;
             overflow: hidden;
             cursor: pointer;
+
+            &:nth-of-type(2) {
+                margin: 0 25px 25px 25px;
+            }
             
 
             &::before {

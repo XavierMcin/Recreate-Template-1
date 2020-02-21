@@ -2,28 +2,32 @@ main .services {
     @include flexRow();
     justify-content: center;
 
+    &:nth-child(odd) {
+        background-color: #f8f9fa;
+    }
+
     .container {
-        width: 75%;
+        max-width: 1100px;
         height: 100%; 
         position: relative;
     }
 
     &:first-of-type {
-        height: 14vh;
+        height: 106px;
         background-color: #1f242c;
         @include flexRow();
         justify-content: center;
     }
 
     .main-header {
-        width: 100%;
-        height: 14vh;
+        width: 1100px;
+        height: 100%;
         @include flexRow();
         justify-content: space-between;
 
         #web-logo {
             height: 100%;
-            width: 25%;
+            width: 300px;
             position: relative;
             background-color: maroon;
             
@@ -37,7 +41,7 @@ main .services {
 
         nav {
             height: 100%;
-            width: 29%;
+            width: 300px;
             display: flex;
             align-items: center;
             justify-content: space-around;
@@ -51,7 +55,7 @@ main .services {
             }
 
             li {
-                width: 22%;
+                width: auto;
                 list-style: none;
                 text-align: center;
                 font-weight: 700;
@@ -88,16 +92,15 @@ main .services {
     /****************/
 
     &:nth-of-type(2) {
-        height: 81vh;
+        height: 572px;
     }
 
     &:nth-of-type(2) .container {
         display: flex;
-        align-items: center;
 
         .first-service {
             width: 100%;
-            height: 69vh;
+            height: 520px;
             @include flexRow();
             align-items: flex-end;
             justify-content: space-between;
@@ -121,9 +124,9 @@ main .services {
                 background-color: #eeeeee;
             }
 
-            div:first-of-type {
+            & > div:first-of-type {
                 width: 42%;
-                height: 73%;
+                height: 380px;
 
                 h3 {
                     font-size: 2.188em;
@@ -144,7 +147,7 @@ main .services {
 
             & > div:last-of-type {
                 width: 55.5%;
-                height: 73%;
+                height: 380px;
                 @include flexRow();
                 flex-wrap: wrap;
 
@@ -157,7 +160,7 @@ main .services {
 
                     div {
                         width: 100%;
-                        height: 1.628vw;
+                        height: 25px;
                         margin-left: 20px;
                         @include flexRow();
 
@@ -198,7 +201,7 @@ main .services {
     /****************/
 
     &:nth-of-type(3) {
-        height: 90vh;
+        height: 635px;
     }
 
     &:nth-of-type(3) .container {
@@ -207,7 +210,7 @@ main .services {
 
         .second-service {
             width: 100%;
-            height: 65vh;
+            height: 490px;
             @include flexRow();
             justify-content: space-between;
 
@@ -306,7 +309,7 @@ main .services {
     /****************/
 
     &:nth-of-type(4) {
-        height: 65vh;
+        height: 492px;
     }
 
     &:nth-of-type(4) .container > h2 {
@@ -325,11 +328,12 @@ main .services {
 
         .third-service {
             width: 100%;
-            height: 53vh;
+            height: auto;
             @include flexRow();
             align-items: flex-end;
             justify-content: space-between;
             position: relative;
+            top: 10%;
         }
 
         
@@ -402,7 +406,7 @@ main .services {
     /****************/
 
     &:nth-of-type(5) {
-        height: 53vh;
+        height: 374px;
     }
 
     &:nth-of-type(5) .container {
@@ -411,9 +415,9 @@ main .services {
 
         .fourth-service {
             width: 100%;
-            height: 41vh;
+            height: 310px;
             @include flexRow();
-            align-items: flex-end;
+            align-items: center;
             justify-content: space-around;
 
             div div {
