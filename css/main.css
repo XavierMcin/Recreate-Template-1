@@ -14,6 +14,92 @@ body {
   display: none;
 }
 
+.main-header {
+  width: 1100px;
+  height: 106px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-header #web-logo {
+  height: 100%;
+  width: 300px;
+  position: relative;
+  background-color: maroon;
+}
+
+.main-header #web-logo img {
+  height: 100%;
+  width: 80%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main-header nav {
+  height: 100%;
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  z-index: 1;
+}
+
+.main-header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  padding: 0;
+}
+
+.main-header nav li {
+  width: auto;
+  list-style: none;
+  text-align: center;
+  font-weight: 700;
+}
+
+.main-header nav li:first-of-type a {
+  color: #fff;
+}
+
+.main-header nav li:first-of-type a:hover {
+  color: #fff;
+}
+
+.main-header nav li a {
+  cursor: pointer;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.main-header nav li a:hover {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.main-header nav li:first-of-type {
+  text-align: right;
+}
+
 .home {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -98,92 +184,6 @@ body {
   height: 106px;
   position: absolute;
   background-color: #222831;
-}
-
-.home section .main-header {
-  width: 1100px;
-  height: 106px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.home section .main-header #web-logo {
-  height: 100%;
-  width: 300px;
-  position: relative;
-  background-color: maroon;
-}
-
-.home section .main-header #web-logo img {
-  height: 100%;
-  width: 80%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.home section .main-header nav {
-  height: 100%;
-  width: 300px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  z-index: 1;
-}
-
-.home section .main-header nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  width: 100%;
-  padding: 0;
-}
-
-.home section .main-header nav li {
-  width: auto;
-  list-style: none;
-  text-align: center;
-  font-weight: 700;
-}
-
-.home section .main-header nav li:first-of-type a {
-  color: #fff;
-}
-
-.home section .main-header nav li:first-of-type a:hover {
-  color: #fff;
-}
-
-.home section .main-header nav li a {
-  cursor: pointer;
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.5);
-}
-
-.home section .main-header nav li a:hover {
-  color: rgba(255, 255, 255, 0.75);
-}
-
-.home section .main-header nav li:first-of-type {
-  text-align: right;
 }
 
 .home section:nth-of-type(2) {
@@ -438,7 +438,7 @@ body {
 }
 
 .home section:nth-of-type(3) {
-  height: auto;
+  height: 675px;
 }
 
 .home section:nth-of-type(3) .container {
@@ -978,9 +978,9 @@ body {
   background-color: #1f242c;
 }
 
-.home footer {
+main footer {
   width: 100%;
-  height: 83px;
+  height: 11vh;
   background-color: #222831;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -994,8 +994,22 @@ body {
           justify-content: center;
 }
 
-.home footer .container {
-  width: 75%;
+main footer .inner-container {
+  width: 1100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main footer .container {
+  max-width: 1200px;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1009,7 +1023,7 @@ body {
           justify-content: space-between;
 }
 
-.home footer .container .footer-content:first-of-type {
+main footer .container .footer-content:first-of-type {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1022,13 +1036,13 @@ body {
           justify-content: center;
 }
 
-.home footer .container .footer-content:first-of-type h3 {
+main footer .container .footer-content:first-of-type h3 {
   font-size: 1.063em;
   font-weight: 400;
   color: #aaaaaa;
 }
 
-.home footer .container .footer-content:last-of-type {
+main footer .container .footer-content:last-of-type {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1041,7 +1055,7 @@ body {
           justify-content: center;
 }
 
-.home footer .container .footer-content:last-of-type ul {
+main footer .container .footer-content:last-of-type ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1053,7 +1067,7 @@ body {
   padding: 0;
 }
 
-.home footer .container .footer-content:last-of-type ul li {
+main footer .container .footer-content:last-of-type ul li {
   list-style: none;
   width: 16px;
   height: 16px;
@@ -1062,7 +1076,7 @@ body {
   margin-left: 25px;
 }
 
-.home footer .container .footer-content:last-of-type ul li img {
+main footer .container .footer-content:last-of-type ul li img {
   width: 100%;
   height: 100%;
   fill: darkviolet;
@@ -1120,68 +1134,12 @@ main .about:first-of-type {
           justify-content: center;
 }
 
-main .about .main-header {
-  width: 1100px;
-  height: 106px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+main .about .main-header nav li:first-of-type a {
+  color: rgba(255, 255, 255, 0.5);
 }
 
-main .about .main-header #web-logo {
-  height: 100%;
-  width: 300px;
-  position: relative;
-  background-color: maroon;
-}
-
-main .about .main-header #web-logo img {
-  height: 100%;
-  width: 80%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-main .about .main-header nav {
-  height: 100%;
-  width: 300px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  z-index: 1;
-}
-
-main .about .main-header nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  width: 100%;
-  padding: 0;
-}
-
-main .about .main-header nav li {
-  width: auto;
-  list-style: none;
-  text-align: center;
-  font-weight: 700;
+main .about .main-header nav li:first-of-type a:hover {
+  color: rgba(255, 255, 255, 0.75);
 }
 
 main .about .main-header nav li:nth-of-type(2) a {
@@ -1190,20 +1148,6 @@ main .about .main-header nav li:nth-of-type(2) a {
 
 main .about .main-header nav li:nth-of-type(2) a:hover {
   color: #fff;
-}
-
-main .about .main-header nav li a {
-  cursor: pointer;
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.5);
-}
-
-main .about .main-header nav li a:hover {
-  color: rgba(255, 255, 255, 0.75);
-}
-
-main .about .main-header nav li:first-of-type {
-  text-align: right;
 }
 
 main .about:nth-of-type(2) {
@@ -1864,96 +1808,6 @@ main .about:nth-of-type(6) .container .fifth-about > div:hover div {
   opacity: 1;
 }
 
-main footer {
-  width: 100%;
-  height: 11vh;
-  background-color: #222831;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-main footer .container {
-  width: 75%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-main footer .container .footer-content:first-of-type {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-main footer .container .footer-content:first-of-type h3 {
-  font-size: 1.063em;
-  font-weight: 400;
-  color: #aaaaaa;
-}
-
-main footer .container .footer-content:last-of-type {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-main footer .container .footer-content:last-of-type ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  margin: 0;
-  padding: 0;
-}
-
-main footer .container .footer-content:last-of-type ul li {
-  list-style: none;
-  width: 16px;
-  height: 16px;
-  background-color: darkolivegreen;
-  position: relative;
-  margin-left: 25px;
-}
-
-main footer .container .footer-content:last-of-type ul li img {
-  width: 100%;
-  height: 100%;
-  fill: darkviolet;
-}
-
 main .services {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2004,68 +1858,12 @@ main .services:first-of-type {
           justify-content: center;
 }
 
-main .services .main-header {
-  width: 1100px;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+main .services .main-header nav li:first-of-type a {
+  color: rgba(255, 255, 255, 0.5);
 }
 
-main .services .main-header #web-logo {
-  height: 100%;
-  width: 300px;
-  position: relative;
-  background-color: maroon;
-}
-
-main .services .main-header #web-logo img {
-  height: 100%;
-  width: 80%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-main .services .main-header nav {
-  height: 100%;
-  width: 300px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  z-index: 1;
-}
-
-main .services .main-header nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  width: 100%;
-  padding: 0;
-}
-
-main .services .main-header nav li {
-  width: auto;
-  list-style: none;
-  text-align: center;
-  font-weight: 700;
+main .services .main-header nav li:first-of-type a:hover {
+  color: rgba(255, 255, 255, 0.75);
 }
 
 main .services .main-header nav li:nth-of-type(3) a {
@@ -2074,20 +1872,6 @@ main .services .main-header nav li:nth-of-type(3) a {
 
 main .services .main-header nav li:nth-of-type(3) a:hover {
   color: #fff;
-}
-
-main .services .main-header nav li a {
-  cursor: pointer;
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.5);
-}
-
-main .services .main-header nav li a:hover {
-  color: rgba(255, 255, 255, 0.75);
-}
-
-main .services .main-header nav li:first-of-type {
-  text-align: right;
 }
 
 main .services:nth-of-type(2) {
@@ -2669,68 +2453,12 @@ main .contact:first-of-type {
           justify-content: center;
 }
 
-main .contact .main-header {
-  width: 1100px;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+main .contact .main-header nav li:first-of-type a {
+  color: rgba(255, 255, 255, 0.5);
 }
 
-main .contact .main-header #web-logo {
-  height: 100%;
-  width: 300px;
-  position: relative;
-  background-color: maroon;
-}
-
-main .contact .main-header #web-logo img {
-  height: 100%;
-  width: 80%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-main .contact .main-header nav {
-  height: 100%;
-  width: 300px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  z-index: 1;
-}
-
-main .contact .main-header nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  width: 100%;
-  padding: 0;
-}
-
-main .contact .main-header nav li {
-  width: auto;
-  list-style: none;
-  text-align: center;
-  font-weight: 700;
+main .contact .main-header nav li:first-of-type a:hover {
+  color: rgba(255, 255, 255, 0.75);
 }
 
 main .contact .main-header nav li:last-of-type a {
@@ -2739,20 +2467,6 @@ main .contact .main-header nav li:last-of-type a {
 
 main .contact .main-header nav li:last-of-type a:hover {
   color: #fff;
-}
-
-main .contact .main-header nav li a {
-  cursor: pointer;
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.5);
-}
-
-main .contact .main-header nav li a:hover {
-  color: rgba(255, 255, 255, 0.75);
-}
-
-main .contact .main-header nav li:first-of-type {
-  text-align: right;
 }
 
 main .contact:nth-of-type(2) {
@@ -2882,23 +2596,26 @@ main .contact:nth-of-type(2) .container .form-content form div:last-of-type butt
   background-color: #1f242c;
 }
 
-@media only screen and (max-width: 1250px) {
+@media only screen and (max-width: 1252px) {
   /****************************/
   /******HOME PAGE STYLES******/
   /****************************/
   .home section .container {
     max-width: 1000px;
   }
-  .home section .main-header {
+  main .main-header {
     width: 1000px;
   }
   /*SECOND SECTION*/
-  .home section:nth-of-type(3) {
-    height: 100vh;
+  .home section:nth-of-type(3) .container .inner-container .second-content:first-of-type {
+    margin-top: 15%;
   }
   .home section:nth-of-type(3) .container .second-content div {
     height: 355px;
     margin-top: -15%;
+  }
+  .home section:nth-of-type(3) .container .inner-container .second-content:last-of-type {
+    margin-top: 15%;
   }
   .home section:nth-of-type(3) .container .second-content:last-of-type div {
     margin-top: -25%;
@@ -2952,45 +2669,24 @@ main .contact:nth-of-type(2) .container .form-content form div:last-of-type butt
     height: 49px;
   }
   /*FOOTER*/
-  main footer .container {
-    width: 90%;
-  }
   main footer .container .footer-content:first-of-type h3 {
     font-size: 16px;
+  }
+  main footer .container {
+    max-width: 1000px;
   }
   /*****************************/
   /******ABOUT PAGE STYLES******/
   /*****************************/
   /*FIRST SECTION*/
-  main .about:nth-of-type(2) {
-    height: 83vh;
-  }
   main .about .container {
-    width: 90%;
-  }
-  main .about .main-header nav {
-    width: 35%;
-  }
-  main .about:nth-of-type(2) .container .first-about:first-of-type div {
-    height: 60vh;
+    max-width: 1000px;
   }
   main .about:nth-of-type(2) .container .first-about:first-of-type div img:last-of-type {
     width: 65%;
     height: 75%;
   }
-  main .about:nth-of-type(2) .container .first-about:last-of-type div h2 {
-    font-weight: 700;
-  }
-  main .about:nth-of-type(2) .container .first-about:last-of-type div p:nth-of-type(3) {
-    font-weight: 700;
-  }
   /*SECOND SECTION*/
-  main .about:nth-of-type(3) {
-    height: 55vh;
-  }
-  main .about:nth-of-type(3)::before {
-    height: 55vh;
-  }
   main .about:nth-of-type(3) .container .second-about div h2 {
     margin-top: 20px;
   }
@@ -3006,8 +2702,8 @@ main .contact:nth-of-type(2) .container .form-content form div:last-of-type butt
     height: 49px;
   }
   /*FOURTH SECTION*/
-  main .about:nth-of-type(5) {
-    height: 80vh;
+  main .about:nth-of-type(5) .container {
+    width: 1000px;
   }
   main .about:nth-of-type(5) .container .fourth-about:first-of-type #skills-chart {
     width: 100%;
@@ -3020,93 +2716,89 @@ main .contact:nth-of-type(2) .container .form-content form div:last-of-type butt
     margin-top: 0;
     margin-left: 5%;
   }
-  main .about:nth-of-type(5) .container .fourth-about:last-of-type #hobbies-wrapper {
-    width: 84%;
-    height: 73%;
-    margin-left: 5%;
-  }
-  main .about:nth-of-type(5) .container .fourth-about:last-of-type #hobbies-wrapper > div {
-    margin-bottom: 20px;
-  }
-  main .about:nth-of-type(5) .container .fourth-about:last-of-type #hobbies-wrapper div div {
-    width: 65px;
-    height: 65px;
-  }
   /*FIFTH SECTION*/
-  main .about:nth-of-type(6) {
-    height: 80vh;
-  }
   main .about:nth-of-type(6) .container .fifth-about {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  main .about:nth-of-type(6) .container .fifth-about > div {
-    width: 290px;
+  main .about:nth-of-type(6) .container .fifth-about h2 {
+    width: 100%;
+    text-align: center;
   }
   /********************************/
   /******SERVICES PAGE STYLES******/
   /********************************/
   main .services .container {
-    width: 90%;
+    max-width: 1000px;
     position: relative;
   }
-  main .services .main-header nav {
-    width: 35%;
-  }
   /*FIRST SECTION*/
-  main .services:nth-of-type(2) {
-    height: 104vh;
-  }
-  main .services:nth-of-type(2) .container .first-service {
-    height: 89vh;
-  }
   main .services:nth-of-type(2) .container .first-service hr {
-    top: 15%;
+    top: 17%;
     height: 2px;
   }
   main .services:nth-of-type(2) .container .first-service > div:first-of-type {
     margin-top: -10%;
   }
-  /*SECOND SECTION*/
-  main .services:nth-of-type(3) .container .second-service {
-    height: 70vh;
-  }
-  main .services:nth-of-type(3) .container .second-service > div {
-    width: 32%;
-  }
-  main .services:nth-of-type(3) .container .second-service > div div:first-of-type {
-    height: 59%;
-  }
   /*THIRD SECTION*/
-  main .services:nth-of-type(4) {
-    height: 78vh;
-  }
-  main .services:nth-of-type(4) .container .third-service > div {
-    height: 77%;
-  }
   main .services:nth-of-type(4) .container > h2 {
     top: 3%;
-  }
-  /*FOURTH SECTION*/
-  main .services:nth-of-type(5) .container .fourth-service > div {
-    height: 92%;
   }
   /*******************************/
   /******CONTACT PAGE STYLES******/
   /*******************************/
   main .contact .container {
-    width: 90%;
-  }
-  main .contact .main-header nav {
-    width: 35%;
-  }
-  main .contact:nth-of-type(2) {
-    height: 119vh;
+    max-width: 1000px;
   }
 }
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 1062px) {
+  /****************************/
+  /******HOME PAGE STYLES******/
+  /****************************/
+  .home section .container {
+    max-width: 900px;
+  }
+  main .main-header {
+    width: 900px;
+  }
+  .home section #image-slider {
+    margin-left: 100px;
+  }
+  .home section #nav-dots {
+    bottom: 12%;
+  }
+  main footer .inner-container {
+    width: 900px;
+  }
+  /*****************************/
+  /******ABOUT PAGE STYLES******/
+  /*****************************/
+  main .about .container {
+    max-width: 900px;
+  }
+  main .about:nth-of-type(4) {
+    height: 624px;
+  }
+  main .about:nth-of-type(5) .container .fourth-about:last-of-type #hobbies-wrapper > div {
+    width: 28%;
+  }
+  main .about:nth-of-type(5) .container .fourth-about:last-of-type #hobbies-wrapper {
+    margin-left: 100px;
+  }
+  /********************************/
+  /******SERVICES PAGE STYLES******/
+  /********************************/
+  main .services .container {
+    max-width: 900px;
+  }
+  main .services:nth-of-type(2) {
+    height: 592px;
+  }
+}
+
+@media only screen and (max-width: 962px) {
   /****************************/
   /******HOME PAGE STYLES******/
   /****************************/
@@ -3134,7 +2826,10 @@ main .contact:nth-of-type(2) .container .form-content form div:last-of-type butt
               transform: scale(1);
     }
   }
-  .home section .main-header nav {
+  main .main-header {
+    width: 100%;
+  }
+  main .main-header nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3153,11 +2848,11 @@ main .contact:nth-of-type(2) .container .form-content form div:last-of-type butt
     height: 100vh;
     left: 0;
     background-color: rgba(0, 0, 0, 0.9);
-    z-index: 2;
+    z-index: 3;
     -webkit-transform: scale(0);
             transform: scale(0);
   }
-  .home section .main-header nav.clicked {
+  main .main-header nav.clicked {
     -webkit-animation: hamburger;
             animation: hamburger;
     -webkit-animation-duration: .3s;
@@ -3165,7 +2860,7 @@ main .contact:nth-of-type(2) .container .form-content form div:last-of-type butt
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  .home section .main-header nav ul {
+  main .main-header nav ul {
     width: 90%;
     height: 100%;
     -webkit-box-orient: vertical;
@@ -3181,17 +2876,14 @@ main .contact:nth-of-type(2) .container .form-content form div:last-of-type butt
         -ms-flex-align: center;
             align-items: center;
   }
-  .home section .main-header nav li, .home section .main-header nav li:first-of-type {
+  main .main-header nav li, main .main-header nav li:first-of-type {
     width: 50%;
     height: 10%;
     text-align: center;
     margin-top: 5%;
   }
-  .home section .main-header nav li:first-of-type {
+  main .main-header nav li:first-of-type {
     margin-top: 20%;
-  }
-  .home section .container {
-    width: 90%;
   }
   .home section:nth-of-type(2) .container {
     width: 75%;
@@ -3201,7 +2893,7 @@ main .contact:nth-of-type(2) .container .form-content form div:last-of-type butt
     width: 52px;
     height: 44px;
     background-color: tan;
-    z-index: 3;
+    z-index: 4;
     position: relative;
     top: 50%;
     -webkit-transform: translateY(-50%);
@@ -3278,36 +2970,11 @@ main .contact:nth-of-type(2) .container .form-content form div:last-of-type butt
   /*FIRST SECTION*/
   .home section #image-slider {
     position: relative;
-    margin: 15% 0 0 0;
-  }
-  .home section #image-slider .slide-title {
-    position: absolute;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    height: 100%;
-    z-index: 1;
-  }
-  .home section #image-slider .slide-title div:first-of-type {
-    left: 0;
-  }
-  .home section #image-slider .slide-title div:nth-of-type(2) {
-    left: -80%;
-    top: 30%;
-  }
-  .home section #image-slider .slide-title div:last-of-type {
-    top: 80%;
-  }
-  .home section #image-slider .slide-title div:first-of-type ul li {
-    font-size: 7em;
-  }
-  .home section #image-slider .slide-title div:nth-of-type(2) {
-    width: 400px;
-    height: 170px;
+    margin-left: 0;
   }
   /*SECOND SECTION*/
   .home section:nth-of-type(3) {
-    height: 175vh;
+    height: 1150px;
   }
   .home section:nth-of-type(3) .container {
     -webkit-box-orient: vertical;
@@ -3318,38 +2985,36 @@ main .contact:nth-of-type(2) .container .form-content form div:last-of-type butt
         -ms-flex-align: center;
             align-items: center;
   }
-  .home section:nth-of-type(3) .container div:first-of-type {
+  .home section:nth-of-type(3) .container > div:first-of-type > div {
+    width: 100%;
+    height: 550px;
+  }
+  .home section:nth-of-type(3) .container .inner-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 900px;
+  }
+  .home section:nth-of-type(3) .container .inner-container .second-content:first-of-type {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
-    width: 100%;
-    height: 67%;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    margin: 0;
   }
-  .home section:nth-of-type(3) .container div:first-of-type > div {
-    width: 100%;
-    height: 550px;
-    margin-top: 35%;
-  }
-  .home section:nth-of-type(3) .container div:last-of-type > div {
-    width: 100%;
-    height: 495px;
-    margin-top: 15%;
-  }
-  .home section:nth-of-type(3) .container div:last-of-type {
+  .home section:nth-of-type(3) .container .inner-container .second-content:last-of-type {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
-    height: 50%;
+    width: 75%;
+    height: 35%;
+    margin: 5% 0 0 0;
   }
-  .home section:nth-of-type(3) .container div:last-of-type {
-    width: 85%;
-    height: 33%;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+  .home section:nth-of-type(3) .container .second-content:last-of-type div {
+    margin: 0;
   }
   .home section:nth-of-type(3) .container .second-content div h2 {
     text-align: center;

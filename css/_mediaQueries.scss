@@ -3,16 +3,16 @@
         @media only screen and (min-width: 320px) and (max-width: 480px) { @content };
     }
 
-    @else if $breakpoint == phoneLandscape {
-        @media only screen and (min-width: 568px) and (max-width: 812px) { @content };
-    }
-
-    @else if $breakpoint == tablet {
-        @media only screen and (max-width: 950px) { @content };
-    }
-
     @else if $breakpoint == tabletLandscape {
-        @media only screen and (max-width: 1250px) { @content };
+        @media only screen and (max-width: 962px) { @content };
+    }
+
+    @else if $breakpoint == smallLaptop {
+        @media only screen and (max-width: 1062px) { @content };
+    }
+
+    @else if $breakpoint == smallDesktop {
+        @media only screen and (max-width: 1252px) { @content };
     }
 
 }
@@ -29,7 +29,7 @@
 
 
 
-@include responsive(tabletLandscape) {
+@include responsive(smallDesktop) {
 
 
 
@@ -50,20 +50,24 @@
         max-width: 1000px;
     }
 
-    .home section .main-header {
+    main .main-header {
         width: 1000px;
     }
 
 
     /*SECOND SECTION*/
 
-    .home section:nth-of-type(3) {
-        height: 100vh;
+    .home section:nth-of-type(3) .container .inner-container .second-content:first-of-type {
+        margin-top: 15%;
     }
 
     .home section:nth-of-type(3) .container .second-content div {
         height: 355px;
         margin-top: -15%;
+    }
+
+    .home section:nth-of-type(3) .container .inner-container .second-content:last-of-type {
+        margin-top: 15%;
     }
 
     .home section:nth-of-type(3) .container .second-content:last-of-type div {
@@ -134,12 +138,13 @@
 
     /*FOOTER*/
 
-    main footer .container {
-        width: 90%;
-    }
    
     main footer .container .footer-content:first-of-type h3 {
         font-size: 16px;
+    }
+
+    main footer .container {
+        max-width: 1000px;
     }
 
 
@@ -159,20 +164,9 @@
 
 
 
-    main .about:nth-of-type(2) {
-        height: 83vh;
-    }
 
     main .about .container {
-        width: 90%;
-    }
-
-    main .about .main-header nav {
-        width: 35%;
-    }
-
-    main .about:nth-of-type(2) .container .first-about:first-of-type div {
-        height: 60vh;
+        max-width: 1000px;
     }
 
     main .about:nth-of-type(2) .container .first-about:first-of-type div img:last-of-type {
@@ -180,26 +174,11 @@
         height: 75%;
     }
 
-    main .about:nth-of-type(2) .container .first-about:last-of-type div h2 {
-        font-weight: 700;
-    }
 
-    main .about:nth-of-type(2) .container .first-about:last-of-type div p:nth-of-type(3) {
-        font-weight: 700;
-    }
 
 
     /*SECOND SECTION*/
 
-
-
-    main .about:nth-of-type(3) {
-        height: 55vh;
-    }
-
-    main .about:nth-of-type(3)::before {
-        height: 55vh;
-    }
 
     main .about:nth-of-type(3) .container .second-about div h2 {
         margin-top: 20px;
@@ -226,13 +205,10 @@
 
     /*FOURTH SECTION*/
 
-
-
-    main .about:nth-of-type(5) {
-        height: 80vh;
-    }
-
     
+    main .about:nth-of-type(5) .container {
+        width: 1000px;
+    }
 
     main .about:nth-of-type(5) .container .fourth-about:first-of-type #skills-chart {
         width: 100%;
@@ -248,40 +224,21 @@
         margin-left: 5%;
     }
 
-    main .about:nth-of-type(5) .container .fourth-about:last-of-type #hobbies-wrapper {
-        width: 84%;
-        height: 73%;
-        margin-left: 5%;
-    }
 
-    main .about:nth-of-type(5) .container .fourth-about:last-of-type #hobbies-wrapper > div {
-        margin-bottom: 20px;
-    }
-
-    main .about:nth-of-type(5) .container .fourth-about:last-of-type #hobbies-wrapper div div {
-        width: 65px;
-        height: 65px;
-    }
 
 
 
     /*FIFTH SECTION*/
 
 
-    main .about:nth-of-type(6) {
-        height: 80vh;
-    }
-
     main .about:nth-of-type(6) .container .fifth-about {
         justify-content: space-between;
     }
 
-    main .about:nth-of-type(6) .container .fifth-about > div {
-        width: 290px;
+    main .about:nth-of-type(6) .container .fifth-about h2 {
+        width: 100%;
+        text-align: center;
     }
-
-
-
 
 
 
@@ -295,29 +252,20 @@
 
 
     main .services .container {
-        width: 90%;
+        max-width: 1000px;
         position: relative;
     }
 
-    main .services .main-header nav {
-        width: 35%;
-    }
 
     
 
     /*FIRST SECTION*/
 
-    main .services:nth-of-type(2) {
-        height: 104vh;
-    }
 
-    main .services:nth-of-type(2) .container .first-service {
-        height: 89vh;
-    }
 
 
     main .services:nth-of-type(2) .container .first-service hr {
-        top: 15%;
+        top: 17%;
         height: 2px;
     }
 
@@ -326,32 +274,7 @@
     }
 
 
-    /*SECOND SECTION*/
-
-
-    main .services:nth-of-type(3) .container .second-service {
-        height: 70vh;
-    }
-
-    main .services:nth-of-type(3) .container .second-service > div {
-        width: 32%;
-    }
-
-    main .services:nth-of-type(3) .container .second-service > div div:first-of-type {
-        height: 59%;
-    }
-
-
-
     /*THIRD SECTION*/
-
-    main .services:nth-of-type(4) {
-        height: 78vh;
-    }
-
-    main .services:nth-of-type(4) .container .third-service > div {
-        height: 77%;
-    }
 
 
     main .services:nth-of-type(4) .container > h2 {
@@ -359,22 +282,7 @@
     }
 
 
-    /*FOURTH SECTION*/
-
-
-
-    main .services:nth-of-type(5) .container .fourth-service > div {
-        height: 92%;
-    }
-
-
-
-
-
-
-
-
-
+    
 
 
 
@@ -385,16 +293,116 @@
     
 
     main .contact .container {
-        width: 90%;
+        max-width: 1000px;
     }
     
-    main .contact .main-header nav {
-        width: 35%;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@include responsive(smallLaptop) {
+
+
+    /****************************/
+    /******HOME PAGE STYLES******/
+    /****************************/
+
+
+    .home section .container {
+        max-width: 900px;
     }
 
-    main .contact:nth-of-type(2) {
-        height: 119vh;
+    main .main-header {
+        width: 900px;
     }
+
+    .home section #image-slider {
+        margin-left: 100px;
+    }
+
+    .home section #nav-dots {
+        bottom: 12%;
+    }
+
+    main footer .inner-container {
+        width: 900px;
+    }
+
+
+
+
+    /*****************************/
+    /******ABOUT PAGE STYLES******/
+    /*****************************/
+
+
+    main .about .container {
+        max-width: 900px;
+    }
+
+    main .about:nth-of-type(4) {
+        height: 624px;
+    }
+
+    main .about:nth-of-type(5) .container .fourth-about:last-of-type #hobbies-wrapper > div {
+        width: 28%;
+    }
+
+    main .about:nth-of-type(5) .container .fourth-about:last-of-type #hobbies-wrapper {
+        margin-left: 100px;
+    }
+
+
+
+    /********************************/
+    /******SERVICES PAGE STYLES******/
+    /********************************/
+
+
+
+    main .services .container {
+        max-width: 900px;
+    }
+
+    main .services:nth-of-type(2) {
+        height: 592px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -437,7 +445,30 @@
 
 
 
-@include responsive(tablet) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@include responsive(tabletLandscape) {
 
 
 
@@ -456,8 +487,12 @@
         }
     }
 
+    main .main-header {
+        width: 100%;
+    }
 
-    .home section .main-header nav {
+
+    main .main-header nav {
         @include flexRow();
         justify-content: center;
         align-items: flex-start;
@@ -466,7 +501,7 @@
         height: 100vh;
         left: 0;
         background-color: rgba(0, 0, 0, 0.9);
-        z-index: 2;
+        z-index: 3;
         transform: scale(0);
 
         &.clicked {
@@ -476,7 +511,7 @@
         }
     }
 
-    .home section .main-header nav ul {
+    main .main-header nav ul {
         width: 90%;
         height: 100%;
         flex-direction: column;
@@ -486,19 +521,15 @@
         align-items: center;
     }
 
-    .home section .main-header nav li, .home section .main-header nav li:first-of-type {
+    main .main-header nav li, main .main-header nav li:first-of-type {
         width: 50%;
         height: 10%;
         text-align: center;
         margin-top: 5%;
     }
 
-    .home section .main-header nav li:first-of-type {
+    main .main-header nav li:first-of-type {
         margin-top: 20%;
-    }
-
-    .home section .container {
-        width: 90%;
     }
 
     .home section:nth-of-type(2) .container {
@@ -510,7 +541,7 @@
         width: 52px;
         height: 44px;
         background-color: tan;
-        z-index: 3;
+        z-index: 4;
         position: relative;
         top: 50%;
         transform: translateY(-50%);
@@ -577,45 +608,45 @@
 
     .home section #image-slider {
         position: relative;
-        margin: 15% 0 0 0;
+        margin-left: 0;
     }
 
-    .home section #image-slider .slide-title {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        height: 100%;
-        z-index: 1;
-    }
+    // .home section #image-slider .slide-title {
+    //     position: absolute;
+    //     left: 50%;
+    //     transform: translateX(-50%);
+    //     height: 100%;
+    //     z-index: 1;
+    // }
 
-    .home section #image-slider .slide-title div:first-of-type {
-        left: 0;
-    }
+    // .home section #image-slider .slide-title div:first-of-type {
+    //     left: 0;
+    // }
 
-    .home section #image-slider .slide-title div:nth-of-type(2) {
-        left: -80%;
-        top: 30%;
-    }
+    // .home section #image-slider .slide-title div:nth-of-type(2) {
+    //     left: -80%;
+    //     top: 30%;
+    // }
 
-    .home section #image-slider .slide-title div:last-of-type {
-        top: 80%;
-    }
+    // .home section #image-slider .slide-title div:last-of-type {
+    //     top: 80%;
+    // }
 
-    .home section #image-slider .slide-title div:first-of-type ul li {
-        font-size: 7em;
-    }
+    // .home section #image-slider .slide-title div:first-of-type ul li {
+    //     font-size: 7em;
+    // }
 
-    .home section #image-slider .slide-title div:nth-of-type(2) {
-        width: 400px;
-        height: 170px;
-    }
+    // .home section #image-slider .slide-title div:nth-of-type(2) {
+    //     width: 400px;
+    //     height: 170px;
+    // }
 
 
     /*SECOND SECTION*/
 
 
     .home section:nth-of-type(3) {
-        height: 175vh;
+        height: 1150px;
     }
 
     .home section:nth-of-type(3) .container {
@@ -623,34 +654,31 @@
         align-items: center;
     }
 
-    .home section:nth-of-type(3) .container div:first-of-type {
-        order: 2;
-        width: 100%;
-        height: 67%;
-        align-items: flex-start;
-    }
-
-    .home section:nth-of-type(3) .container div:first-of-type > div {
+    .home section:nth-of-type(3) .container > div:first-of-type > div {
         width: 100%;
         height: 550px;
-        margin-top: 35%;
     }
 
-    .home section:nth-of-type(3) .container div:last-of-type > div {
-        width: 100%;
-        height: 495px;
-        margin-top: 15%;
+    .home section:nth-of-type(3) .container .inner-container {
+        flex-direction: column;
+        align-items: center;
+        width: 900px;
     }
 
-    .home section:nth-of-type(3) .container div:last-of-type {
+    .home section:nth-of-type(3) .container .inner-container .second-content:first-of-type {
+        order: 2;
+        margin: 0;
+    }
+
+    .home section:nth-of-type(3) .container .inner-container .second-content:last-of-type {
         order: 1;
-        height: 50%;
+        width: 75%;
+        height: 35%;
+        margin: 5% 0 0 0;
     }
 
-    .home section:nth-of-type(3) .container div:last-of-type {
-        width: 85%;
-        height: 33%;
-        align-items: flex-start;
+    .home section:nth-of-type(3) .container .second-content:last-of-type div {
+        margin: 0;
     }
 
     .home section:nth-of-type(3) .container .second-content div h2 {
@@ -980,10 +1008,6 @@
     main .about:nth-of-type(6) .container .fifth-about > div:hover div {
         top: 20%;
     }
-
-
-
-
 
 
 

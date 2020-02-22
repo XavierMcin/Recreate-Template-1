@@ -18,69 +18,22 @@ main .about {
         justify-content: center;
     }
 
-    .main-header {
-        width: 1100px;
-        height: 106px;
-        @include flexRow();
-        justify-content: space-between;
+    .main-header nav li {
 
-        #web-logo {
-            height: 100%;
-            width: 300px;
-            position: relative;
-            background-color: maroon;
-            
+        &:first-of-type a {
+            color: rgba(255, 255, 255, 0.5);
 
-            img {
-                height: 100%;
-                width: 80%;
-                object-fit: cover;
+            &:hover {
+                color: rgba(255, 255, 255, 0.75);
             }
         }
 
-        nav {
-            height: 100%;
-            width: 300px;
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            z-index: 1;
-            
-            ul {
-                @include flexRow();
-                justify-content: space-around;
-                width: 100%;
-                padding: 0;
-            }
 
-            li {
-                width: auto;
-                list-style: none;
-                text-align: center;
-                font-weight: 700;
+        &:nth-of-type(2) a {
+            color: #fff;
 
-                &:nth-of-type(2) a {
-                    color: #fff;
-
-                    &:hover {
-                        color: #fff;
-                    }
-                }
-
-                a {
-                    cursor: pointer;
-                    text-decoration: none;
-                    color: rgba(255, 255, 255, 0.5);
-
-                    &:hover {
-                        color: rgba(255, 255, 255, 0.75);
-                    }
-                }
-
-                &:first-of-type {
-                    text-align: right;
-                }
-
+            &:hover {
+                color: #fff;
             }
         }
     }
@@ -598,57 +551,3 @@ main .about {
 
 }
 
-main {
-    
-    footer {
-        width: 100%;
-        height: 11vh;
-        background-color: #222831;
-        @include flexRow();
-        justify-content: center;
-
-        .container {
-            width: 75%;
-            height: 100%;
-            @include flexRow();
-            justify-content: space-between;
-
-            .footer-content:first-of-type {
-                @include flexColumn();
-                justify-content: center;
-
-                h3 {
-                    font-size: 1.063em;
-                    font-weight: 400;
-                    color: #aaaaaa;
-                }
-            }
-
-            .footer-content:last-of-type {
-                @include flexColumn();
-                justify-content: center;
-
-                ul {
-                    @include flexRow();
-                    margin: 0;
-                    padding: 0;
-
-                    li {
-                        list-style: none;
-                        width: 16px;
-                        height: 16px;
-                        background-color: darkolivegreen;
-                        position: relative;
-                        margin-left: 25px;
-
-                        img {
-                            width: 100%;
-                            height: 100%;
-                            fill: darkviolet;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
