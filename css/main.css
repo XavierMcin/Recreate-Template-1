@@ -2826,6 +2826,9 @@ main .contact:nth-of-type(2) .container .form-content form div:last-of-type butt
               transform: scale(1);
     }
   }
+  .home section .container {
+    width: 85%;
+  }
   main .main-header {
     width: 100%;
   }
@@ -2967,6 +2970,9 @@ main .contact:nth-of-type(2) .container .form-content form div:last-of-type butt
     -webkit-transform-origin: center;
             transform-origin: center;
   }
+  .home section:first-of-type .container {
+    position: initial;
+  }
   /*FIRST SECTION*/
   .home section #image-slider {
     position: relative;
@@ -2974,7 +2980,7 @@ main .contact:nth-of-type(2) .container .form-content form div:last-of-type butt
   }
   /*SECOND SECTION*/
   .home section:nth-of-type(3) {
-    height: 1150px;
+    height: auto;
   }
   .home section:nth-of-type(3) .container {
     -webkit-box-orient: vertical;
@@ -2997,21 +3003,25 @@ main .contact:nth-of-type(2) .container .form-content form div:last-of-type butt
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 900px;
+    width: 100%;
   }
   .home section:nth-of-type(3) .container .inner-container .second-content:first-of-type {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
     margin: 0;
+    width: 85%;
   }
   .home section:nth-of-type(3) .container .inner-container .second-content:last-of-type {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
-    width: 75%;
-    height: 35%;
+    width: 85%;
+    height: 500px;
     margin: 5% 0 0 0;
+  }
+  .home section:nth-of-type(3) .container .inner-container .second-content div p {
+    width: 100%;
   }
   .home section:nth-of-type(3) .container .second-content:last-of-type div {
     margin: 0;
@@ -3031,7 +3041,7 @@ main .contact:nth-of-type(2) .container .form-content form div:last-of-type butt
   }
   /*FOURTH SECTION*/
   .home section:nth-of-type(5) {
-    height: 150vh;
+    height: 1050px;
   }
   .home section:nth-of-type(5) .container {
     -webkit-box-orient: vertical;
@@ -3081,7 +3091,7 @@ main .contact:nth-of-type(2) .container .form-content form div:last-of-type butt
   }
   /*SIXTH SECTION*/
   .home section:nth-of-type(7) {
-    height: 160vh;
+    height: 1000px;
   }
   .home section:nth-of-type(7) .container {
     -webkit-box-orient: vertical;
@@ -3114,7 +3124,7 @@ main .contact:nth-of-type(2) .container .form-content form div:last-of-type butt
   }
   /*FOOTER*/
   main footer .container {
-    width: 90%;
+    width: 85%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -3122,9 +3132,6 @@ main .contact:nth-of-type(2) .container .form-content form div:last-of-type butt
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-  main footer {
-    height: 19vh;
   }
   main footer .container .footer-content {
     -webkit-box-align: center;
@@ -3136,6 +3143,9 @@ main .contact:nth-of-type(2) .container .form-content form div:last-of-type butt
   /*****************************/
   main .about .container {
     width: 90%;
+  }
+  main .about:first-of-type .container {
+    position: initial;
   }
   main .about .main-header nav {
     display: -webkit-box;
@@ -3197,6 +3207,9 @@ main .contact:nth-of-type(2) .container .form-content form div:last-of-type butt
   main .about:nth-of-type(2) .container .first-about:first-of-type {
     width: 65%;
   }
+  main .about:nth-of-type(2) .container .first-about:first-of-type div {
+    height: 424px;
+  }
   main .about:nth-of-type(2) .container .first-about:first-of-type div img:last-of-type {
     width: 70%;
   }
@@ -3218,7 +3231,7 @@ main .contact:nth-of-type(2) .container .form-content form div:last-of-type butt
   }
   /*THIRD SECTION*/
   main .about:nth-of-type(4) {
-    height: 155vh;
+    height: 1100px;
   }
   main .about:nth-of-type(4) .container {
     -webkit-box-orient: vertical;
@@ -3253,10 +3266,11 @@ main .contact:nth-of-type(2) .container .form-content form div:last-of-type butt
     width: 85%;
     height: 495px;
     margin-top: 15%;
+    margin-left: 0;
   }
   /*FOURTH SECTION*/
   main .about:nth-of-type(5) {
-    height: 130vh;
+    height: 1000px;
   }
   main .about:nth-of-type(5) .container {
     -webkit-box-orient: vertical;
@@ -3265,8 +3279,8 @@ main .contact:nth-of-type(2) .container .form-content form div:last-of-type butt
             flex-direction: column;
   }
   main .about:nth-of-type(5) .container .fourth-about:first-of-type {
-    width: 100%;
-    height: 50%;
+    width: 85%;
+    height: 45%;
   }
   main .about:nth-of-type(5) .container h2 {
     font-size: 1.9em;
@@ -3281,24 +3295,39 @@ main .contact:nth-of-type(2) .container .form-content form div:last-of-type butt
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    margin-top: 5%;
+    margin-top: 10%;
   }
   main .about:nth-of-type(5) .container .fourth-about:last-of-type h2 {
-    margin-top: 5%;
+    margin: 0;
+    width: 100%;
+    text-align: center;
   }
   main .about:nth-of-type(5) .container .fourth-about:last-of-type #hobbies-wrapper {
-    width: 100%;
+    width: 90%;
+    margin: 50px 0 0 0;
   }
   main .about:nth-of-type(5) .container .fourth-about:last-of-type #hobbies-wrapper > div {
     margin-bottom: 25px;
+    width: 33%;
   }
   /*FIFTH SECTION*/
+  main .about:nth-of-type(6) {
+    height: 450px;
+  }
+  main .about:nth-of-type(6) .container {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
   main .about:nth-of-type(6) .container .fifth-about > div {
     width: 30%;
     height: 63%;
   }
   main .about:nth-of-type(6) .container .fifth-about > div:hover div {
     top: 20%;
+  }
+  main .about:nth-of-type(6) button {
+    bottom: 100px;
   }
   /********************************/
   /******SERVICES PAGE STYLES******/
@@ -3367,7 +3396,7 @@ main .contact:nth-of-type(2) .container .form-content form div:last-of-type butt
   }
   /*FIRST SECTION*/
   main .services:nth-of-type(2) {
-    height: 135vh;
+    height: 950px;
   }
   main .services:nth-of-type(2) .container {
     -webkit-box-align: start;
@@ -3379,15 +3408,19 @@ main .contact:nth-of-type(2) .container .form-content form div:last-of-type butt
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: auto;
   }
   main .services:nth-of-type(2) .container .first-service h2 {
     text-align: center;
   }
   main .services:nth-of-type(2) .container .first-service hr {
-    top: 18%;
+    top: 100px;
   }
   main .services:nth-of-type(2) .container .first-service > div:first-of-type {
-    width: 100%;
+    width: 85%;
     margin-top: 17%;
   }
   main .services:nth-of-type(2) .container .first-service > div:first-of-type h3 {
@@ -3404,12 +3437,13 @@ main .contact:nth-of-type(2) .container .form-content form div:last-of-type butt
             transform: translateX(-50%);
   }
   main .services:nth-of-type(2) .container .first-service > div:last-of-type {
-    margin-top: 10%;
-    width: 100%;
+    width: 80%;
     height: auto;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    position: relative;
+    margin-top: 25px;
   }
   main .services:nth-of-type(2) .container .first-service > div:last-of-type .service-wrapper {
     width: 44%;
@@ -3423,7 +3457,7 @@ main .contact:nth-of-type(2) .container .form-content form div:last-of-type butt
   }
   /*SECOND SECTION*/
   main .services:nth-of-type(3) {
-    height: 150vh;
+    height: auto;
   }
   main .services:nth-of-type(3) .container {
     -webkit-box-align: start;
@@ -3433,6 +3467,7 @@ main .contact:nth-of-type(2) .container .form-content form div:last-of-type butt
   main .services:nth-of-type(3) .container .second-service {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    height: auto;
   }
   main .services:nth-of-type(3) .container .second-service > div {
     width: 48%;
@@ -3455,13 +3490,14 @@ main .contact:nth-of-type(2) .container .form-content form div:last-of-type butt
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
     width: 65%;
+    margin-bottom: 50px;
   }
   main .services:nth-of-type(3) .container .second-service > div div:last-of-type {
     height: 50%;
   }
   /*THIRD SECTION*/
   main .services:nth-of-type(4) {
-    height: 120vh;
+    height: 800px;
   }
   main .services:nth-of-type(4) .container {
     -webkit-box-align: start;
@@ -3470,7 +3506,7 @@ main .contact:nth-of-type(2) .container .form-content form div:last-of-type butt
   }
   main .services:nth-of-type(4) .container .third-service {
     height: auto;
-    margin-top: 22%;
+    margin-top: 10%;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
@@ -3493,7 +3529,7 @@ main .contact:nth-of-type(2) .container .form-content form div:last-of-type butt
   }
   /*FOURTH SECTION*/
   main .services:nth-of-type(5) {
-    height: 100vh;
+    height: 720px;
   }
   main .services:nth-of-type(5) .container {
     -webkit-box-align: start;
@@ -3577,7 +3613,302 @@ main .contact:nth-of-type(2) .container .form-content form div:last-of-type butt
     margin-top: 20%;
   }
   main .contact:nth-of-type(2) {
-    height: 120vh;
+    height: 800px;
   }
+  /******************************/
+  /******FOOTER PAGE STYLES******/
+  /******************************/
+  main footer {
+    height: 128px;
+  }
+  main footer .inner-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    height: 100%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  main footer .container .footer-content:first-of-type {
+    height: 40px;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  main footer .container .footer-content:first-of-type h3 {
+    margin: 0;
+  }
+  main footer .container .footer-content:last-of-type {
+    height: 50px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  main footer .container .footer-content:last-of-type ul li:first-of-type {
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /****************************/
+  /******HOME PAGE STYLES******/
+  /****************************/
+  .home section #image-slider .slide-title {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    height: 100%;
+    z-index: 1;
+  }
+  .home section #image-slider .slide-title div:first-of-type {
+    left: 0;
+  }
+  .home section #image-slider .slide-title div:nth-of-type(2) {
+    left: -80%;
+    top: 30%;
+  }
+  .home section #image-slider .slide-title div:last-of-type {
+    top: 80%;
+  }
+  .home section #image-slider .slide-title div:first-of-type ul li {
+    font-size: 7em;
+  }
+  .home section #image-slider .slide-title div:nth-of-type(2) {
+    width: 400px;
+    height: 170px;
+  }
+  /*SECOND SECTION*/
+  .home section:nth-of-type(3) {
+    height: 1075px;
+  }
+  .home section:nth-of-type(3) .container .inner-container .second-content:last-of-type {
+    width: 85%;
+  }
+  .home section:nth-of-type(3) .container .inner-container .second-content:first-of-type {
+    width: 85%;
+  }
+  /*THIRD SECTION*/
+  .home section:nth-of-type(4) {
+    height: 730px;
+  }
+  .home section:nth-of-type(4) .container .inner-container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .home section:nth-of-type(4) .container .third-content:first-of-type {
+    width: 85%;
+  }
+  .home section:nth-of-type(4) .container .third-content:last-of-type {
+    width: 85%;
+  }
+  /*FOURTH SECTION*/
+  .home section:nth-of-type(5) {
+    height: 1100px;
+  }
+  .home section:nth-of-type(5) .container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .home section:nth-of-type(5) .container .fourth-content:first-of-type {
+    width: 85%;
+  }
+  .home section:nth-of-type(5) .container .fourth-content:last-of-type {
+    width: 85%;
+  }
+  .home section:nth-of-type(5) .container .fourth-content:first-of-type div {
+    width: 100%;
+  }
+  .home section:nth-of-type(5) .container .fourth-content:last-of-type div {
+    margin: 0;
+  }
+  .home section:nth-of-type(5) .container .fourth-content:last-of-type div h2 {
+    margin-top: 50px;
+  }
+  /*FIFTH SECTION*/
+  .home section:nth-of-type(6) {
+    height: 525px;
+  }
+  .home section:nth-of-type(6)::before {
+    height: 525px;
+  }
+  .home section:nth-of-type(6) .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .home section:nth-of-type(6) .container .fifth-content:first-of-type {
+    width: 85%;
+  }
+  .home section:nth-of-type(6) .container .fifth-content:last-of-type {
+    width: 85%;
+  }
+  .home section:nth-of-type(6) .container .fifth-content:first-of-type div p {
+    text-align: center;
+  }
+  /*SIXTH SECTION*/
+  .home section:nth-of-type(7) {
+    height: 1250px;
+  }
+  .home section:nth-of-type(7) .container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .home section:nth-of-type(7) .container .sixth-content:first-of-type {
+    width: 85%;
+  }
+  .home section:nth-of-type(7) .container .sixth-content:last-of-type {
+    width: 85%;
+  }
+  /*****************************/
+  /******ABOUT PAGE STYLES******/
+  /*****************************/
+  /*FIRST SECTION*/
+  main .about:nth-of-type(2) {
+    height: 1000px;
+  }
+  main .about:nth-of-type(2) .container .inner-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .about:nth-of-type(2) .container .first-about:first-of-type {
+    height: auto;
+    width: 85%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-top: 25px;
+  }
+  main .about:nth-of-type(2) .container .first-about:first-of-type div {
+    height: 524px;
+  }
+  main .about:nth-of-type(2) .container .first-about:last-of-type {
+    height: auto;
+    width: 85%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  main .about:nth-of-type(2) .container .first-about:last-of-type div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+  }
+  main .about:nth-of-type(2) .container .first-about:last-of-type div h2 {
+    text-align: center;
+  }
+  main .about:nth-of-type(2) .container .first-about:last-of-type div p {
+    text-align: center;
+  }
+  /*SECOND SECTION*/
+  main .about:nth-of-type(3) {
+    height: 555px;
+  }
+  main .about:nth-of-type(3)::before {
+    height: 555px;
+  }
+  main .about:nth-of-type(3) .container .second-about {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  main .about:nth-of-type(3) .container .second-about div {
+    width: 50%;
+    height: 50%;
+  }
+  /*THIRD SECTION*/
+  main .about:nth-of-type(4) .container .third-about:first-of-type {
+    width: 85%;
+  }
+  /*FOURTH SECTION*/
+  main .about:nth-of-type(5) .container {
+    width: 90%;
+  }
+  /*FIFTH SECTION*/
+  main .about:nth-of-type(6) {
+    height: auto;
+  }
+  main .about:nth-of-type(6) .container .fifth-about {
+    height: auto;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .about:nth-of-type(6) .container .fifth-about > div {
+    width: 85%;
+  }
+  main .about:nth-of-type(6) .container .fifth-about > div:first-of-type {
+    margin: 15% 0 0 0;
+  }
+  main .about:nth-of-type(6) .container .fifth-about > div:nth-of-type(2) {
+    margin: 25px 0 25px 0;
+  }
+  main .about:nth-of-type(6) .container .fifth-about > div:last-of-type {
+    margin-bottom: 125px;
+  }
+  main .about:nth-of-type(6) button {
+    bottom: 35px;
+  }
+  main .about:nth-of-type(6) .container .fifth-about > div:hover div {
+    top: 25%;
+  }
+  main .about:nth-of-type(6) .container .fifth-about > div div h3 {
+    font-size: 3em;
+  }
+  main .about:nth-of-type(6) .container .fifth-about > div div p {
+    font-size: 1.2em;
+  }
+  /********************************/
+  /******SERVICES PAGE STYLES******/
+  /********************************/
+  /*FIRST SECTION*/
+  main .services:nth-of-type(2) {
+    height: auto;
+  }
+  main .services:nth-of-type(2) .container .first-service > div:first-of-type {
+    height: auto;
+  }
+  main .services:nth-of-type(2) .container .first-service div:first-of-type button {
+    margin-bottom: 25px;
+  }
+  main .services:nth-of-type(2) .container .first-service hr {
+    top: 90px;
+    width: 85%;
+  }
+  main .services:nth-of-type(2) .container .first-service > div:first-of-type h3 {
+    margin-top: 25px;
+  }
+  main .services:nth-of-type(2) .container .first-service > div:last-of-type {
+    margin-bottom: 25px;
+  }
+  /*SECOND SECTION*/
 }
 /*# sourceMappingURL=main.css.map */

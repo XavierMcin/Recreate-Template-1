@@ -1,6 +1,14 @@
 @mixin responsive($breakpoint) {
     @if $breakpoint == phone {
-        @media only screen and (min-width: 320px) and (max-width: 480px) { @content };
+        @media only screen and (max-width: 480px) { @content };
+    }
+
+    @else if $breakpoint == phoneLandscape {
+        @media only screen and (max-width: 580px) { @content };
+    }
+
+    @else if $breakpoint == tablet {
+        @media only screen and (max-width: 768px) { @content };
     }
 
     @else if $breakpoint == tabletLandscape {
@@ -487,9 +495,14 @@
         }
     }
 
+    .home section .container {
+        width: 85%;
+    }
+
     main .main-header {
         width: 100%;
     }
+
 
 
     main .main-header nav {
@@ -602,6 +615,11 @@
 
 
 
+
+    .home section:first-of-type .container {
+        position: initial;
+    }
+
     /*FIRST SECTION*/
 
 
@@ -611,42 +629,12 @@
         margin-left: 0;
     }
 
-    // .home section #image-slider .slide-title {
-    //     position: absolute;
-    //     left: 50%;
-    //     transform: translateX(-50%);
-    //     height: 100%;
-    //     z-index: 1;
-    // }
-
-    // .home section #image-slider .slide-title div:first-of-type {
-    //     left: 0;
-    // }
-
-    // .home section #image-slider .slide-title div:nth-of-type(2) {
-    //     left: -80%;
-    //     top: 30%;
-    // }
-
-    // .home section #image-slider .slide-title div:last-of-type {
-    //     top: 80%;
-    // }
-
-    // .home section #image-slider .slide-title div:first-of-type ul li {
-    //     font-size: 7em;
-    // }
-
-    // .home section #image-slider .slide-title div:nth-of-type(2) {
-    //     width: 400px;
-    //     height: 170px;
-    // }
-
-
+    
     /*SECOND SECTION*/
 
 
     .home section:nth-of-type(3) {
-        height: 1150px;
+        height: auto;
     }
 
     .home section:nth-of-type(3) .container {
@@ -662,19 +650,24 @@
     .home section:nth-of-type(3) .container .inner-container {
         flex-direction: column;
         align-items: center;
-        width: 900px;
+        width: 100%;
     }
 
     .home section:nth-of-type(3) .container .inner-container .second-content:first-of-type {
         order: 2;
         margin: 0;
+        width: 85%;
     }
 
     .home section:nth-of-type(3) .container .inner-container .second-content:last-of-type {
         order: 1;
-        width: 75%;
-        height: 35%;
+        width: 85%;
+        height: 500px;
         margin: 5% 0 0 0;
+    }
+
+    .home section:nth-of-type(3) .container .inner-container .second-content div p {
+        width: 100%;
     }
 
     .home section:nth-of-type(3) .container .second-content:last-of-type div {
@@ -701,7 +694,7 @@
 
 
     .home section:nth-of-type(5) {
-        height: 150vh;
+        height: 1050px;
     }
 
     .home section:nth-of-type(5) .container {
@@ -764,7 +757,7 @@
 
 
     .home section:nth-of-type(7)  {
-        height: 160vh;
+        height: 1000px;
     }
 
     .home section:nth-of-type(7) .container {
@@ -802,13 +795,9 @@
     /*FOOTER*/
 
     main footer .container {
-        width: 90%;
+        width: 85%;
         flex-direction: column;
         justify-content: center;
-    }
-
-    main footer {
-        height: 19vh;
     }
 
     main footer .container .footer-content {
@@ -835,6 +824,10 @@
 
     main .about .container {
         width: 90%;
+    }
+
+    main .about:first-of-type .container {
+        position: initial;
     }
 
     main .about .main-header nav {
@@ -885,6 +878,10 @@
         width: 65%;
     }
 
+    main .about:nth-of-type(2) .container .first-about:first-of-type div {
+        height: 424px;
+    }
+
     main .about:nth-of-type(2) .container .first-about:first-of-type div img:last-of-type {
         width: 70%;
     }
@@ -917,7 +914,7 @@
     /*THIRD SECTION*/
 
     main .about:nth-of-type(4) {
-        height: 155vh;
+        height: 1100px;
     }
 
     main .about:nth-of-type(4) .container {
@@ -949,6 +946,7 @@
         width: 85%;
         height: 495px;
         margin-top: 15%;
+        margin-left: 0;
     }
 
 
@@ -956,7 +954,7 @@
 
 
     main .about:nth-of-type(5) {
-        height: 130vh;
+        height: 1000px;
     }
 
     main .about:nth-of-type(5) .container {
@@ -964,8 +962,8 @@
     }
 
     main .about:nth-of-type(5) .container .fourth-about:first-of-type {
-        width: 100%;
-        height: 50%;
+        width: 85%;
+        height: 45%;
     }
 
     main .about:nth-of-type(5) .container h2 {
@@ -981,24 +979,35 @@
         width: 100%;
         height: 38%;
         justify-content: flex-start;
-        margin-top: 5%;
+        margin-top: 10%;
     }
 
     main .about:nth-of-type(5) .container .fourth-about:last-of-type h2 {
-        margin-top: 5%;
+        margin: 0;
+        width: 100%;
+        text-align: center;
     }
 
     main .about:nth-of-type(5) .container .fourth-about:last-of-type #hobbies-wrapper {
-        width: 100%;
+        width: 90%;
+        margin: 50px 0 0 0;
     }
 
     main .about:nth-of-type(5) .container .fourth-about:last-of-type #hobbies-wrapper > div {
         margin-bottom: 25px;
+        width: 33%;
     }
 
 
     /*FIFTH SECTION*/
 
+    main .about:nth-of-type(6) {
+        height: 450px;
+    }
+
+    main .about:nth-of-type(6) .container {
+        align-items: flex-start;
+    }
 
     main .about:nth-of-type(6) .container .fifth-about > div {
         width: 30%;
@@ -1007,6 +1016,10 @@
 
     main .about:nth-of-type(6) .container .fifth-about > div:hover div {
         top: 20%;
+    }
+
+    main .about:nth-of-type(6) button {
+        bottom: 100px;
     }
 
 
@@ -1078,7 +1091,7 @@
 
 
     main .services:nth-of-type(2) {
-        height: 135vh;
+        height: 950px;
     }
 
     main .services:nth-of-type(2) .container {
@@ -1087,6 +1100,8 @@
 
     main .services:nth-of-type(2) .container .first-service {
         flex-direction: column;
+        align-items: center;
+        height: auto;
     }
 
     main .services:nth-of-type(2) .container .first-service h2 {
@@ -1094,11 +1109,11 @@
     }
 
     main .services:nth-of-type(2) .container .first-service hr {
-        top: 18%;
+        top: 100px;
     }
 
     main .services:nth-of-type(2) .container .first-service > div:first-of-type {
-        width: 100%;
+        width: 85%;
         margin-top: 17%;
     }
 
@@ -1118,10 +1133,11 @@
     }
 
     main .services:nth-of-type(2) .container .first-service > div:last-of-type {
-        margin-top: 10%;
-        width: 100%;
+        width: 80%;
         height: auto;
         justify-content: space-between;
+        position: relative;
+        margin-top: 25px;
     }
 
     main .services:nth-of-type(2) .container .first-service > div:last-of-type .service-wrapper {
@@ -1142,7 +1158,7 @@
 
 
     main .services:nth-of-type(3) {
-        height: 150vh;
+        height: auto;
     }
 
     main .services:nth-of-type(3) .container {
@@ -1151,6 +1167,7 @@
 
     main .services:nth-of-type(3) .container .second-service {
         flex-wrap: wrap;
+        height: auto;
     }
 
     main .services:nth-of-type(3) .container .second-service > div {
@@ -1177,6 +1194,7 @@
         left: 50%;
         transform: translateX(-50%);
         width: 65%;
+        margin-bottom: 50px;
     }
 
     main .services:nth-of-type(3) .container .second-service > div div:last-of-type {
@@ -1188,7 +1206,7 @@
 
 
     main .services:nth-of-type(4) {
-        height: 120vh;
+        height: 800px;
     }
 
     main .services:nth-of-type(4) .container {
@@ -1197,7 +1215,7 @@
 
     main .services:nth-of-type(4) .container .third-service {
         height: auto;
-        margin-top: 22%;
+        margin-top: 10%;
         flex-wrap: wrap;
     }
 
@@ -1226,7 +1244,7 @@
 
 
     main .services:nth-of-type(5) {
-        height: 100vh;
+        height: 720px;
     }
 
     main .services:nth-of-type(5) .container {
@@ -1245,12 +1263,6 @@
         height: 250px;
         margin-bottom: 5%;
     }
-
-
-
-
-
-
 
 
 
@@ -1309,7 +1321,400 @@
     }
 
     main .contact:nth-of-type(2) {
-        height: 120vh;
+        height: 800px;
+    }
+
+
+
+
+
+    /******************************/
+    /******FOOTER PAGE STYLES******/
+    /******************************/
+
+
+    main footer {
+        height: 128px;
+    }
+
+    main footer .inner-container {
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        justify-content: space-around;
+    }
+
+    main footer .container .footer-content:first-of-type {
+        height: 40px;
+        justify-content: flex-end;
+    }
+
+    main footer .container .footer-content:first-of-type h3 {
+        margin: 0;
+    }
+
+    main footer .container .footer-content:last-of-type {
+        height: 50px;
+        justify-content: flex-start;
+    }
+
+    main footer .container .footer-content:last-of-type ul li:first-of-type {
+        margin: 0;
+    }
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@include responsive(tablet) {
+
+
+
+
+
+    /****************************/
+    /******HOME PAGE STYLES******/
+    /****************************/
+
+
+
+
+
+    .home section #image-slider .slide-title {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 100%;
+        z-index: 1;
+    }
+
+    .home section #image-slider .slide-title div:first-of-type {
+        left: 0;
+    }
+
+    .home section #image-slider .slide-title div:nth-of-type(2) {
+        left: -80%;
+        top: 30%;
+    }
+
+    .home section #image-slider .slide-title div:last-of-type {
+        top: 80%;
+    }
+
+    .home section #image-slider .slide-title div:first-of-type ul li {
+        font-size: 7em;
+    }
+
+    .home section #image-slider .slide-title div:nth-of-type(2) {
+        width: 400px;
+        height: 170px;
+    }
+
+
+
+    /*SECOND SECTION*/
+
+
+
+    .home section:nth-of-type(3) {
+        height: 1075px;
+    }
+
+    .home section:nth-of-type(3) .container .inner-container .second-content:last-of-type {
+        width: 85%;
+    }
+
+    .home section:nth-of-type(3) .container .inner-container .second-content:first-of-type {
+        width: 85%;
+    }
+
+
+    /*THIRD SECTION*/
+
+
+
+    .home section:nth-of-type(4) {
+        height: 730px;
+    }
+
+    .home section:nth-of-type(4) .container .inner-container {
+        align-items: center;
+    }
+
+    .home section:nth-of-type(4) .container .third-content:first-of-type {
+        width: 85%;
+    }
+
+    .home section:nth-of-type(4) .container .third-content:last-of-type {
+        width: 85%;
+    }
+
+
+    /*FOURTH SECTION*/
+
+
+
+    .home section:nth-of-type(5) {
+        height: 1100px;
+    }
+
+    .home section:nth-of-type(5) .container {
+        align-items: center;
+    }
+
+    .home section:nth-of-type(5) .container .fourth-content:first-of-type {
+        width: 85%;
+    }
+
+    .home section:nth-of-type(5) .container .fourth-content:last-of-type {
+        width: 85%;
+    }
+
+    .home section:nth-of-type(5) .container .fourth-content:first-of-type div {
+        width: 100%;
+    }
+
+    .home section:nth-of-type(5) .container .fourth-content:last-of-type div {
+        margin: 0;
+    }
+
+    .home section:nth-of-type(5) .container .fourth-content:last-of-type div h2 {
+        margin-top: 50px;
+    }
+
+
+    /*FIFTH SECTION*/
+
+
+    .home section:nth-of-type(6) {
+        height: 525px;
+
+        &::before {
+            height: 525px;
+        }
+    }
+
+    .home section:nth-of-type(6) .container {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .home section:nth-of-type(6) .container .fifth-content:first-of-type {
+        width: 85%;
+    }
+
+    .home section:nth-of-type(6) .container .fifth-content:last-of-type {
+        width: 85%;
+    }
+
+    .home section:nth-of-type(6) .container .fifth-content:first-of-type div p {
+        text-align: center;
+    }
+
+
+    /*SIXTH SECTION*/
+
+
+
+    .home section:nth-of-type(7) {
+        height: 1250px;
+    }
+
+    .home section:nth-of-type(7) .container {
+        align-items: center;
+    }
+
+    .home section:nth-of-type(7) .container .sixth-content:first-of-type {
+        width: 85%;
+    }
+
+    .home section:nth-of-type(7) .container .sixth-content:last-of-type {
+        width: 85%;
+    }
+
+
+
+
+
+
+    /*****************************/
+    /******ABOUT PAGE STYLES******/
+    /*****************************/
+
+
+
+    /*FIRST SECTION*/
+
+
+    main .about:nth-of-type(2) {
+        height: 1000px;
+    }
+
+    main .about:nth-of-type(2) .container .inner-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main .about:nth-of-type(2) .container .first-about:first-of-type {
+        height: auto;
+        width: 85%;
+        order: 2;
+        margin-top: 25px;
+    }
+
+    main .about:nth-of-type(2) .container .first-about:first-of-type div {
+        height: 524px;
+    }
+
+    main .about:nth-of-type(2) .container .first-about:last-of-type {
+        height: auto;
+        width: 85%;
+        order: 1;
+    }
+
+    main .about:nth-of-type(2) .container .first-about:last-of-type div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    main .about:nth-of-type(2) .container .first-about:last-of-type div h2 {
+        text-align: center;
+    }
+
+    main .about:nth-of-type(2) .container .first-about:last-of-type div p {
+        text-align: center;
+    }
+
+
+
+    /*SECOND SECTION*/
+
+
+    main .about:nth-of-type(3) {
+        height: 555px;
+
+        &::before {
+            height: 555px;
+        }
+    }
+
+    main .about:nth-of-type(3) .container .second-about {
+        flex-wrap: wrap;
+    }
+
+    main .about:nth-of-type(3) .container .second-about div {
+        width: 50%;
+        height: 50%;
+    }
+
+
+
+    /*THIRD SECTION*/
+
+
+    main .about:nth-of-type(4) .container .third-about:first-of-type {
+        width: 85%;
+    }
+
+
+
+    /*FOURTH SECTION*/
+
+
+
+    main .about:nth-of-type(5) .container {
+        width: 90%;
+    }
+
+
+
+    /*FIFTH SECTION*/
+
+
+    main .about:nth-of-type(6) {
+        height: auto;
+    }
+
+    main .about:nth-of-type(6) .container .fifth-about {
+        height: auto;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main .about:nth-of-type(6) .container .fifth-about > div {
+        width: 85%;
+    }
+
+    main .about:nth-of-type(6) .container .fifth-about > div:first-of-type {
+        margin: 15% 0 0 0;
+    }
+
+    main .about:nth-of-type(6) .container .fifth-about > div:nth-of-type(2) {
+        margin: 25px 0 25px 0;
+    }
+
+    main .about:nth-of-type(6) .container .fifth-about > div:last-of-type {
+        margin-bottom: 125px;
+    }
+
+    main .about:nth-of-type(6) button {
+        bottom: 35px;
+    }
+
+    main .about:nth-of-type(6) .container .fifth-about > div:hover div {
+        top: 25%;
+    }
+
+    main .about:nth-of-type(6) .container .fifth-about > div div h3 {
+        font-size: 3em;
+    }
+
+    main .about:nth-of-type(6) .container .fifth-about > div div p {
+        font-size: 1.2em;
     }
 
 
@@ -1320,11 +1725,46 @@
 
 
 
+    /********************************/
+    /******SERVICES PAGE STYLES******/
+    /********************************/
 
 
 
+    /*FIRST SECTION*/
 
 
+    main .services:nth-of-type(2) {
+        height: auto;
+    }
+
+    main .services:nth-of-type(2) .container .first-service > div:first-of-type {
+        height: auto;
+    }
+
+    main .services:nth-of-type(2) .container .first-service div:first-of-type button {
+        margin-bottom: 25px;
+    }
+
+    main .services:nth-of-type(2) .container .first-service hr {
+        top: 90px;
+        width: 85%;
+    }
+
+    main .services:nth-of-type(2) .container .first-service > div:first-of-type h3 {
+        margin-top: 25px;
+    }
+
+    main .services:nth-of-type(2) .container .first-service > div:last-of-type {
+        margin-bottom: 25px;
+    }
+
+
+
+    /*SECOND SECTION*/
+
+
+    
 
 
 }
