@@ -530,19 +530,19 @@
         flex-direction: column;
         margin: 0;
         font-size: 3em;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: center;
     }
 
-    main .main-header nav li, main .main-header nav li:first-of-type {
+    main .main-header nav li {
         width: 50%;
         height: 10%;
         text-align: center;
         margin-top: 5%;
     }
 
-    main .main-header nav li:first-of-type {
-        margin-top: 20%;
+    .main-header nav li:first-of-type {
+        text-align: center;
     }
 
     .home section:nth-of-type(2) .container {
@@ -553,7 +553,9 @@
         display: block;
         width: 52px;
         height: 44px;
-        background-color: tan;
+        background-color: #161a1f;
+        border-radius: 5px;
+        border: 1px solid #29a19c;
         z-index: 4;
         position: relative;
         top: 50%;
@@ -561,6 +563,10 @@
         @include flexColumn();
         justify-content: center;
         align-items: center;
+
+        &:hover {
+            background-color: #29a19c;
+        }
         
         &.clicked {
             span {
@@ -581,7 +587,7 @@
         span {
             height: 2px;
             width: 50%;
-            background-color: black;
+            background-color: rgba(255, 255, 255, 0.5);
             display: block;
             transition: background-color .1s linear .2s;
 
@@ -590,7 +596,7 @@
                 display: block;
                 width: inherit;
                 height: inherit;
-                background-color: black;
+                background-color: rgba(255, 255, 255, 0.5);
                 position: absolute;
                 top: 25%;
                 transition: top .3s linear, transform .3s ease-in-out .3s;
@@ -603,7 +609,7 @@
                 display: block;
                 width: inherit;
                 height: inherit;
-                background-color: black;
+                background-color: rgba(255, 255, 255, 0.5);
                 position: absolute;
                 bottom: 25%;
                 transition: bottom .3s linear, transform .3s ease-in-out .3s;
@@ -642,10 +648,6 @@
         align-items: center;
     }
 
-    .home section:nth-of-type(3) .container > div:first-of-type > div {
-        width: 100%;
-        height: 550px;
-    }
 
     .home section:nth-of-type(3) .container .inner-container {
         flex-direction: column;
@@ -655,14 +657,14 @@
 
     .home section:nth-of-type(3) .container .inner-container .second-content:first-of-type {
         order: 2;
-        margin: 0;
+        margin: 10% 0 50px 0;
         width: 85%;
     }
 
     .home section:nth-of-type(3) .container .inner-container .second-content:last-of-type {
         order: 1;
         width: 85%;
-        height: 500px;
+        height: 550px;
         margin: 5% 0 0 0;
     }
 
@@ -855,19 +857,15 @@
         flex-direction: column;
         margin: 0;
         font-size: 3em;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: center;
     }
 
-    main .about .main-header nav li, main .about .main-header nav li:first-of-type {
+    main .about .main-header nav li {
         width: 50%;
         height: 10%;
         text-align: center;
         margin-top: 5%;
-    }
-
-    main .about .main-header nav li:first-of-type {
-        margin-top: 20%;
     }
 
 
@@ -1071,20 +1069,17 @@
         flex-direction: column;
         margin: 0;
         font-size: 3em;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: center;
     }
 
-    main .services .main-header nav li, main .services .main-header nav li:first-of-type {
+    main .services .main-header nav li {
         width: 50%;
         height: 10%;
         text-align: center;
         margin-top: 5%;
     }
 
-    main .services .main-header nav li:first-of-type {
-        margin-top: 20%;
-    }
 
 
     /*FIRST SECTION*/
@@ -1305,20 +1300,17 @@
         flex-direction: column;
         margin: 0;
         font-size: 3em;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: center;
     }
 
-    main .contact .main-header nav li, main .contact .main-header nav li:first-of-type {
+    main .contact .main-header nav li {
         width: 50%;
         height: 10%;
         text-align: center;
         margin-top: 5%;
     }
 
-    main .contact .main-header nav li:first-of-type {
-        margin-top: 20%;
-    }
 
     main .contact:nth-of-type(2) {
         height: 800px;
@@ -1456,9 +1448,6 @@
 
 
 
-    .home section:nth-of-type(3) {
-        height: 1075px;
-    }
 
     .home section:nth-of-type(3) .container .inner-container .second-content:last-of-type {
         width: 85%;
@@ -1471,11 +1460,6 @@
 
     /*THIRD SECTION*/
 
-
-
-    .home section:nth-of-type(4) {
-        height: 730px;
-    }
 
     .home section:nth-of-type(4) .container .inner-container {
         align-items: center;
@@ -1495,7 +1479,7 @@
 
 
     .home section:nth-of-type(5) {
-        height: 1100px;
+        height: auto;
     }
 
     .home section:nth-of-type(5) .container {
@@ -1508,6 +1492,7 @@
 
     .home section:nth-of-type(5) .container .fourth-content:last-of-type {
         width: 85%;
+        margin-bottom: 50px;
     }
 
     .home section:nth-of-type(5) .container .fourth-content:first-of-type div {
@@ -1527,10 +1512,11 @@
 
 
     .home section:nth-of-type(6) {
-        height: 525px;
+        height: auto;
+        position: relative;
 
         &::before {
-            height: 525px;
+            height: 100%;
         }
     }
 
@@ -1542,10 +1528,12 @@
 
     .home section:nth-of-type(6) .container .fifth-content:first-of-type {
         width: 85%;
+        margin-top: 50px;
     }
 
     .home section:nth-of-type(6) .container .fifth-content:last-of-type {
         width: 85%;
+        margin: 50px 0 25px 0;
     }
 
     .home section:nth-of-type(6) .container .fifth-content:first-of-type div p {
@@ -1761,10 +1749,292 @@
 
 
 
+
+    
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@include responsive(phoneLandscape) {
+
+
+    /****************************/
+    /******HOME PAGE STYLES******/
+    /****************************/
+
+
+
+    .home section .container {
+        width: 95%;
+    }
+
+    .main-header #web-logo {
+        width: 200px;
+    }
+
+
+    /*THIRD SECTION*/
+
+
+    .home section:nth-of-type(4) .container .third-content:last-of-type div {
+        width: 23.5%;
+    }
+
+    .home section:nth-of-type(4) .container .third-content:last-of-type div:nth-of-type(5) {
+        display: none;
+    }
+
+    .home section:nth-of-type(4) .container .third-content:last-of-type div:nth-of-type(6) {
+        display: none;
+    }
+
+    
+    /*SIXTH SECTION*/
+
+
+    .home section:nth-of-type(7) {
+        height: auto;
+    }
+
+    .home section:nth-of-type(7) .container .sixth-content:last-of-type {
+        flex-basis: 57%;
+        justify-content: flex-start;
+        margin-bottom: 50px;
+    }
+
+    .home section:nth-of-type(7) .container .sixth-content:last-of-type div {
+        height: 270px;
+    }
+
+    .home section:nth-of-type(7) .container .sixth-content:last-of-type div:first-of-type {
+        justify-content: center;
+        
+        span {
+            width: 400px;
+        }
+    }
+
+    .home section:nth-of-type(7) .container .sixth-content:last-of-type div:last-of-type {
+        justify-content: center;
+        
+        span {
+            width: 337px;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+    /*****************************/
+    /******ABOUT PAGE STYLES******/
+    /*****************************/
+
+
+
+    main .about:nth-of-type(2) .container .first-about:first-of-type {
+        width: 95%;
+    }
+
+
+
+
+
+    /********************************/
+    /******SERVICES PAGE STYLES******/
+    /********************************/
+
+
+
     /*SECOND SECTION*/
 
 
-    
+    main .services:nth-of-type(3) .container .second-service {
+        justify-content: center;
+    }
+
+    main .services:nth-of-type(3) .container .second-service > div {
+        width: 85%;
+    }
+
+    main .services:nth-of-type(3) .container .second-service > div:last-of-type {
+        width: 85%;
+        transform: none;
+        left: 0;
+    }
+
+
+
+    /*THIRD SECTION*/
+
+
+    main .services:nth-of-type(4) {
+        height: auto;
+    }
+
+    main .services:nth-of-type(4) .container .third-service > div:first-of-type {
+        margin-top: 125px;
+    }
+
+    main .services:nth-of-type(4) .container .third-service {
+        justify-content: center;
+    }
+
+    main .services:nth-of-type(4) .container .third-service > div {
+        width: 85%;
+    }
+
+    main .services:nth-of-type(4) .container .third-service > div:last-of-type {
+        width: 85%;
+        transform: none;
+        left: 0;
+    }
+
+
+
+    /*FOURTH SECTION*/
+
+
+    main .services:nth-of-type(5) {
+        height: auto;
+    }
+
+    main .services:nth-of-type(5) .container .fourth-service {
+        justify-content: center;
+    }
+
+    main .services:nth-of-type(5) .container .fourth-service > div {
+        width: 85%;
+    }
+
+    main .services:nth-of-type(5) .container .fourth-service > div:last-of-type {
+        margin-bottom: 50px;
+    }
+
+
+
+
+
+
+}
+
+@include responsive(phone) {
+
+
+
+    /****************************/
+    /******HOME PAGE STYLES******/
+    /****************************/
+
+
+
+    .home section .container {
+        width: 100%;
+    }
+
+    .home section:first-of-type .container {
+        width: 90%;
+    }
+
+
+    /*SECOND SECTION*/
+
+    .home section:nth-of-type(3) .container .inner-container .second-content div h2 {
+        font-size: 2.3em;
+    }
+
+
+    .home section:last-of-type .container h2 {
+        text-align: center;
+    }
+
+    main footer .container .footer-content:first-of-type h3 {
+        text-align: center;
+    }
+
+
+
+    /*****************************/
+    /******ABOUT PAGE STYLES******/
+    /*****************************/
+
+
+
+    main .about:nth-of-type(4) {
+        height: auto;
+    }
+
+    main .about:nth-of-type(4) .container .third-about:first-of-type {
+        margin-bottom: 50px;
+    }
+
+
+
+
+
+    /********************************/
+    /******SERVICES PAGE STYLES******/
+    /********************************/
+
+
+
+    main .services:nth-of-type(2) .container .first-service hr {
+        top: 85px;
+    }
+
+    main .services:nth-of-type(2) .container .first-service > div:first-of-type {
+        margin-top: 22%;
+    }
+
+
+
+
+    /*******************************/
+    /******CONTACT PAGE STYLES******/
+    /*******************************/
+
+    main .contact:nth-of-type(2) .container .form-content h2 {
+        font-size: 2.5em;
+        top: 1%;
+    }
+
+
+
+
+
 
 
 }
